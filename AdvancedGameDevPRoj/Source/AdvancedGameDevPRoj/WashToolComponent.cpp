@@ -21,11 +21,17 @@ void UWashToolComponent::StartSpray()
 {
 	if (CurrentCharge <= 0.0f) return;
 	bIsSpraying = true;
+
+	UE_LOG(LogTemp, Warning, TEXT("StartSpray called"));
+
 }
 
 void UWashToolComponent::StopSpray()
 {
 	bIsSpraying = false;
+
+	UE_LOG(LogTemp, Warning, TEXT("StopSpray called"));
+
 }
 
 void UWashToolComponent::ApplyUpgrade(const UUpgradeData* Upgrade)
