@@ -1,6 +1,8 @@
 {
 	"SourceFiles": [
 		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRoj\\AdvancedGameDevPRoj.Build.cs",
+		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Plugins\\VisualStudioTools\\Source\\VisualStudioBlueprintDebuggerHelper\\VisualStudioBlueprintDebuggerHelper.Build.cs",
+		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Plugins\\VisualStudioTools\\Source\\VisualStudioTools\\VisualStudioTools.Build.cs",
 		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRoj.Target.cs",
 		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRojEditor.Target.cs"
 	],
