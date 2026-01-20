@@ -1145,3 +1145,373 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.01.20-15.54.21:694][ 12]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 5.954591, Update Interval: 356.517212
 [2026.01.20-15.54.42:259][748]LogSlate: Took 0.002763 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
 [2026.01.20-15.56.06:205][459]LogDerivedDataCache: C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.01.20-16.00.18:269][321]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 362.863129
+[2026.01.20-16.00.19:270][324]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.01.20-16.00.19:270][324]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 363.530426, Update Interval: 342.132019
+[2026.01.20-16.01.23:093][ 96]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2026.01.20-16.01.23:094][ 96]LogStreaming: Display: FlushAsyncLoading(393): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.01.23:305][ 96]LogChaosDD: Creating Chaos Debug Draw Scene for world Level2_OutdoorWash
+[2026.01.20-16.01.23:314][ 96]LogAssetEditorSubsystem: Opening Asset editor for World /Game/CarWashBox/Maps/Level2_OutdoorWash.Level2_OutdoorWash
+[2026.01.20-16.01.23:316][ 96]Cmd: MAP LOAD FILE="../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level2_OutdoorWash.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2026.01.20-16.01.23:354][ 96]LogWorld: UWorld::CleanupWorld for Lvl_FirstPerson, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.01.23:354][ 96]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.01.23:354][ 96]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/FirstPerson/Lvl_FirstPerson.Lvl_FirstPerson
+[2026.01.20-16.01.23:378][ 96]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.01.20-16.01.23:380][ 96]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2026.01.20-16.01.23:393][ 96]LogWorld: UWorld::CleanupWorld for Level2_OutdoorWash, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.01.23:394][ 96]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.01.23:409][ 96]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2026.01.20-16.01.23:418][ 96]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2026.01.20-16.01.23:448][ 96]LogAudio: Display: Audio Device (ID: 1) registered with world 'Level2_OutdoorWash'.
+[2026.01.20-16.01.23:449][ 96]LogChaosDD: Creating Chaos Debug Draw Scene for world Level2_OutdoorWash
+[2026.01.20-16.01.23:509][ 96]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.01.20-16.01.23:529][ 96]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2026.01.20-16.01.23:534][ 96]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.01.20-16.01.23:534][ 96]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.051ms to complete.
+[2026.01.20-16.01.23:549][ 96]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2026.01.20-16.01.23:686][ 97]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 768
+[2026.01.20-16.01.23:693][ 97]LogSlate: Took 0.000163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.01.20-16.01.24:588][147]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2026.01.20-16.01.34:106][990]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2026.01.20-16.01.34:106][990]LogEditor: Attempting to add actor of class 'WashableCar' to level at -3990.00,240.00,0.00
+[2026.01.20-16.01.34:758][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2026.01.20-16.01.34:763][ 60]LogEditorActor: Deleted 0 Actors (0.019 secs)
+[2026.01.20-16.01.34:767][ 60]LogEditor: Attempting to add actor of class 'WashableCar' to level at -3840.00,350.00,0.00
+[2026.01.20-16.01.54:662][899]LogSlate: Took 0.002070 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2026.01.20-16.06.03:922][513]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 708.518555
+[2026.01.20-16.06.04:922][516]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.01.20-16.06.04:923][516]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 709.184570, Update Interval: 359.417694
+[2026.01.20-16.11.07:976][100]LogFab: Display: Logging in using persist
+[2026.01.20-16.11.07:977][100]LogEOSSDK: Warning: LogEOSAuth: No existing persistent auth credentials were found for automatic login.
+[2026.01.20-16.11.08:150][100]LogWebBrowser: Loaded CEF3 version 90.6.7.2358 from C:/Users/User/Documents/UE_5.6/Engine/Binaries/ThirdParty/CEF3/Win64/
+[2026.01.20-16.11.08:180][100]LogCEFBrowser: CEF GPU acceleration enabled
+[2026.01.20-16.11.08:582][100]LogFab: Error: Login failed - error code: EOS_InvalidAuth
+[2026.01.20-16.11.08:582][100]LogFab: Display: Logging in using exchange code
+[2026.01.20-16.11.08:582][100]LogFab: Display: Reading exchange code from commandline
+[2026.01.20-16.11.08:582][100]LogEOSSDK: Error: LogEOSAuth: Invalid parameter EOS_Auth_Credentials.Token reason: must not be null or empty
+[2026.01.20-16.11.08:600][101]LogFab: Error: Login failed - error code: EOS_InvalidParameters
+[2026.01.20-16.11.10:813][293]LogEOSSDK: Error: LogEOS: EOS_Auth_CopyUserAuthToken - One or more parameters are null
+[2026.01.20-16.11.10:813][293]LogFab: Error: User auth token is invalid - unable to get auth token
+[2026.01.20-16.12.11:675][809]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1076.272217
+[2026.01.20-16.12.11:864][826]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.01.20-16.12.11:864][827]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1076.451660, Update Interval: 322.881561
+[2026.01.20-16.12.25:407][ 60]LogFab: Display: Add listing to project - 86913ed2-c5cc-4b52-b55d-60815de79735
+[2026.01.20-16.12.25:407][ 60]LogFab: Display: Listing type - glb
+[2026.01.20-16.12.32:064][620]LogStreaming: Display: FlushAsyncLoading(395): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.12.32:321][620]LogInterchangeEngine: Display: Interchange import: Using stack [OverridePipeline] to import.
+[2026.01.20-16.12.32:322][620]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/User/AppData/Local/Temp/FabLibrary/86913ed2-c5cc-4b52-b55d-60815de79735/futuristic_car_extracted/source/futuristic car.glb]
+[2026.01.20-16.12.32:392][624]LogStreaming: Display: FlushAsyncLoading(438): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.12.32:454][631]LogStreaming: Display: FlushAsyncLoading(441): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.12.34:296][793]LogStreaming: Display: FlushAsyncLoading(442): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.12.35:149][798]LogTexture: Display: Building textures: /Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b.ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b (TFO_AutoDXT, 2048x2048 x1x1x1) (Required Memory Estimate: 280.999983 MB), EncodeSpeed: Fast
+[2026.01.20-16.12.35:149][798]LogTexture: Display: Building textures: /Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b.Color_f2a1f7ce-dfba-484e-ac30-d283709a394b (TFO_AutoDXT, 2048x2048 x1x1x1) (Required Memory Estimate: 280.999983 MB), EncodeSpeed: Fast
+[2026.01.20-16.12.35:240][799]LogAsyncCompilation: Display: BEWARE: AssetCompile memory estimate is greater than available, but we're running it [StaticMesh] anyway! RequiredMemory = 0.000 MiB + 1091.575806 MiB, MemoryLimit = 587.792969 MiB 
+[2026.01.20-16.12.35:241][799]LogAsyncCompilation: Display: BEWARE: AssetCompile memory estimate is greater than available, but we're running it [StaticMesh] anyway! RequiredMemory = 0.000 MiB + 1091.575806 MiB, MemoryLimit = 587.792969 MiB 
+[2026.01.20-16.12.35:241][799]LogStaticMesh: Display: Building static mesh futuristic_car (Required Memory Estimate: 1091.575765 MB)...
+[2026.01.20-16.12.38:145][ 60]LogSlate: Window 'Fab' being destroyed
+[2026.01.20-16.12.38:149][ 60]LogSlate: Window 'Fab' being destroyed
+[2026.01.20-16.12.39:648][197]LogWebBrowser: Closing browser during destruction, this may cause a later crash.
+[2026.01.20-16.12.39:648][197]LogWebBrowser: Deleting browser for Url=https://www.fab.com/plugins/ue5/listings/86913ed2-c5cc-4b52-b55d-60815de79735.
+[2026.01.20-16.12.40:064][233]LogStaticMesh: Built static mesh [4.82s] /Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car.futuristic_car
+[2026.01.20-16.12.40:934][312]LogStaticMesh: Warning: futuristic_car has some nearly zero tangents which can create some issues. (Tolerance of 1E-4)
+[2026.01.20-16.12.40:934][312]LogStaticMesh: Warning: futuristic_car has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2026.01.20-16.12.40:936][312]LogTexture: Display: Building textures: /Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b.NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b (TFO_BC5, 2048x2048 x1x1x1) (Required Memory Estimate: 382.499988 MB), EncodeSpeed: Fast
+[2026.01.20-16.12.41:117][316]LogInterchangeEngine: Display: Interchange import completed [C:/Users/User/AppDat...car_extracted/source/futuristic car.glb]
+[2026.01.20-16.13.18:757][329]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2026.01.20-16.13.18:908][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/CarWashBox/Maps/Level2_OutdoorWash_Auto1
+[2026.01.20-16.13.18:908][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Level2_OutdoorWash_Auto1FE3C816449C9F085E3FB98A51DA04D24.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/CarWashBox/Maps/Level2_OutdoorWash_Auto1.umap'
+[2026.01.20-16.13.18:910][329]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/CarWashBox/Maps/Level2_OutdoorWash' took 0.180
+[2026.01.20-16.13.18:910][329]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.180
+[2026.01.20-16.13.18:911][329]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.13.18:921][329]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b.ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:921][329]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:936][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1
+[2026.01.20-16.13.18:936][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/ORM_f2a1f7ce-dfba-484e-ac30-d283602412914F419EED1B79A380A65C2DA5.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1.uasset'
+[2026.01.20-16.13.18:937][329]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.13.18:941][329]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b.Color_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:941][329]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:956][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1
+[2026.01.20-16.13.18:956][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Color_f2a1f7ce-dfba-484e-ac30-d2C0BE7D674038E533C1318ABA5EB9C9FD.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1.uasset'
+[2026.01.20-16.13.18:957][329]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.13.18:959][329]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b.NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:959][329]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.18:972][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1
+[2026.01.20-16.13.18:973][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/NormalGL_f2a1f7ce-dfba-484e-ac30F08FA46C48569CFE517B8FBF85D6836F.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1.uasset'
+[2026.01.20-16.13.18:974][329]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.13.19:110][329]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b.tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.19:110][329]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.13.19:120][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1
+[2026.01.20-16.13.19:120][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/tripo_material_f2a1f7ce-dfba-4842F14B67244E7462E5473DCA5F9758A60.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b_Auto1.uasset'
+[2026.01.20-16.13.19:121][329]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car] ([1] browsable assets)...
+[2026.01.20-16.13.19:180][329]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car.futuristic_car]
+[2026.01.20-16.13.19:180][329]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car]
+[2026.01.20-16.13.19:287][329]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car_Auto1
+[2026.01.20-16.13.19:287][329]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/futuristic_car_Auto13231D6AC4C32C486DEAFBD99D38D9729.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Autosaves/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car_Auto1.uasset'
+[2026.01.20-16.13.19:288][329]LogFileHelpers: Auto-saving content packages took 0.378
+[2026.01.20-16.13.41:613][653]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car.futuristic_car
+[2026.01.20-16.13.41:665][653]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_2
+[2026.01.20-16.13.41:670][653]LogStreaming: Display: FlushAsyncLoading(443): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.20-16.13.41:706][653]LogStaticMesh: Display: Building static mesh Sphere_inversenormals (Required Memory Estimate: 1.522745 MB)...
+[2026.01.20-16.13.41:713][653]LogStaticMesh: Built static mesh [0.03s] /Engine/EditorMeshes/AssetViewer/Sphere_inversenormals.Sphere_inversenormals
+[2026.01.20-16.13.41:723][653]LogStaticMesh: Display: Building static mesh Floor_Mesh (Required Memory Estimate: 0.022237 MB)...
+[2026.01.20-16.13.41:724][653]LogStaticMesh: Built static mesh [0.00s] /Engine/EditorMeshes/AssetViewer/Floor_Mesh.Floor_Mesh
+[2026.01.20-16.15.03:939][333]LogSlate: Window 'futuristic_car' being destroyed
+[2026.01.20-16.15.03:943][333]LogSlate: Window 'futuristic_car' being destroyed
+[2026.01.20-16.15.04:003][333]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.15.04:003][333]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.15.04:041][333]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2026.01.20-16.15.05:481][461]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.01.20-16.15.05:516][461]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.01.20-16.15.05:526][461]LogOnline: OSS: Created online subsystem instance for: NULL
+[2026.01.20-16.15.05:526][461]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2026.01.20-16.15.05:526][461]LogPlayLevel: Creating play world package: /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash
+[2026.01.20-16.15.05:568][461]LogPlayLevel: PIE: StaticDuplicateObject took: (0.041825s)
+[2026.01.20-16.15.05:568][461]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CarWashBox/Maps/Level2_OutdoorWash.Level2_OutdoorWash to /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash.Level2_OutdoorWash (0.041857s)
+[2026.01.20-16.15.05:579][461]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2026.01.20-16.15.05:580][461]LogChaosDD: Creating Chaos Debug Draw Scene for world Level2_OutdoorWash
+[2026.01.20-16.15.05:582][461]LogPlayLevel: PIE: World Init took: (0.001581s)
+[2026.01.20-16.15.05:582][461]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.01.20-16.15.05:582][461]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.01.20-16.15.05:582][461]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.01.20-16.15.05:582][461]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.01.20-16.15.05:582][461]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.01.20-16.15.05:582][461]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.01.20-16.15.05:584][461]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.01.20-16.15.05:613][461]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (G435 Wireless Gaming Headset)
+[2026.01.20-16.15.05:613][461]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.01.20-16.15.05:613][461]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.01.20-16.15.05:613][461]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.01.20-16.15.05:613][461]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2026.01.20-16.15.05:613][461]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2026.01.20-16.15.05:615][461]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2026.01.20-16.15.05:615][461]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2026.01.20-16.15.05:615][461]LogInit: FAudioDevice initialized with ID 2.
+[2026.01.20-16.15.05:615][461]LogAudio: Display: Audio Device (ID: 2) registered with world 'Level2_OutdoorWash'.
+[2026.01.20-16.15.05:615][461]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2026.01.20-16.15.05:618][461]LogLoad: Game class is 'BP_FirstPersonGameMode_C'
+[2026.01.20-16.15.05:632][461]LogWorld: Bringing World /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash.Level2_OutdoorWash up for play (max tick rate 0) at 2026.01.20-17.15.05
+[2026.01.20-16.15.05:633][461]LogWorld: Bringing up level for play took: 0.014097
+[2026.01.20-16.15.05:634][461]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2026.01.20-16.15.05:666][461]PIE: Server logged in
+[2026.01.20-16.15.05:667][461]PIE: Play in editor total start time 0.181 seconds.
+[2026.01.20-16.15.06:158][462]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 768
+[2026.01.20-16.15.09:415][716]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.20-16.15.09:415][716]LogWorld: BeginTearingDown for /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash
+[2026.01.20-16.15.09:415][716]LogWorld: UWorld::CleanupWorld for Level2_OutdoorWash, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.15.09:420][716]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.15.09:421][716]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.01.20-16.15.09:424][716]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.15.09:440][716]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.01.20-16.15.09:441][716]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2026.01.20-16.15.09:441][716]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2, StreamState=4
+[2026.01.20-16.15.09:443][716]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2, StreamState=2
+[2026.01.20-16.15.09:449][716]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.20-16.15.09:455][716]LogUObjectHash: Compacting FUObjectHashTables data took   0.47ms
+[2026.01.20-16.15.09:517][717]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: ================================================
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Total job queries 502, among them cache hits 67 (13.35%), DDC hits 353 (70.32%), Duplicates 72 (14.34%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Tracking 363 distinct input hashes that result in 265 distinct outputs (73.00%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: RAM used: 3.49 MiB of 1.60 GiB budget. Usage: 0.21%
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Shaders Compiled: 10
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Jobs assigned 10, completed 10 (100%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Average time worker was idle: 54.58 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Time job spent in pending queue: average 0.06 s, longest 0.07 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Job execution time: average 0.72 s, max 1.05 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Job life time (pending + execution): average 0.79 s, max 1.11
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Shader code size: total 100.711 KiB, numShaders 11, average 9.155 KiB, min 5.586 KiB, max 15.699 KiB
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 2.10 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.00%
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Jobs were issued in 10 batches (only local compilation was used), average 1.00 jobs/batch
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Average processing rate: 4.76 jobs/sec
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Total thread time: 4.833 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Total thread preprocess time: 5.201 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Percentage time preprocessing: 107.60%
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Effective parallelization: 2.30 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.287332
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy (compiled    3 times, average 0.71 sec, max 0.73 sec, min 0.70 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                                FAnisotropyPS (compiled    1 times, average 0.53 sec, max 0.53 sec, min 0.53 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled    3 times, average 0.38 sec, max 0.43 sec, min 0.35 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                                 FLumenCardPS (compiled    1 times, average 0.30 sec, max 0.30 sec, min 0.30 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled    1 times, average 0.26 sec, max 0.26 sec, min 0.26 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                TMaterialCHSFNoLightMapPolicy - 43.98% of total time (compiled    3 times, average 0.71 sec, max 0.73 sec, min 0.70 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 23.78% of total time (compiled    3 times, average 0.38 sec, max 0.43 sec, min 0.35 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                                FAnisotropyPS - 11.05% of total time (compiled    1 times, average 0.53 sec, max 0.53 sec, min 0.53 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                                 FLumenCardPS - 6.15% of total time (compiled    1 times, average 0.30 sec, max 0.30 sec, min 0.30 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 5.44% of total time (compiled    1 times, average 0.26 sec, max 0.26 sec, min 0.26 sec)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: === Material stats ===
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Materials Translated:    179
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Material Total Translate Time: 0.16 s
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Material Translation Only: 0.08 s (49%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (1%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: Material Cache Hits: 24 (13%)
+[2026.01.20-16.15.19:951][573]LogShaderCompilers: Display: ================================================
+[2026.01.20-16.15.28:844][306]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.01.20-16.15.28:850][306]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.01.20-16.15.28:850][306]LogPlayLevel: Creating play world package: /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash
+[2026.01.20-16.15.28:896][306]LogPlayLevel: PIE: StaticDuplicateObject took: (0.046917s)
+[2026.01.20-16.15.28:896][306]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CarWashBox/Maps/Level2_OutdoorWash.Level2_OutdoorWash to /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash.Level2_OutdoorWash (0.046944s)
+[2026.01.20-16.15.28:910][306]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2026.01.20-16.15.28:911][306]LogChaosDD: Creating Chaos Debug Draw Scene for world Level2_OutdoorWash
+[2026.01.20-16.15.28:912][306]LogPlayLevel: PIE: World Init took: (0.001207s)
+[2026.01.20-16.15.28:913][306]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.01.20-16.15.28:913][306]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.01.20-16.15.28:913][306]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.01.20-16.15.28:913][306]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.01.20-16.15.28:913][306]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.01.20-16.15.28:913][306]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.01.20-16.15.28:915][306]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.01.20-16.15.28:940][306]LogAudioMixer: Display: Using Audio Hardware Device Headset Earphone (G435 Wireless Gaming Headset)
+[2026.01.20-16.15.28:940][306]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.01.20-16.15.28:940][306]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.01.20-16.15.28:941][306]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.01.20-16.15.28:941][306]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2026.01.20-16.15.28:941][306]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2026.01.20-16.15.28:943][306]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2026.01.20-16.15.28:943][306]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2026.01.20-16.15.28:943][306]LogInit: FAudioDevice initialized with ID 3.
+[2026.01.20-16.15.28:943][306]LogAudio: Display: Audio Device (ID: 3) registered with world 'Level2_OutdoorWash'.
+[2026.01.20-16.15.28:943][306]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2026.01.20-16.15.28:947][306]LogLoad: Game class is 'BP_FirstPersonGameMode_C'
+[2026.01.20-16.15.28:963][306]LogWorld: Bringing World /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash.Level2_OutdoorWash up for play (max tick rate 0) at 2026.01.20-17.15.28
+[2026.01.20-16.15.28:963][306]LogWorld: Bringing up level for play took: 0.016027
+[2026.01.20-16.15.28:965][306]LogOnline: OSS: Created online subsystem instance for: :Context_5
+[2026.01.20-16.15.28:970][306]PIE: Server logged in
+[2026.01.20-16.15.28:972][306]PIE: Play in editor total start time 0.122 seconds.
+[2026.01.20-16.15.29:068][307]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 768
+[2026.01.20-16.15.38:414][ 10]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.20-16.15.38:414][ 10]LogWorld: BeginTearingDown for /Game/CarWashBox/Maps/UEDPIE_0_Level2_OutdoorWash
+[2026.01.20-16.15.38:415][ 10]LogWorld: UWorld::CleanupWorld for Level2_OutdoorWash, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.15.38:419][ 10]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.15.38:421][ 10]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.01.20-16.15.38:425][ 10]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.15.38:439][ 10]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.20-16.15.38:440][ 10]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2026.01.20-16.15.38:440][ 10]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3, StreamState=4
+[2026.01.20-16.15.38:442][ 10]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3, StreamState=2
+[2026.01.20-16.15.38:450][ 10]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2026.01.20-16.15.38:509][ 11]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2026.01.20-16.17.49:305][130]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1413.900024
+[2026.01.20-16.17.50:305][133]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.01.20-16.17.50:305][133]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1414.566406, Update Interval: 309.034698
+[2026.01.20-16.20.09:523][590]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2026.01.20-16.20.10:662][590]LogSlate: Window 'Save Content' being destroyed
+[2026.01.20-16.20.10:681][590]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.01.20-16.20.10:739][590]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2026.01.20-16.20.10:890][590]LogSavePackage: Moving output files for package: /Game/CarWashBox/Maps/Level2_OutdoorWash
+[2026.01.20-16.20.10:892][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Level2_OutdoorWash699E3D2E41FD1A6BD6D776B673E1F7C8.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level2_OutdoorWash.umap'
+[2026.01.20-16.20.10:901][590]LogFileHelpers: Saving map 'Level2_OutdoorWash' took 0.190
+[2026.01.20-16.20.10:901][590]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.20.10:901][590]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.20.10:935][590]LogSavePackage: Moving output files for package: /Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b
+[2026.01.20-16.20.10:935][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/Color_f2a1f7ce-dfba-484e-ac30-d281E84FBE430579AD849F3DB927582734.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b.uasset'
+[2026.01.20-16.20.10:938][590]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.20.10:938][590]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.20.10:958][590]LogSavePackage: Moving output files for package: /Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b
+[2026.01.20-16.20.10:958][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/NormalGL_f2a1f7ce-dfba-484e-ac3086345F92469C676EA7EEC7A105924969.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b.uasset'
+[2026.01.20-16.20.10:959][590]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.20.10:959][590]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.20.10:986][590]LogSavePackage: Moving output files for package: /Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b
+[2026.01.20-16.20.10:986][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/ORM_f2a1f7ce-dfba-484e-ac30-d283532848044781B6098ADB0E9682F03CCE.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b.uasset'
+[2026.01.20-16.20.10:987][590]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car] ([1] browsable assets)...
+[2026.01.20-16.20.10:987][590]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car]
+[2026.01.20-16.20.11:095][590]LogSavePackage: Moving output files for package: /Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car
+[2026.01.20-16.20.11:095][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/futuristic_carE2D648194C025B6DF6F501A4A39864F5.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car.uasset'
+[2026.01.20-16.20.11:097][590]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b] ([1] browsable assets)...
+[2026.01.20-16.20.11:097][590]OBJ SavePackage: Finished generating thumbnails for package [/Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b]
+[2026.01.20-16.20.11:104][590]LogSavePackage: Moving output files for package: /Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b
+[2026.01.20-16.20.11:104][590]LogSavePackage: Moving '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/tripo_material_f2a1f7ce-dfba-4844C93A3B14B5582CEEB1EEBAC2CE7CE13.tmp' to '../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b.uasset'
+[2026.01.20-16.20.11:112][590]LogFileHelpers: InternalPromptForCheckoutAndSave took 429.806 ms
+[2026.01.20-16.20.11:139][590]LogStall: Shutdown...
+[2026.01.20-16.20.11:139][590]LogStall: Shutdown complete.
+[2026.01.20-16.20.11:163][590]LogSlate: Window 'AdvancedGameDevPRoj - Unreal Editor' being destroyed
+[2026.01.20-16.20.11:229][590]LogContentValidation: Display: Starting to validate 6 assets
+[2026.01.20-16.20.11:229][590]LogContentValidation: Enabled validators:
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.01.20-16.20.11:231][590]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.01.20-16.20.11:233][590]AssetCheck: /Game/CarWashBox/Maps/Level2_OutdoorWash Validating asset
+[2026.01.20-16.20.11:233][590]AssetCheck: /Game/Fab/futuristic_car/futuristic_car/Textures/Color_f2a1f7ce-dfba-484e-ac30-d283709a394b Validating asset
+[2026.01.20-16.20.11:233][590]AssetCheck: /Game/Fab/futuristic_car/futuristic_car/Textures/NormalGL_f2a1f7ce-dfba-484e-ac30-d283709a394b Validating asset
+[2026.01.20-16.20.11:233][590]AssetCheck: /Game/Fab/futuristic_car/futuristic_car/Textures/ORM_f2a1f7ce-dfba-484e-ac30-d283709a394b Validating asset
+[2026.01.20-16.20.11:234][590]AssetCheck: /Game/Fab/futuristic_car/futuristic_car/StaticMeshes/futuristic_car Validating asset
+[2026.01.20-16.20.11:234][590]AssetCheck: /Game/Fab/futuristic_car/futuristic_car/Materials/tripo_material_f2a1f7ce-dfba-484e-ac30-d283709a394b Validating asset
+[2026.01.20-16.20.11:236][590]Cmd: QUIT_EDITOR
+[2026.01.20-16.20.11:236][590]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2026.01.20-16.20.11:237][590]LogSourceControl: Display: Uncontrolled Changelist persistency file saved ../../../../../Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/SourceControl/UncontrolledChangelists.json
+[2026.01.20-16.20.11:246][591]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.01.20-16.20.11:247][591]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2026.01.20-16.20.11:247][591]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2026.01.20-16.20.11:255][591]LogWorld: UWorld::CleanupWorld for Level2_OutdoorWash, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.20.11:255][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.20.11:268][591]LogStylusInput: Shutting down StylusInput subsystem.
+[2026.01.20-16.20.11:269][591]LogTedsSettings: UTedsSettingsEditorSubsystem::Deinitialize
+[2026.01.20-16.20.11:272][591]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2026.01.20-16.20.11:275][591]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.20.11:275][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.20.11:277][591]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2026.01.20-16.20.11:277][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.20-16.20.11:282][591]LogRuntimeTelemetry: Recording EnginePreExit events
+[2026.01.20-16.20.11:282][591]LogStudioTelemetry: Ended StudioTelemetry Session
+[2026.01.20-16.20.11:284][591]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::EndSession
+[2026.01.20-16.20.12:113][591]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2026.01.20-16.20.12:113][591]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2026.01.20-16.20.12:113][591]LogAudio: Display: Audio Device unregistered from world 'Level2_OutdoorWash'.
+[2026.01.20-16.20.12:113][591]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2026.01.20-16.20.12:113][591]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=4
+[2026.01.20-16.20.12:114][591]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=2
+[2026.01.20-16.20.12:120][591]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2026.01.20-16.20.12:120][591]LogAudio: Display: Audio Device Manager Shutdown
+[2026.01.20-16.20.12:120][591]LogWindowsTextInputMethodSystem: Activated input method: English (United States) - (Keyboard).
+[2026.01.20-16.20.12:121][591]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.01.20-16.20.12:121][591]LogExit: Preparing to exit.
+[2026.01.20-16.20.12:164][591]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2026.01.20-16.20.13:377][591]LogEditorDataStorage: Deinitializing
+[2026.01.20-16.20.13:453][591]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.01.20-16.20.13:483][591]LogExit: Editor shut down
+[2026.01.20-16.20.13:484][591]LogExit: Transaction tracking system shut down
+[2026.01.20-16.20.13:780][591]LogExit: Object subsystem successfully closed.
+[2026.01.20-16.20.13:821][591]LogShaderCompilers: Display: Shaders left to compile 0
+[2026.01.20-16.20.14:055][591]LogMemoryProfiler: Shutdown
+[2026.01.20-16.20.14:057][591]LogNetworkingProfiler: Shutdown
+[2026.01.20-16.20.14:057][591]LoadingProfiler: Shutdown
+[2026.01.20-16.20.14:058][591]LogTimingProfiler: Shutdown
+[2026.01.20-16.20.14:066][591]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDGenericDebugDrawExtension] ...
+[2026.01.20-16.20.14:066][591]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDAccelerationStructuresExtension] ...
+[2026.01.20-16.20.14:348][591]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.01.20-16.20.14:370][591]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2026.01.20-16.20.14:370][591]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BC790E45D-48AC-89B5-0138-10B76C4A856B%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.6.1-44394996%2B%2B%2BUE5%2BRelease-5.6&UserID=0089757d49b40548ce5f888a7af1fda8%7Ced28ec215604490981df44336bc5516b%7C356a2e8b-288b-4ae2-be0b-ca691c29818c&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2026.01.20-16.20.14:929][591]LogEOSShared: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2026.01.20-16.20.14:929][591]LogNFORDenoise: NFORDenoise function shutting down
+[2026.01.20-16.20.14:931][591]RenderDocPlugin: plugin has been unloaded.
+[2026.01.20-16.20.14:936][591]LogXGEController: Cleaning working directory: C:/Users/User/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2026.01.20-16.20.14:939][591]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2026.01.20-16.20.14:939][591]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2026.01.20-16.20.14:939][591]LogPakFile: Destroying PakPlatformFile
+[2026.01.20-16.20.15:180][591]LogD3D12RHI: ~FD3D12DynamicRHI
+[2026.01.20-16.20.15:205][591]LogExit: Exiting.
+[2026.01.20-16.20.15:219][591]Log file closed, 01/20/26 17:20:15
