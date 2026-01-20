@@ -11,6 +11,7 @@
     <None Include="..\..\Source\AdvancedGameDevPRojEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -63,6 +64,36 @@
       <Filter>Source\AdvancedGameDevPRoj</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\PickupBase.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\PickupBase.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\UpgradeData.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\UpgradeData.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Washable.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Washable.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\WashableCar.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\WashableCar.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\WashToolComponent.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\WashToolComponent.h">
       <Filter>Source\AdvancedGameDevPRoj</Filter>
     </ClInclude>
     <Filter Include="Source\AdvancedGameDevPRoj\Variant_Horror">

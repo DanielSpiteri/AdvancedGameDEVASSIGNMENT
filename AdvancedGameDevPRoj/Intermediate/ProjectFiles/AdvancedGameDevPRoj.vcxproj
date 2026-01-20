@@ -252,6 +252,7 @@
     <None Include="..\..\AdvancedGameDevPRoj.uproject"/>
     <None Include="..\..\Source\AdvancedGameDevPRoj.Target.cs"/>
     <None Include="..\..\Source\AdvancedGameDevPRojEditor.Target.cs"/>
+    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -278,6 +279,26 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h"/>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\PickupBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\PickupBase.h"/>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\UpgradeData.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\UpgradeData.h"/>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Washable.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Washable.h"/>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\WashableCar.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\WashableCar.h"/>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\WashToolComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\WashToolComponent.h"/>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

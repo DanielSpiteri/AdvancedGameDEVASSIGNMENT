@@ -13,6 +13,7 @@
 #include "TimerManager.h"
 #include "ShooterGameMode.h"
 
+
 AShooterCharacter::AShooterCharacter()
 {
 	// create the noise emitter component
