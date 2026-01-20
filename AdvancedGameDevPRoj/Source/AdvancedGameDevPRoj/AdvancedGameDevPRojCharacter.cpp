@@ -9,6 +9,10 @@
 #include "InputActionValue.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "AdvancedGameDevPRoj.h"
+#include "EnhancedInputSubsystems.h"
+#include "InputMappingContext.h"
+#include "InputAction.h"
+
 
 // ADD THIS include (safe even if already included in .h)
 #include "WashToolComponent.h"
@@ -52,25 +56,45 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 
 void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
-		// Jumping
+		// Jump
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::DoJumpStart);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AAdvancedGameDevPRojCharacter::DoJumpEnd);
 
-		// Moving
+		// Move
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::MoveInput);
 
-		// Looking/Aiming
+		// Look
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
-	}
-	else
-	{
-		UE_LOG(LogAdvancedGameDevPRoj, Error, TEXT("'%s' Failed to find an Enhanced Input Component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+
+		// ===== Wash Tool =====
+		if (WashTool && IA_Spray)
+		{
+			EnhancedInputComponent->BindAction(
+				IA_Spray,
+				ETriggerEvent::Started,
+				WashTool,
+				&UWashToolComponent::StartSpray
+			);
+
+			EnhancedInputComponent->BindAction(
+				IA_Spray,
+				ETriggerEvent::Completed,
+				WashTool,
+				&UWashToolComponent::StopSpray
+			);
+		}
+
+		// Menu (optional)
+		if (IA_Menu)
+		{
+			// You can bind this later if you add ToggleMenu()
+		}
 	}
 }
+
 
 void AAdvancedGameDevPRojCharacter::MoveInput(const FInputActionValue& Value)
 {
@@ -120,4 +144,22 @@ void AAdvancedGameDevPRojCharacter::DoJumpEnd()
 {
 	// pass StopJumping to the character
 	StopJumping();
+}
+
+
+void AAdvancedGameDevPRojCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	{
+		if (UEnhancedInputLocalPlayerSubsystem* Subsystem =
+			ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
+		{
+			if (DefaultMappingContext)
+			{
+				Subsystem->AddMappingContext(DefaultMappingContext, 0);
+			}
+		}
+	}
 }

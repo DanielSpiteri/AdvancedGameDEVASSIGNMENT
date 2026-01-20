@@ -57,6 +57,18 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Input")
 	class UInputAction* MouseLookAction;
 
+	
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	class UInputMappingContext* DefaultMappingContext;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	class UInputAction* IA_Spray;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	class UInputAction* IA_Menu;
+
+
 public:
 	AAdvancedGameDevPRojCharacter();
 
@@ -83,6 +95,8 @@ protected:
 	/** Handles jump end inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
+
+	virtual void BeginPlay() override;
 
 protected:
 
