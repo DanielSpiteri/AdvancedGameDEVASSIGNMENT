@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRojCharacter() {}
 // ********** Begin Cross Module References ********************************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter_NoRegister();
+ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashToolComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -280,6 +281,18 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 		{ "ToolTip", "First person camera" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WashTool_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Washing" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//  ADD THIS: Wash tool component (owned by the character)\n" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "ADD THIS: Wash tool component (owned by the character)" },
+#endif
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JumpAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
@@ -323,6 +336,7 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WashTool;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
@@ -343,6 +357,7 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonMesh = { "FirstPersonMesh", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, FirstPersonMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FirstPersonMesh_MetaData), NewProp_FirstPersonMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonCameraComponent = { "FirstPersonCameraComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, FirstPersonCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FirstPersonCameraComponent_MetaData), NewProp_FirstPersonCameraComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_WashTool = { "WashTool", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, WashTool), Z_Construct_UClass_UWashToolComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WashTool_MetaData), NewProp_WashTool_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, JumpAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
@@ -350,6 +365,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameD
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonCameraComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_WashTool,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_LookAction,
@@ -392,10 +408,10 @@ AAdvancedGameDevPRojCharacter::~AAdvancedGameDevPRojCharacter() {}
 struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 1369935704U) },
+		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 4268153251U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_2356967764(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_3954441448(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

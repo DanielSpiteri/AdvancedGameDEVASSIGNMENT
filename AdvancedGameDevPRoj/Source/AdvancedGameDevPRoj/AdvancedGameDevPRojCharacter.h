@@ -5,6 +5,10 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+
+// ADD THIS include (adjust path if needed)
+#include "WashToolComponent.h"
+
 #include "AdvancedGameDevPRojCharacter.generated.h"
 
 class UInputComponent;
@@ -24,31 +28,35 @@ class AAdvancedGameDevPRojCharacter : public ACharacter
 	GENERATED_BODY()
 
 	/** Pawn mesh: first person view (arms; seen only by self) */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USkeletalMeshComponent* FirstPersonMesh;
 
 	/** First person camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
+
+	//  ADD THIS: Wash tool component (owned by the character)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing", meta = (AllowPrivateAccess = "true"))
+	UWashToolComponent* WashTool;
 
 protected:
 
 	/** Jump Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* JumpAction;
 
 	/** Move Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MoveAction;
 
 	/** Look Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, Category = "Input")
 	class UInputAction* LookAction;
 
 	/** Mouse Look Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, Category = "Input")
 	class UInputAction* MouseLookAction;
-	
+
 public:
 	AAdvancedGameDevPRojCharacter();
 
@@ -61,26 +69,26 @@ protected:
 	void LookInput(const FInputActionValue& Value);
 
 	/** Handles aim inputs from either controls or UI interfaces */
-	UFUNCTION(BlueprintCallable, Category="Input")
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAim(float Yaw, float Pitch);
 
 	/** Handles move inputs from either controls or UI interfaces */
-	UFUNCTION(BlueprintCallable, Category="Input")
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoMove(float Right, float Forward);
 
 	/** Handles jump start inputs from either controls or UI interfaces */
-	UFUNCTION(BlueprintCallable, Category="Input")
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpStart();
 
 	/** Handles jump end inputs from either controls or UI interfaces */
-	UFUNCTION(BlueprintCallable, Category="Input")
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
 
 protected:
 
 	/** Set up input action bindings */
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
-	
+
 
 public:
 
@@ -90,5 +98,6 @@ public:
 	/** Returns first person camera component **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	/**  Optional getter for your wash tool (handy for pickups etc.) **/
+	UWashToolComponent* GetWashTool() const { return WashTool; }
 };
-

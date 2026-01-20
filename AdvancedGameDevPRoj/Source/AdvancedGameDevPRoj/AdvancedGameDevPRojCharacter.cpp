@@ -10,11 +10,14 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "AdvancedGameDevPRoj.h"
 
+// ADD THIS include (safe even if already included in .h)
+#include "WashToolComponent.h"
+
 AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
-	
+
 	// Create the first person mesh that will be viewed only by this character's owner
 	FirstPersonMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("First Person Mesh"));
 
@@ -33,6 +36,9 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 	FirstPersonCameraComponent->FirstPersonFieldOfView = 70.0f;
 	FirstPersonCameraComponent->FirstPersonScale = 0.6f;
 
+	//  ADD THIS: Create the wash tool component
+	WashTool = CreateDefaultSubobject<UWashToolComponent>(TEXT("WashTool"));
+
 	// configure the character comps
 	GetMesh()->SetOwnerNoSee(true);
 	GetMesh()->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::WorldSpaceRepresentation;
@@ -45,7 +51,7 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 }
 
 void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{	
+{
 	// Set up action bindings
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
 	{
@@ -66,7 +72,6 @@ void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* P
 	}
 }
 
-
 void AAdvancedGameDevPRojCharacter::MoveInput(const FInputActionValue& Value)
 {
 	// get the Vector2D move axis
@@ -74,7 +79,6 @@ void AAdvancedGameDevPRojCharacter::MoveInput(const FInputActionValue& Value)
 
 	// pass the axis values to the move input
 	DoMove(MovementVector.X, MovementVector.Y);
-
 }
 
 void AAdvancedGameDevPRojCharacter::LookInput(const FInputActionValue& Value)
@@ -84,7 +88,6 @@ void AAdvancedGameDevPRojCharacter::LookInput(const FInputActionValue& Value)
 
 	// pass the axis values to the aim input
 	DoAim(LookAxisVector.X, LookAxisVector.Y);
-
 }
 
 void AAdvancedGameDevPRojCharacter::DoAim(float Yaw, float Pitch)
