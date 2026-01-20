@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\AdvancedGameDevPRoj.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvancedGameDevPRoj.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AdvancedGameDevPRojEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\AdvancedGameDevPRoj">
+      <UniqueIdentifier>{869ACFA1-EC14-3601-BDB2-A752A946E2D8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRoj.Build.cs">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRoj.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRoj.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCameraManager.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCameraManager.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCharacter.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCharacter.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojGameMode.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojGameMode.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Horror">
+      <UniqueIdentifier>{E82A300D-EAD2-3682-A535-9F684ADC0B86}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorGameMode.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorGameMode.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorPlayerController.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorPlayerController.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Horror\UI">
+      <UniqueIdentifier>{7CC9ABF4-0519-3F7D-9CE3-1D66BABE0058}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\UI\HorrorUI.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\UI\HorrorUI.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Horror\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Shooter">
+      <UniqueIdentifier>{4DE77DDA-FD20-3CA6-9B53-B6C8913E52D2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterCharacter.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterCharacter.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterGameMode.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterGameMode.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterPlayerController.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterPlayerController.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Shooter\AI">
+      <UniqueIdentifier>{4FFBB3F3-E457-3F72-98AA-25EF91AC331B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\EnvQueryContext_Target.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\EnvQueryContext_Target.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterAIController.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterAIController.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterNPC.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterNPC.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterStateTreeUtility.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterStateTreeUtility.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Shooter\UI">
+      <UniqueIdentifier>{A32D98CA-17AD-31D1-84AF-D524AC1CB093}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterBulletCounterUI.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterBulletCounterUI.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterUI.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterUI.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons">
+      <UniqueIdentifier>{515E0E94-7093-34EE-9CA4-4645750C31CC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterPickup.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterPickup.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterProjectile.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterProjectile.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeapon.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeapon.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeaponHolder.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeaponHolder.h">
+      <Filter>Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

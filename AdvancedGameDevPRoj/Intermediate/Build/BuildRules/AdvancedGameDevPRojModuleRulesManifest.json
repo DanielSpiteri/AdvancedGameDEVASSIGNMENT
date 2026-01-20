@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRoj\\AdvancedGameDevPRoj.Build.cs",
+		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRoj.Target.cs",
+		"C:\\Users\\User\\Desktop\\AdvancedGameDev\\AdvancedGameDEVASSIGNMENT\\AdvancedGameDevPRoj\\Source\\AdvancedGameDevPRojEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.1"
+}
