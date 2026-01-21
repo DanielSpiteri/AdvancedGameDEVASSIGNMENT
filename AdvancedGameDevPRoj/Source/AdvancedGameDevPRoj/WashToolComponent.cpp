@@ -26,7 +26,10 @@ void UWashToolComponent::StopSpray()
 	UE_LOG(LogTemp, Warning, TEXT("StopSpray called"));
 }
 
-void UWashToolComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UWashToolComponent::TickComponent(
+	float DeltaTime,
+	ELevelTick TickType,
+	FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -40,7 +43,11 @@ void UWashToolComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 
 	if (HitActor->GetClass()->ImplementsInterface(UWashable::StaticClass()))
 	{
-		const float WashPerTick = BaseWashRate * DeltaTime;
+		UE_LOG(LogTemp, Warning, TEXT("[WashTool] Base=%f Mult=%f FinalPerSec=%f"),
+			BaseWashRate, WashRateMultiplier, BaseWashRate * WashRateMultiplier);
+
+
+		const float WashPerTick = (BaseWashRate * WashRateMultiplier) * DeltaTime;
 		IWashable::Execute_ApplyWash(HitActor, WashPerTick);
 	}
 }
@@ -62,5 +69,18 @@ bool UWashToolComponent::DoSprayTrace(FHitResult& OutHit) const
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(Owner);
 
-	return GetWorld()->LineTraceSingleByChannel(OutHit, Start, End, ECC_Visibility, Params);
+	return GetWorld()->LineTraceSingleByChannel(
+		OutHit,
+		Start,
+		End,
+		ECC_Visibility,
+		Params
+	);
 }
+
+void UWashToolComponent::SetWashRateMultiplier(float NewMultiplier)
+{
+	WashRateMultiplier = FMath::Max(0.0f, NewMultiplier);
+	UE_LOG(LogTemp, Warning, TEXT("WashRateMultiplier set to: %f"), WashRateMultiplier);
+}
+

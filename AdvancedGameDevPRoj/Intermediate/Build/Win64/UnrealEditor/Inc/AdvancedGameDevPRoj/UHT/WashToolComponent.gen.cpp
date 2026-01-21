@@ -18,6 +18,49 @@ ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class UWashToolComponent Function SetWashRateMultiplier ************************
+struct Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics
+{
+	struct WashToolComponent_eventSetWashRateMultiplier_Parms
+	{
+		float NewMultiplier;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Washing" },
+		{ "ModuleRelativePath", "WashToolComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_NewMultiplier;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::NewProp_NewMultiplier = { "NewMultiplier", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WashToolComponent_eventSetWashRateMultiplier_Parms, NewMultiplier), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::NewProp_NewMultiplier,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UWashToolComponent, nullptr, "SetWashRateMultiplier", Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::PropPointers), sizeof(Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::WashToolComponent_eventSetWashRateMultiplier_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::Function_MetaDataParams), Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::WashToolComponent_eventSetWashRateMultiplier_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UWashToolComponent::execSetWashRateMultiplier)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_NewMultiplier);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetWashRateMultiplier(Z_Param_NewMultiplier);
+	P_NATIVE_END;
+}
+// ********** End Class UWashToolComponent Function SetWashRateMultiplier **************************
+
 // ********** Begin Class UWashToolComponent Function StartSpray ***********************************
 struct Z_Construct_UFunction_UWashToolComponent_StartSpray_Statics
 {
@@ -83,6 +126,7 @@ void UWashToolComponent::StaticRegisterNativesUWashToolComponent()
 {
 	UClass* Class = UWashToolComponent::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "SetWashRateMultiplier", &UWashToolComponent::execSetWashRateMultiplier },
 		{ "StartSpray", &UWashToolComponent::execStartSpray },
 		{ "StopSpray", &UWashToolComponent::execStopSpray },
 	};
@@ -144,14 +188,20 @@ struct Z_Construct_UClass_UWashToolComponent_Statics
 		{ "Category", "Washing" },
 		{ "ModuleRelativePath", "WashToolComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WashRateMultiplier_MetaData[] = {
+		{ "Category", "Washing" },
+		{ "ModuleRelativePath", "WashToolComponent.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_BaseWashRate;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprayRange;
 	static void NewProp_bIsSpraying_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsSpraying;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WashRateMultiplier;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UWashToolComponent_SetWashRateMultiplier, "SetWashRateMultiplier" }, // 3789531797
 		{ &Z_Construct_UFunction_UWashToolComponent_StartSpray, "StartSpray" }, // 691436313
 		{ &Z_Construct_UFunction_UWashToolComponent_StopSpray, "StopSpray" }, // 1505017106
 	};
@@ -168,10 +218,12 @@ void Z_Construct_UClass_UWashToolComponent_Statics::NewProp_bIsSpraying_SetBit(v
 	((UWashToolComponent*)Obj)->bIsSpraying = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UWashToolComponent_Statics::NewProp_bIsSpraying = { "bIsSpraying", nullptr, (EPropertyFlags)0x0020080000020001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UWashToolComponent), &Z_Construct_UClass_UWashToolComponent_Statics::NewProp_bIsSpraying_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsSpraying_MetaData), NewProp_bIsSpraying_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UWashToolComponent_Statics::NewProp_WashRateMultiplier = { "WashRateMultiplier", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWashToolComponent, WashRateMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WashRateMultiplier_MetaData), NewProp_WashRateMultiplier_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UWashToolComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWashToolComponent_Statics::NewProp_BaseWashRate,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWashToolComponent_Statics::NewProp_SprayRange,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWashToolComponent_Statics::NewProp_bIsSpraying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UWashToolComponent_Statics::NewProp_WashRateMultiplier,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UWashToolComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UWashToolComponent_Statics::DependentSingletons[])() = {
@@ -210,10 +262,10 @@ UWashToolComponent::~UWashToolComponent() {}
 struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWashToolComponent, UWashToolComponent::StaticClass, TEXT("UWashToolComponent"), &Z_Registration_Info_UClass_UWashToolComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWashToolComponent), 1064010171U) },
+		{ Z_Construct_UClass_UWashToolComponent, UWashToolComponent::StaticClass, TEXT("UWashToolComponent"), &Z_Registration_Info_UClass_UWashToolComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWashToolComponent), 1745480776U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h__Script_AdvancedGameDevPRoj_143944804(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h__Script_AdvancedGameDevPRoj_1265335380(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

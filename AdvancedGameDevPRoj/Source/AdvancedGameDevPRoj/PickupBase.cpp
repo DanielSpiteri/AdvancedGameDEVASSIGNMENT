@@ -33,29 +33,47 @@ APickupBase::APickupBase()
 }
 
 void APickupBase::OnTriggerOverlap(
-	UPrimitiveComponent* OverlappedComp,
-	AActor* OtherActor,
-	UPrimitiveComponent* OtherComp,
-	int32 OtherBodyIndex,
-	bool bFromSweep,
-	const FHitResult& SweepResult)
+    UPrimitiveComponent* OverlappedComp,
+    AActor* OtherActor,
+    UPrimitiveComponent* OtherComp,
+    int32 OtherBodyIndex,
+    bool bFromSweep,
+    const FHitResult& SweepResult)
 {
-	// Debug: prove overlap fires
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(
-			-1, 2.0f, FColor::Green,
-			FString::Printf(TEXT("Pickup overlap with: %s"), *GetNameSafe(OtherActor))
-		);
-	}
+    if (GEngine)
+    {
+        GEngine->AddOnScreenDebugMessage(
+            -1, 2.0f, FColor::Green,
+            FString::Printf(TEXT("Pickup overlap with: %s"), *GetNameSafe(OtherActor))
+        );
+    }
 
-	if (!OtherActor || !UpgradeToGrant) return;
+    if (!OtherActor)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("[Pickup] OtherActor is null"));
+        return;
+    }
 
-	// Player must have WashToolComponent attached
-	UWashToolComponent* Tool = OtherActor->FindComponentByClass<UWashToolComponent>();
-	if (!Tool) return;
+    if (!UpgradeToGrant)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("[Pickup] UpgradeToGrant is null"));
+        return;
+    }
 
-	//Tool->ApplyUpgrade(UpgradeToGrant);
+    UE_LOG(LogTemp, Warning, TEXT("[Pickup] Upgrade asset: %s  WashRateMult=%f"),
+        *UpgradeToGrant->GetName(),
+        UpgradeToGrant->WashRateMultiplier
+    );
 
-	Destroy();
+    UWashToolComponent* Tool = OtherActor->FindComponentByClass<UWashToolComponent>();
+    if (!Tool)
+    {
+        UE_LOG(LogTemp, Error, TEXT("[Pickup] WashToolComponent NOT found on %s"), *OtherActor->GetName());
+        return;
+    }
+
+    UE_LOG(LogTemp, Warning, TEXT("[Pickup] Found WashToolComponent. Setting multiplier..."));
+    Tool->SetWashRateMultiplier(UpgradeToGrant->WashRateMultiplier);
+
+    Destroy();
 }

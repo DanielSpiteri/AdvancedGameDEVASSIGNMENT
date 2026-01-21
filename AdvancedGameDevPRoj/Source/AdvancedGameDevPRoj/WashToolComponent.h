@@ -14,7 +14,11 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	virtual void TickComponent(
+		float DeltaTime,
+		ELevelTick TickType,
+		FActorComponentTickFunction* ThisTickFunction
+	) override;
 
 	UPROPERTY(EditAnywhere, Category = "Washing")
 	float BaseWashRate = 20.0f; // dirt per second
@@ -33,4 +37,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Washing")
 	void StopSpray();
+
+	UPROPERTY(EditAnywhere, Category = "Washing")
+	float WashRateMultiplier = 1.0f;
+
+	UFUNCTION(BlueprintCallable, Category = "Washing")
+	void SetWashRateMultiplier(float NewMultiplier);
+
+
 };

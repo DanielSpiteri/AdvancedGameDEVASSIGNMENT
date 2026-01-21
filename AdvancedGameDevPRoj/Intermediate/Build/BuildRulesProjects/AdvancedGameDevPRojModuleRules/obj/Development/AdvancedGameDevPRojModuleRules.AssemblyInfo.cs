@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvancedGameDevPRojModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b606cf0f4449c39c7af15583fe3f17de518741d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49acac3ed088444819ed2030c1094a21471a6003")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvancedGameDevPRojModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvancedGameDevPRojModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
