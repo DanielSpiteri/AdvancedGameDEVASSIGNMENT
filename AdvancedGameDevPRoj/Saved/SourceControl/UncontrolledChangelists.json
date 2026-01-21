@@ -7,7 +7,6 @@
 			"files": [
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level2_OutdoorWash.umap",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Upgrades/DA_SoapBoost.uasset",
-				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/M_Car_CleanBlend1.uasset",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Muscle_car_-_Low_poly/MuscleCarTexture.uasset",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/MuscleCarClean.uasset",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/TruckClean.uasset",
@@ -89,7 +88,13 @@
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/3D_Bike_2011/3d_bike_2011/Materials/23_-_Default.uasset",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/3D_Bike_2011/3d_bike_2011/Materials/7_-_Default.uasset",
 				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/3D_Bike_2011/3d_bike_2011/Materials/Material_1143.uasset",
-				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/3D_Bike_2011/3d_bike_2011/StaticMeshes/3d_bike_2011.uasset"
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/3D_Bike_2011/3d_bike_2011/StaticMeshes/3d_bike_2011.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Shampoo_bottle/shampoo_bottle/Textures/shampoo_bottle_texture_0.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Shampoo_bottle/shampoo_bottle/Textures/shampoo_bottle_texture_1.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Shampoo_bottle/shampoo_bottle/Textures/shampoo_bottle_texture_2.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Shampoo_bottle/shampoo_bottle/Materials/T_Shampoo_bottle.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/Fab/Shampoo_bottle/shampoo_bottle/StaticMeshes/shampoo_bottle.uasset",
+				"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Content/M_Car_CleanBlend1.uasset"
 			]
 		}
 	]

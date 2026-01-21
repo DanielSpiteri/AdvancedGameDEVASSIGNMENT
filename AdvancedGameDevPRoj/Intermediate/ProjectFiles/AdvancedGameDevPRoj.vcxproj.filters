@@ -162,6 +162,12 @@
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h">
       <Filter>Source\AdvancedGameDevPRoj</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\CanisterPickup.cpp">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\CanisterPickup.h">
+      <Filter>Source\AdvancedGameDevPRoj</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\PickupBase.cpp">
       <Filter>Source\AdvancedGameDevPRoj</Filter>
     </ClCompile>

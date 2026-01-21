@@ -12,10 +12,20 @@ UWashToolComponent::UWashToolComponent()
 void UWashToolComponent::BeginPlay()
 {
 	Super::BeginPlay();
+	CurrentCharge = MaxCharge;
+
 }
 
 void UWashToolComponent::StartSpray()
 {
+
+	if (CurrentCharge <= 0.f)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("StartSpray blocked: out of charge"));
+		bIsSpraying = false;
+		return;
+	}
+
 	bIsSpraying = true;
 	UE_LOG(LogTemp, Warning, TEXT("StartSpray called"));
 }
@@ -34,6 +44,18 @@ void UWashToolComponent::TickComponent(
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	if (!bIsSpraying) return;
+
+	// Drain charge while spraying
+	CurrentCharge -= ChargeDrainPerSecond * DeltaTime;
+	CurrentCharge = FMath::Clamp(CurrentCharge, 0.f, MaxCharge);
+
+	if (CurrentCharge <= 0.f)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Charge empty -> stopping spray"));
+		StopSpray();
+		return;
+	}
+
 
 	FHitResult Hit;
 	if (!DoSprayTrace(Hit)) return;
@@ -84,3 +106,13 @@ void UWashToolComponent::SetWashRateMultiplier(float NewMultiplier)
 	UE_LOG(LogTemp, Warning, TEXT("WashRateMultiplier set to: %f"), WashRateMultiplier);
 }
 
+
+void UWashToolComponent::AddCharge(float Amount)
+{
+	if (Amount <= 0.f) return;
+
+	const float Old = CurrentCharge;
+	CurrentCharge = FMath::Clamp(CurrentCharge + Amount, 0.f, MaxCharge);
+
+	UE_LOG(LogTemp, Warning, TEXT("Charge refilled: %f -> %f"), Old, CurrentCharge);
+}
