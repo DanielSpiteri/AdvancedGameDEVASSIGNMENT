@@ -55,7 +55,7 @@ void APickupBase::OnTriggerOverlap(
 	UWashToolComponent* Tool = OtherActor->FindComponentByClass<UWashToolComponent>();
 	if (!Tool) return;
 
-	Tool->ApplyUpgrade(UpgradeToGrant);
+	//Tool->ApplyUpgrade(UpgradeToGrant);
 
 	Destroy();
 }

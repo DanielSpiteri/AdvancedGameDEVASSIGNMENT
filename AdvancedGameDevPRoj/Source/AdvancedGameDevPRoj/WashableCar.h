@@ -28,16 +28,15 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Washing")
 	float CurrentDirt = 100.0f;
 
-	// Name of the scalar parameter inside your material
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Washing|Visual")
-	FName CleanAmountParamName = TEXT("CleanAmount");
+	// Material parameter name (must match your material)
+	UPROPERTY(EditAnywhere, Category = "Washing|Visual")
+	FName CleanParamName = "CleanAmount";
 
-	// Dynamic material instances (one per material slot)
-	UPROPERTY(Transient)
-	TArray<UMaterialInstanceDynamic*> CarMIDs;
+private:
+	UPROPERTY()
+	UMaterialInstanceDynamic* CarMID = nullptr;
 
-	// Updates CleanAmount on materials based on CurrentDirt/MaxDirt
-	void UpdateMaterialFromCleanPercent(float Clean01);
+	void UpdateMaterialCleanAmount();
 
 public:
 	// IWashable
@@ -45,7 +44,6 @@ public:
 	virtual float GetCleanPercent_Implementation() const override;
 	virtual bool IsFullyClean_Implementation() const override;
 
-	// Useful for UI
 	UFUNCTION(BlueprintCallable, Category = "Washing")
 	float GetCurrentDirt() const { return CurrentDirt; }
 };

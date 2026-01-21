@@ -10,40 +10,27 @@ AWashableCar::AWashableCar()
 	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarMesh"));
 	SetRootComponent(CarMesh);
 	CarMesh->SetCollisionProfileName(TEXT("BlockAll"));
+
+	// Start dirty
+	CurrentDirt = MaxDirt;
 }
 
 void AWashableCar::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Create & apply dynamic material instances for every material slot
+	// Create dynamic material instance so we can change CleanAmount at runtime
 	if (CarMesh)
 	{
-		const int32 NumMats = CarMesh->GetNumMaterials();
-		CarMIDs.Empty();
-		CarMIDs.Reserve(NumMats);
-
-		for (int32 i = 0; i < NumMats; i++)
+		UMaterialInterface* BaseMat = CarMesh->GetMaterial(0);
+		if (BaseMat)
 		{
-			UMaterialInstanceDynamic* MID = CarMesh->CreateAndSetMaterialInstanceDynamic(i);
-			CarMIDs.Add(MID);
+			CarMID = UMaterialInstanceDynamic::Create(BaseMat, this);
+			CarMesh->SetMaterial(0, CarMID);
 		}
 	}
 
-	// Apply initial visual state (starts dirty/brown)
-	UpdateMaterialFromCleanPercent(GetCleanPercent_Implementation());
-}
-
-void AWashableCar::UpdateMaterialFromCleanPercent(float Clean01)
-{
-	// Clean01 is 0..1 (0 dirty, 1 clean)
-	for (UMaterialInstanceDynamic* MID : CarMIDs)
-	{
-		if (MID)
-		{
-			MID->SetScalarParameterValue(CleanAmountParamName, Clean01);
-		}
-	}
+	UpdateMaterialCleanAmount();
 }
 
 void AWashableCar::ApplyWash_Implementation(float Amount)
@@ -52,15 +39,12 @@ void AWashableCar::ApplyWash_Implementation(float Amount)
 
 	CurrentDirt = FMath::Clamp(CurrentDirt - Amount, 0.0f, MaxDirt);
 
-	const float Clean01 = GetCleanPercent_Implementation();
+	UpdateMaterialCleanAmount();
 
-	// Update material every time dirt changes
-	UpdateMaterialFromCleanPercent(Clean01);
-
-	// Optional debug
+	// Debug clean %
 	if (GEngine)
 	{
-		const float CleanPct = Clean01 * 100.0f;
+		const float CleanPct = GetCleanPercent_Implementation() * 100.0f;
 		GEngine->AddOnScreenDebugMessage(
 			-1, 0.05f, FColor::Green,
 			FString::Printf(TEXT("Car Clean: %.1f%%"), CleanPct)
@@ -77,4 +61,13 @@ float AWashableCar::GetCleanPercent_Implementation() const
 bool AWashableCar::IsFullyClean_Implementation() const
 {
 	return CurrentDirt <= KINDA_SMALL_NUMBER;
+}
+
+void AWashableCar::UpdateMaterialCleanAmount()
+{
+	if (!CarMID) return;
+
+	// CleanAmount: 0 = fully dirty, 1 = fully clean
+	const float CleanAmount = GetCleanPercent_Implementation();
+	CarMID->SetScalarParameterValue(CleanParamName, CleanAmount);
 }
