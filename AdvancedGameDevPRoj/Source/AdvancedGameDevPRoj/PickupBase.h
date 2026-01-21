@@ -2,11 +2,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "UpgradeData.h"
 #include "PickupBase.generated.h"
 
 class USphereComponent;
 class UStaticMeshComponent;
+class UUpgradeData;
 
 UCLASS()
 class ADVANCEDGAMEDEVPROJ_API APickupBase : public AActor
