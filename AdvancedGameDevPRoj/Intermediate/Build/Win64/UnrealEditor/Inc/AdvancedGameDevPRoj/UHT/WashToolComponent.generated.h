@@ -16,31 +16,19 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-class UUpgradeData;
-struct FActiveUpgrade;
-
-// ********** Begin ScriptStruct FActiveUpgrade ****************************************************
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_11_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FActiveUpgrade_Statics; \
-	ADVANCEDGAMEDEVPROJ_API static class UScriptStruct* StaticStruct();
-
-
-struct FActiveUpgrade;
-// ********** End ScriptStruct FActiveUpgrade ******************************************************
-
 // ********** Begin Class UWashToolComponent *******************************************************
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execGetActiveUpgrades); \
-	DECLARE_FUNCTION(execGetChargePercent); \
-	DECLARE_FUNCTION(execGetCleanPercentLookingAt); \
-	DECLARE_FUNCTION(execApplyUpgrade); \
+#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execAddCharge); \
+	DECLARE_FUNCTION(execGetCurrentCharge); \
+	DECLARE_FUNCTION(execGetChargeNormalised); \
+	DECLARE_FUNCTION(execSetWashRateMultiplier); \
 	DECLARE_FUNCTION(execStopSpray); \
 	DECLARE_FUNCTION(execStartSpray);
 
 
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashToolComponent_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_INCLASS_NO_PURE_DECLS \
+#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWashToolComponent(); \
 	friend struct Z_Construct_UClass_UWashToolComponent_Statics; \
@@ -51,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UWashToolComponent)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_ENHANCED_CONSTRUCTORS \
+#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UWashToolComponent(UWashToolComponent&&) = delete; \
 	UWashToolComponent(const UWashToolComponent&) = delete; \
@@ -61,13 +49,13 @@ public: \
 	NO_API virtual ~UWashToolComponent();
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_20_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_GENERATED_BODY \
+#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_7_PROLOG
+#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_INCLASS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_23_ENHANCED_CONSTRUCTORS \
+	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_INCLASS_NO_PURE_DECLS \
+	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

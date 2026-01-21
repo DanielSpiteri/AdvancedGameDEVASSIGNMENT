@@ -5,16 +5,15 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
-
-// ADD THIS include (adjust path if needed)
-#include "WashToolComponent.h"
-
 #include "AdvancedGameDevPRojCharacter.generated.h"
 
 class UInputComponent;
 class USkeletalMeshComponent;
 class UCameraComponent;
 class UInputAction;
+class UInputMappingContext;
+class UUserWidget;
+class UWashToolComponent;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -35,7 +34,7 @@ class AAdvancedGameDevPRojCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
 
-	//  ADD THIS: Wash tool component (owned by the character)
+	/** Wash tool component (owned by character) */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing", meta = (AllowPrivateAccess = "true"))
 	UWashToolComponent* WashTool;
 
@@ -51,23 +50,36 @@ protected:
 
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, Category = "Input")
-	class UInputAction* LookAction;
+	UInputAction* LookAction;
 
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category = "Input")
-	class UInputAction* MouseLookAction;
+	UInputAction* MouseLookAction;
 
-	
-
+	/** Input Mapping Context */
 	UPROPERTY(EditAnywhere, Category = "Input")
-	class UInputMappingContext* DefaultMappingContext;
+	UInputMappingContext* DefaultMappingContext;
 
+	/** Spray */
 	UPROPERTY(EditAnywhere, Category = "Input")
-	class UInputAction* IA_Spray;
+	UInputAction* IA_Spray;
 
+	/** Menu */
 	UPROPERTY(EditAnywhere, Category = "Input")
-	class UInputAction* IA_Menu;
+	UInputAction* IA_Menu;
 
+	// ===================== UI MENU =====================
+	UPROPERTY(EditAnywhere, Category = "UI")
+	TSubclassOf<UUserWidget> StatusMenuClass;
+
+	UPROPERTY()
+	UUserWidget* StatusMenuInstance = nullptr;
+
+	bool bMenuOpen = false;
+
+	// Toggle function (C++ logic)
+	UFUNCTION()
+	void ToggleMenu();
 
 public:
 	AAdvancedGameDevPRojCharacter();
@@ -80,38 +92,26 @@ protected:
 	/** Called from Input Actions for looking input */
 	void LookInput(const FInputActionValue& Value);
 
-	/** Handles aim inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoAim(float Yaw, float Pitch);
 
-	/** Handles move inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoMove(float Right, float Forward);
 
-	/** Handles jump start inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpStart();
 
-	/** Handles jump end inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
 
 	virtual void BeginPlay() override;
 
-protected:
-
 	/** Set up input action bindings */
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
-
 public:
 
-	/** Returns the first person mesh **/
 	USkeletalMeshComponent* GetFirstPersonMesh() const { return FirstPersonMesh; }
-
-	/** Returns first person camera component **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
-
-	/**  Optional getter for your wash tool (handy for pickups etc.) **/
 	UWashToolComponent* GetWashTool() const { return WashTool; }
 };

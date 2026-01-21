@@ -1,5 +1,6 @@
 #include "WashableCar.h"
 #include "Components/StaticMeshComponent.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "Engine/Engine.h"
 
 AWashableCar::AWashableCar()
@@ -9,6 +10,27 @@ AWashableCar::AWashableCar()
 	CarMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CarMesh"));
 	SetRootComponent(CarMesh);
 	CarMesh->SetCollisionProfileName(TEXT("BlockAll"));
+
+	// Start dirty
+	CurrentDirt = MaxDirt;
+}
+
+void AWashableCar::BeginPlay()
+{
+	Super::BeginPlay();
+
+	// Create dynamic material instance so we can change CleanAmount at runtime
+	if (CarMesh)
+	{
+		UMaterialInterface* BaseMat = CarMesh->GetMaterial(0);
+		if (BaseMat)
+		{
+			CarMID = UMaterialInstanceDynamic::Create(BaseMat, this);
+			CarMesh->SetMaterial(0, CarMID);
+		}
+	}
+
+	UpdateMaterialCleanAmount();
 }
 
 void AWashableCar::ApplyWash_Implementation(float Amount)
@@ -17,7 +39,9 @@ void AWashableCar::ApplyWash_Implementation(float Amount)
 
 	CurrentDirt = FMath::Clamp(CurrentDirt - Amount, 0.0f, MaxDirt);
 
-	// Optional debug
+	UpdateMaterialCleanAmount();
+
+	// Debug clean %
 	if (GEngine)
 	{
 		const float CleanPct = GetCleanPercent_Implementation() * 100.0f;
@@ -37,4 +61,13 @@ float AWashableCar::GetCleanPercent_Implementation() const
 bool AWashableCar::IsFullyClean_Implementation() const
 {
 	return CurrentDirt <= KINDA_SMALL_NUMBER;
+}
+
+void AWashableCar::UpdateMaterialCleanAmount()
+{
+	if (!CarMID) return;
+
+	// CleanAmount: 0 = fully dirty, 1 = fully clean
+	const float CleanAmount = GetCleanPercent_Implementation();
+	CarMID->SetScalarParameterValue(CleanParamName, CleanAmount);
 }

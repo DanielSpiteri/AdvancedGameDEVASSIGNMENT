@@ -1,2 +1,8 @@
-2026/01/20-17:11:08.529 41bc Creating DB C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb since it was missing.
-2026/01/20-17:11:08.542 41bc Reusing MANIFEST C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/01/21-22:19:25.265 7f1c Creating DB C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb since it was missing.
+2026/01/21-22:19:25.276 7f1c Reusing MANIFEST C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/01/21-22:54:24.840 36c8 Level-0 table #5: started
+2026/01/21-22:54:24.844 36c8 Level-0 table #5: 61616 bytes OK
+2026/01/21-22:54:24.846 36c8 Delete type=0 #3
+2026/01/21-22:58:28.629 5e28 Level-0 table #7: started
+2026/01/21-22:58:28.632 5e28 Level-0 table #7: 63816 bytes OK
+2026/01/21-22:58:28.634 5e28 Delete type=0 #4
