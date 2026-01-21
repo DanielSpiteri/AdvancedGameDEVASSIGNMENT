@@ -15,11 +15,13 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRojCharacter() {}
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter_NoRegister();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashToolComponent_NoRegister();
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
 
@@ -34,13 +36,7 @@ struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoAim_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Handles aim inputs from either controls or UI interfaces */" },
-#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Handles aim inputs from either controls or UI interfaces" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Yaw;
@@ -83,13 +79,7 @@ struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpEnd_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Handles jump end inputs from either controls or UI interfaces */" },
-#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Handles jump end inputs from either controls or UI interfaces" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -119,13 +109,7 @@ struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpStart_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Handles jump start inputs from either controls or UI interfaces */" },
-#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Handles jump start inputs from either controls or UI interfaces" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -160,13 +144,7 @@ struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoMove_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Handles move inputs from either controls or UI interfaces */" },
-#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Handles move inputs from either controls or UI interfaces" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Right;
@@ -203,6 +181,41 @@ DEFINE_FUNCTION(AAdvancedGameDevPRojCharacter::execDoMove)
 }
 // ********** End Class AAdvancedGameDevPRojCharacter Function DoMove ******************************
 
+// ********** Begin Class AAdvancedGameDevPRojCharacter Function ToggleMenu ************************
+struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Toggle function (C++ logic)\n" },
+#endif
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Toggle function (C++ logic)" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AAdvancedGameDevPRojCharacter, nullptr, "ToggleMenu", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics::Function_MetaDataParams), Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AAdvancedGameDevPRojCharacter::execToggleMenu)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->ToggleMenu();
+	P_NATIVE_END;
+}
+// ********** End Class AAdvancedGameDevPRojCharacter Function ToggleMenu **************************
+
 // ********** Begin Class AAdvancedGameDevPRojCharacter ********************************************
 void AAdvancedGameDevPRojCharacter::StaticRegisterNativesAAdvancedGameDevPRojCharacter()
 {
@@ -212,6 +225,7 @@ void AAdvancedGameDevPRojCharacter::StaticRegisterNativesAAdvancedGameDevPRojCha
 		{ "DoJumpEnd", &AAdvancedGameDevPRojCharacter::execDoJumpEnd },
 		{ "DoJumpStart", &AAdvancedGameDevPRojCharacter::execDoJumpStart },
 		{ "DoMove", &AAdvancedGameDevPRojCharacter::execDoMove },
+		{ "ToggleMenu", &AAdvancedGameDevPRojCharacter::execToggleMenu },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -286,12 +300,12 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Washing" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//  ADD THIS: Wash tool component (owned by the character)\n" },
+		{ "Comment", "/** Wash tool component (owned by character) */" },
 #endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "ADD THIS: Wash tool component (owned by the character)" },
+		{ "ToolTip", "Wash tool component (owned by character)" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JumpAction_MetaData[] = {
@@ -336,14 +350,46 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Input Mapping Context */" },
+#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Input Mapping Context" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Spray_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Spray */" },
+#endif
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Spray" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Menu_MetaData[] = {
 		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Menu */" },
+#endif
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Menu" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatusMenuClass_MetaData[] = {
+		{ "Category", "UI" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// ===================== UI MENU =====================\n" },
+#endif
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "===================== UI MENU =====================" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatusMenuInstance_MetaData[] = {
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
 	};
 #endif // WITH_METADATA
@@ -357,13 +403,16 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Spray;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Menu;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_StatusMenuClass;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_StatusMenuInstance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoAim, "DoAim" }, // 1562063910
-		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpEnd, "DoJumpEnd" }, // 1774913782
-		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpStart, "DoJumpStart" }, // 3728002821
-		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoMove, "DoMove" }, // 185749642
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoAim, "DoAim" }, // 2293699420
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpEnd, "DoJumpEnd" }, // 2272083769
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpStart, "DoJumpStart" }, // 471575238
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoMove, "DoMove" }, // 1847708546
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu, "ToggleMenu" }, // 442010664
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -381,6 +430,8 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameD
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Spray = { "IA_Spray", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, IA_Spray), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Spray_MetaData), NewProp_IA_Spray_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu = { "IA_Menu", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, IA_Menu), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Menu_MetaData), NewProp_IA_Menu_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuClass = { "StatusMenuClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, StatusMenuClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatusMenuClass_MetaData), NewProp_StatusMenuClass_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuInstance = { "StatusMenuInstance", nullptr, (EPropertyFlags)0x0020080000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, StatusMenuInstance), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatusMenuInstance_MetaData), NewProp_StatusMenuInstance_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -392,6 +443,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvanced
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Spray,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuInstance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::DependentSingletons[])() = {
@@ -430,10 +483,10 @@ AAdvancedGameDevPRojCharacter::~AAdvancedGameDevPRojCharacter() {}
 struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 1566180935U) },
+		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 2491449820U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_3550613313(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_2105766950(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

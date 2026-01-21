@@ -16,6 +16,7 @@ ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AWashableCar();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AWashableCar_NoRegister();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashable_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
+ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
@@ -126,10 +127,32 @@ struct Z_Construct_UClass_AWashableCar_Statics
 		{ "Category", "Washing" },
 		{ "ModuleRelativePath", "WashableCar.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CleanAmountParamName_MetaData[] = {
+		{ "Category", "Washing|Visual" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Name of the scalar parameter inside your material\n" },
+#endif
+		{ "ModuleRelativePath", "WashableCar.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Name of the scalar parameter inside your material" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CarMIDs_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Dynamic material instances (one per material slot)\n" },
+#endif
+		{ "ModuleRelativePath", "WashableCar.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Dynamic material instances (one per material slot)" },
+#endif
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CarMesh;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxDirt;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_CurrentDirt;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_CleanAmountParamName;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CarMIDs_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_CarMIDs;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -145,10 +168,16 @@ struct Z_Construct_UClass_AWashableCar_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMesh = { "CarMesh", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWashableCar, CarMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CarMesh_MetaData), NewProp_CarMesh_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_MaxDirt = { "MaxDirt", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWashableCar, MaxDirt), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxDirt_MetaData), NewProp_MaxDirt_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_CurrentDirt = { "CurrentDirt", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWashableCar, CurrentDirt), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentDirt_MetaData), NewProp_CurrentDirt_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_CleanAmountParamName = { "CleanAmountParamName", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWashableCar, CleanAmountParamName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CleanAmountParamName_MetaData), NewProp_CleanAmountParamName_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMIDs_Inner = { "CarMIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMIDs = { "CarMIDs", nullptr, (EPropertyFlags)0x0020080000002000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWashableCar, CarMIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CarMIDs_MetaData), NewProp_CarMIDs_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWashableCar_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_MaxDirt,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_CurrentDirt,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_CleanAmountParamName,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMIDs_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWashableCar_Statics::NewProp_CarMIDs,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWashableCar_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWashableCar_Statics::DependentSingletons[])() = {
@@ -190,10 +219,10 @@ AWashableCar::~AWashableCar() {}
 struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashableCar_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWashableCar, AWashableCar::StaticClass, TEXT("AWashableCar"), &Z_Registration_Info_UClass_AWashableCar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWashableCar), 3730556355U) },
+		{ Z_Construct_UClass_AWashableCar, AWashableCar::StaticClass, TEXT("AWashableCar"), &Z_Registration_Info_UClass_AWashableCar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWashableCar), 1879548859U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashableCar_h__Script_AdvancedGameDevPRoj_222916895(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashableCar_h__Script_AdvancedGameDevPRoj_165880051(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashableCar_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashableCar_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

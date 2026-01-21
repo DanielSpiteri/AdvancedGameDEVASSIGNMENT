@@ -5,6 +5,9 @@
 #include "Washable.h"
 #include "WashableCar.generated.h"
 
+class UStaticMeshComponent;
+class UMaterialInstanceDynamic;
+
 UCLASS()
 class ADVANCEDGAMEDEVPROJ_API AWashableCar : public AActor, public IWashable
 {
@@ -14,6 +17,8 @@ public:
 	AWashableCar();
 
 protected:
+	virtual void BeginPlay() override;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	UStaticMeshComponent* CarMesh;
 
@@ -22,6 +27,17 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Washing")
 	float CurrentDirt = 100.0f;
+
+	// Name of the scalar parameter inside your material
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Washing|Visual")
+	FName CleanAmountParamName = TEXT("CleanAmount");
+
+	// Dynamic material instances (one per material slot)
+	UPROPERTY(Transient)
+	TArray<UMaterialInstanceDynamic*> CarMIDs;
+
+	// Updates CleanAmount on materials based on CurrentDirt/MaxDirt
+	void UpdateMaterialFromCleanPercent(float Clean01);
 
 public:
 	// IWashable
