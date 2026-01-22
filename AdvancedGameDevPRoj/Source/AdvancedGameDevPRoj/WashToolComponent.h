@@ -42,6 +42,14 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Charge")
 	float ChargeDrainPerSecond = 20.0f; // drains while spraying
 
+	UPROPERTY(VisibleAnywhere, Category = "Washing|UI")
+	AActor* CurrentWashTarget = nullptr;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing")
+	bool bCountedAsClean = false;
+
+
+
 public:
 	// Spray controls
 	UFUNCTION(BlueprintCallable, Category = "Washing")
@@ -64,4 +72,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Charge")
 	float GetCurrentCharge() const;
+
+	// Current wash target (for UI)
+	UFUNCTION(BlueprintCallable, Category = "Washing|UI")
+	AActor* GetCurrentWashTarget() const { return CurrentWashTarget; }
+
 };

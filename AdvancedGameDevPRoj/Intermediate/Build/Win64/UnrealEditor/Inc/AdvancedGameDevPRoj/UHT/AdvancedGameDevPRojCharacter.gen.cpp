@@ -25,6 +25,42 @@ UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class AAdvancedGameDevPRojCharacter Function AddCleanedCar *********************
+struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Progress" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Called by cars when they become fully clean\n" },
+#endif
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Called by cars when they become fully clean" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AAdvancedGameDevPRojCharacter, nullptr, "AddCleanedCar", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar_Statics::Function_MetaDataParams), Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AAdvancedGameDevPRojCharacter::execAddCleanedCar)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddCleanedCar();
+	P_NATIVE_END;
+}
+// ********** End Class AAdvancedGameDevPRojCharacter Function AddCleanedCar ***********************
+
 // ********** Begin Class AAdvancedGameDevPRojCharacter Function DoAim *****************************
 struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoAim_Statics
 {
@@ -181,6 +217,48 @@ DEFINE_FUNCTION(AAdvancedGameDevPRojCharacter::execDoMove)
 }
 // ********** End Class AAdvancedGameDevPRojCharacter Function DoMove ******************************
 
+// ********** Begin Class AAdvancedGameDevPRojCharacter Function GetCarsCleaned ********************
+struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics
+{
+	struct AdvancedGameDevPRojCharacter_eventGetCarsCleaned_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Progress" },
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AdvancedGameDevPRojCharacter_eventGetCarsCleaned_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AAdvancedGameDevPRojCharacter, nullptr, "GetCarsCleaned", Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::PropPointers), sizeof(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::AdvancedGameDevPRojCharacter_eventGetCarsCleaned_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::Function_MetaDataParams), Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::AdvancedGameDevPRojCharacter_eventGetCarsCleaned_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AAdvancedGameDevPRojCharacter::execGetCarsCleaned)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetCarsCleaned();
+	P_NATIVE_END;
+}
+// ********** End Class AAdvancedGameDevPRojCharacter Function GetCarsCleaned **********************
+
 // ********** Begin Class AAdvancedGameDevPRojCharacter Function ToggleMenu ************************
 struct Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu_Statics
 {
@@ -221,10 +299,12 @@ void AAdvancedGameDevPRojCharacter::StaticRegisterNativesAAdvancedGameDevPRojCha
 {
 	UClass* Class = AAdvancedGameDevPRojCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AddCleanedCar", &AAdvancedGameDevPRojCharacter::execAddCleanedCar },
 		{ "DoAim", &AAdvancedGameDevPRojCharacter::execDoAim },
 		{ "DoJumpEnd", &AAdvancedGameDevPRojCharacter::execDoJumpEnd },
 		{ "DoJumpStart", &AAdvancedGameDevPRojCharacter::execDoJumpStart },
 		{ "DoMove", &AAdvancedGameDevPRojCharacter::execDoMove },
+		{ "GetCarsCleaned", &AAdvancedGameDevPRojCharacter::execGetCarsCleaned },
 		{ "ToggleMenu", &AAdvancedGameDevPRojCharacter::execToggleMenu },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -392,6 +472,16 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CarsCleaned_MetaData[] = {
+		{ "Category", "Progress" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Cars cleaned counter\n" },
+#endif
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Cars cleaned counter" },
+#endif
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
@@ -405,13 +495,16 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Menu;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_StatusMenuClass;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StatusMenuInstance;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_CarsCleaned;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_AddCleanedCar, "AddCleanedCar" }, // 2136246078
 		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoAim, "DoAim" }, // 2293699420
 		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpEnd, "DoJumpEnd" }, // 2272083769
 		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoJumpStart, "DoJumpStart" }, // 471575238
 		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_DoMove, "DoMove" }, // 1847708546
+		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_GetCarsCleaned, "GetCarsCleaned" }, // 1020747266
 		{ &Z_Construct_UFunction_AAdvancedGameDevPRojCharacter_ToggleMenu, "ToggleMenu" }, // 442010664
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -432,6 +525,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameD
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu = { "IA_Menu", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, IA_Menu), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Menu_MetaData), NewProp_IA_Menu_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuClass = { "StatusMenuClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, StatusMenuClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatusMenuClass_MetaData), NewProp_StatusMenuClass_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuInstance = { "StatusMenuInstance", nullptr, (EPropertyFlags)0x0020080000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, StatusMenuInstance), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatusMenuInstance_MetaData), NewProp_StatusMenuInstance_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_CarsCleaned = { "CarsCleaned", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, CarsCleaned), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CarsCleaned_MetaData), NewProp_CarsCleaned_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -445,6 +539,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvanced
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_StatusMenuInstance,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_CarsCleaned,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::DependentSingletons[])() = {
@@ -483,10 +578,10 @@ AAdvancedGameDevPRojCharacter::~AAdvancedGameDevPRojCharacter() {}
 struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 2491449820U) },
+		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 235158053U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_2105766950(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_2853042332(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
