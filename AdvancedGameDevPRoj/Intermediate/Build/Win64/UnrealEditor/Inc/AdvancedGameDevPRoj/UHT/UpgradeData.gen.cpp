@@ -213,7 +213,7 @@ UUpgradeData::~UUpgradeData() {}
 // ********** End Class UUpgradeData ***************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics
+struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EUpgradeType_StaticEnum, TEXT("EUpgradeType"), &Z_Registration_Info_UEnum_EUpgradeType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2879150946U) },
@@ -222,10 +222,10 @@ struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNME
 		{ Z_Construct_UClass_UUpgradeData, UUpgradeData::StaticClass, TEXT("UUpgradeData"), &Z_Registration_Info_UClass_UUpgradeData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UUpgradeData), 1552672081U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_394521617(TEXT("/Script/AdvancedGameDevPRoj"),
-	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_394521617(TEXT("/Script/AdvancedGameDevPRoj"),
+	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h__Script_AdvancedGameDevPRoj_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

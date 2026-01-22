@@ -324,14 +324,14 @@ UHorrorUI::~UHorrorUI() {}
 // ********** End Class UHorrorUI ******************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics
+struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UHorrorUI, UHorrorUI::StaticClass, TEXT("UHorrorUI"), &Z_Registration_Info_UClass_UHorrorUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHorrorUI), 2127187899U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_2723974300(TEXT("/Script/AdvancedGameDevPRoj"),
-	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_2723974300(TEXT("/Script/AdvancedGameDevPRoj"),
+	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Variant_Horror_UI_HorrorUI_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -10,13 +10,13 @@
                         "text": "'UClass::ClassDefaultObject': ClassDefaultObject will be made private in the next release. For general purpose access to the CDO consider using the global GetDefault<>() or GetMutableDefault<>() functions. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
+                        "uri": "file:///C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Source/VisualStudioTools/Private/VisualStudioToolsCommandlet.cpp"
+                                    "uri": "file:///C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Source/VisualStudioTools/Private/VisualStudioToolsCommandlet.cpp"
                                 },
                                 "region": {
                                     "startLine": 118,
@@ -35,13 +35,13 @@
                         "text": "'UClass::ClassDefaultObject': ClassDefaultObject will be made private in the next release. For general purpose access to the CDO consider using the global GetDefault<>() or GetMutableDefault<>() functions. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
+                        "uri": "file:///C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Source/VisualStudioTools/Private/VisualStudioToolsCommandlet.cpp"
+                                    "uri": "file:///C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Source/VisualStudioTools/Private/VisualStudioToolsCommandlet.cpp"
                                 },
                                 "region": {
                                     "startLine": 257,

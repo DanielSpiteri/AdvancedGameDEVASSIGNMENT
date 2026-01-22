@@ -9,6 +9,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRoj_init() {}
 	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_BulletCountUpdatedDelegate__DelegateSignature();
 	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_DamagedDelegate__DelegateSignature();
+	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_OnDied__DelegateSignature();
+	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_OnHealthChanged__DelegateSignature();
 	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_PawnDeathDelegate__DelegateSignature();
 	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_SprintStateChangedDelegate__DelegateSignature();
 	ADVANCEDGAMEDEVPROJ_API UFunction* Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_UpdateSprintMeterDelegate__DelegateSignature();
@@ -20,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRoj_init() {}
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_BulletCountUpdatedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_DamagedDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_OnDied__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_OnHealthChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_PawnDeathDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_SprintStateChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_AdvancedGameDevPRoj_UpdateSprintMeterDelegate__DelegateSignature,
@@ -29,13 +33,13 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRoj_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xAD6DBD22,
-				0xFAC25E34,
+				0x389C3AF5,
+				0xFB60AC21,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_AdvancedGameDevPRoj(Z_Construct_UPackage__Script_AdvancedGameDevPRoj, TEXT("/Script/AdvancedGameDevPRoj"), Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xAD6DBD22, 0xFAC25E34));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_AdvancedGameDevPRoj(Z_Construct_UPackage__Script_AdvancedGameDevPRoj, TEXT("/Script/AdvancedGameDevPRoj"), Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x389C3AF5, 0xFB60AC21));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

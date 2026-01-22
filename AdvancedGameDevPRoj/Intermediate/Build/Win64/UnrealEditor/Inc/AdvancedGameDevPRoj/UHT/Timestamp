@@ -1,26 +1,28 @@
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCameraManager.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojGameMode.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCharacter.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\WashToolComponent.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorGameMode.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterCharacter.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\WashableCar.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterGameMode.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorPlayerController.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterNPC.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\EnvQueryContext_Target.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterAIController.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterProjectile.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterPickup.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeaponHolder.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterBulletCounterUI.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterUI.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeapon.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\PickupBase.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterStateTreeUtility.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\UpgradeData.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Washable.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\UI\HorrorUI.h
-C:\Users\User\Desktop\AdvancedGameDev\AdvancedGameDEVASSIGNMENT\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterPlayerController.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Public\HealthComponent.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Public\BacteriaEnemyCharacter.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCameraManager.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojCharacter.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojGameMode.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\UpgradeData.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\WashableCar.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorGameMode.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\UI\HorrorUI.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorPlayerController.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterCharacter.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterNPC.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterGameMode.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterUI.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\UI\ShooterBulletCounterUI.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\EnvQueryContext_Target.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeaponHolder.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterPickup.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterWeapon.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterAIController.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\Weapons\ShooterProjectile.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\WashToolComponent.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Washable.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\AdvancedGameDevPRojPlayerController.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\PickupBase.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\ShooterPlayerController.h
+C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Source\AdvancedGameDevPRoj\Variant_Shooter\AI\ShooterStateTreeUtility.h

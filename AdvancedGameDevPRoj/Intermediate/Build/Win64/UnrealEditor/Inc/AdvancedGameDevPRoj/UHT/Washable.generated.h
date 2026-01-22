@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Interface UWashable ************************************************************
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool IsFullyClean_Implementation() const { return false; }; \
 	virtual float GetCleanPercent_Implementation() const { return 0; }; \
 	virtual void ApplyWash_Implementation(float Amount) {}; \
@@ -26,10 +26,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execApplyWash);
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_CALLBACK_WRAPPERS
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_CALLBACK_WRAPPERS
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashable_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWashable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -41,7 +41,7 @@ ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashable_NoRegister();
 	virtual ~UWashable() = default;
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_UINTERFACE_BODY() \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUWashable(); \
 	friend struct Z_Construct_UClass_UWashable_Statics; \
@@ -52,15 +52,15 @@ public: \
 	DECLARE_SERIALIZER(UWashable)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_UINTERFACE_BODY() \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_GENERATED_UINTERFACE_BODY() \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IWashable() {} \
 public: \
@@ -72,13 +72,13 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_7_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_15_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_7_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_CALLBACK_WRAPPERS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_CALLBACK_WRAPPERS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h_10_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -88,6 +88,6 @@ class UWashable;
 // ********** End Interface UWashable **************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h
+#define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Washable_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

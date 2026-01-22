@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AAdvancedGameDevPRojGameMode *********************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojGameMode_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAdvancedGameDevPRojGameMode(); \
 	friend struct Z_Construct_UClass_AAdvancedGameDevPRojGameMode_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AAdvancedGameDevPRojGameMode)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AAdvancedGameDevPRojGameMode(AAdvancedGameDevPRojGameMode&&) = delete; \
 	AAdvancedGameDevPRojGameMode(const AAdvancedGameDevPRojGameMode&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~AAdvancedGameDevPRojGameMode();
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_12_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_12_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class AAdvancedGameDevPRojGameMode;
 // ********** End Class AAdvancedGameDevPRojGameMode ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h
+#define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojGameMode_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -20,7 +20,7 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/lib/x64"
+/LIBPATH:"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/lib/x64"
 /LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/ucrt/x64"
 /LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/um/x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -36,9 +36,9 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.NonOptimized.ValApi.ValExpApi.Cpp20.h.obj"
-"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioBlueprintDebuggerHelper/Module.VisualStudioBlueprintDebuggerHelper.cpp.obj"
-"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioBlueprintDebuggerHelper/Default.rc2.res"
+"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.NonOptimized.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioBlueprintDebuggerHelper/Module.VisualStudioBlueprintDebuggerHelper.cpp.obj"
+"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioBlueprintDebuggerHelper/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/ApplicationCore/UnrealEditor-ApplicationCore.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/AssetRegistry/UnrealEditor-AssetRegistry.lib"
@@ -83,6 +83,6 @@
 "imm32.lib"
 "uiautomationcore.lib"
 "DXGI.lib"
-/OUT:"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Binaries/Win64/UnrealEditor-VisualStudioBlueprintDebuggerHelper.dll"
-/PDB:"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Binaries/Win64/UnrealEditor-VisualStudioBlueprintDebuggerHelper.pdb"
+/OUT:"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Binaries/Win64/UnrealEditor-VisualStudioBlueprintDebuggerHelper.dll"
+/PDB:"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Binaries/Win64/UnrealEditor-VisualStudioBlueprintDebuggerHelper.pdb"
 /ignore:4078

@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UVsBlueprintReferencesCommandlet *****************************************
 VISUALSTUDIOTOOLS_API UClass* Z_Construct_UClass_UVsBlueprintReferencesCommandlet_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUVsBlueprintReferencesCommandlet(); \
 	friend struct Z_Construct_UClass_UVsBlueprintReferencesCommandlet_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UVsBlueprintReferencesCommandlet)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UVsBlueprintReferencesCommandlet(UVsBlueprintReferencesCommandlet&&) = delete; \
 	UVsBlueprintReferencesCommandlet(const UVsBlueprintReferencesCommandlet&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UVsBlueprintReferencesCommandlet();
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_11_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_11_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UVsBlueprintReferencesCommandlet;
 // ********** End Class UVsBlueprintReferencesCommandlet *******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h
+#define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

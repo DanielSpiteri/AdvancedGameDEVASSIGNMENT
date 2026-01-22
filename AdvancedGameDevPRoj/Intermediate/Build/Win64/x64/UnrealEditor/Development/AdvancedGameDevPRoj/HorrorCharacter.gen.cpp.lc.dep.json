@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedgamedevproj\\uht\\horrorcharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\x64\\advancedgamedevprojeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\advancedgamedevproj\\definitions.advancedgamedevproj.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\source\\advancedgamedevproj\\variant_horror\\horrorcharacter.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\source\\advancedgamedevproj\\advancedgamedevprojcharacter.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\source\\advancedgamedevproj\\washtoolcomponent.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\source\\advancedgamedevproj\\upgradedata.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedgamedevproj\\uht\\upgradedata.generated.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedgamedevproj\\uht\\washtoolcomponent.generated.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedgamedevproj\\uht\\advancedgamedevprojcharacter.generated.h",
+            "c:\\users\\user\\desktop\\adv game prog\\carwash\\advancedgamedevproj\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedgamedevproj\\uht\\horrorcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

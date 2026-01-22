@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UUpgradeData *************************************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UUpgradeData_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUUpgradeData(); \
 	friend struct Z_Construct_UClass_UUpgradeData_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UUpgradeData)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UUpgradeData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~UUpgradeData();
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_15_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_15_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,7 +57,7 @@ class UUpgradeData;
 // ********** End Class UUpgradeData ***************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h
+#define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_UpgradeData_h
 
 // ********** Begin Enum EUpgradeType **************************************************************
 #define FOREACH_ENUM_EUPGRADETYPE(op) \

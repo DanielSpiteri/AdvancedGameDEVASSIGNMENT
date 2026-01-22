@@ -99,14 +99,14 @@ UVisualStudioToolsBlueprintBreakpointExtension::~UVisualStudioToolsBlueprintBrea
 // ********** End Class UVisualStudioToolsBlueprintBreakpointExtension *****************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics
+struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UVisualStudioToolsBlueprintBreakpointExtension, UVisualStudioToolsBlueprintBreakpointExtension::StaticClass, TEXT("UVisualStudioToolsBlueprintBreakpointExtension"), &Z_Registration_Info_UClass_UVisualStudioToolsBlueprintBreakpointExtension, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVisualStudioToolsBlueprintBreakpointExtension), 1695444235U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_2730001034(TEXT("/Script/VisualStudioTools"),
-	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_2730001034(TEXT("/Script/VisualStudioTools"),
+	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsBlueprintBreakpointExtension_h__Script_VisualStudioTools_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

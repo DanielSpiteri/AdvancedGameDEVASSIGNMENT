@@ -98,14 +98,14 @@ UVsBlueprintReferencesCommandlet::~UVsBlueprintReferencesCommandlet() {}
 // ********** End Class UVsBlueprintReferencesCommandlet *******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics
+struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UVsBlueprintReferencesCommandlet, UVsBlueprintReferencesCommandlet::StaticClass, TEXT("UVsBlueprintReferencesCommandlet"), &Z_Registration_Info_UClass_UVsBlueprintReferencesCommandlet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVsBlueprintReferencesCommandlet), 3588560280U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_468257732(TEXT("/Script/VisualStudioTools"),
-	Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_468257732(TEXT("/Script/VisualStudioTools"),
+	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_BlueprintReferencesCommandlet_h__Script_VisualStudioTools_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

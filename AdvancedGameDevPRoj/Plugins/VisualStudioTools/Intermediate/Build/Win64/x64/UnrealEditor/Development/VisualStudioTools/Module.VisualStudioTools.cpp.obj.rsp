@@ -1,12 +1,13 @@
-"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
-@"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/VisualStudioTools.Shared.rsp"
-/FI"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/FI"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Definitions.VisualStudioTools.h"
-/Yu"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/Fp"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.obj"
-/experimental:log "C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.sarif"
-/sourceDependencies "C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.dep.json"
+"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp"
+@"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/VisualStudioTools.Shared.rsp"
+/FI"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Definitions.VisualStudioTools.h"
+/Yu"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/Build/Win64/x64/AdvancedGameDevPRojEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.obj"
+/experimental:log "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.sarif"
+/sourceDependencies "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Plugins/VisualStudioTools/Intermediate/Build/Win64/x64/UnrealEditor/Development/VisualStudioTools/Module.VisualStudioTools.cpp.dep.json"
+/d2ssa-cfg-question-
 /Zc:inline
 /nologo
 /Oi

@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UVisualStudioToolsCommandletBase *****************************************
 VISUALSTUDIOTOOLS_API UClass* Z_Construct_UClass_UVisualStudioToolsCommandletBase_NoRegister();
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUVisualStudioToolsCommandletBase(); \
 	friend struct Z_Construct_UClass_UVisualStudioToolsCommandletBase_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UVisualStudioToolsCommandletBase)
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UVisualStudioToolsCommandletBase(UVisualStudioToolsCommandletBase&&) = delete; \
 	UVisualStudioToolsCommandletBase(const UVisualStudioToolsCommandletBase&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UVisualStudioToolsCommandletBase();
 
 
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_10_PROLOG
-#define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_10_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UVisualStudioToolsCommandletBase;
 // ********** End Class UVisualStudioToolsCommandletBase *******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h
+#define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Plugins_VisualStudioTools_Source_VisualStudioTools_Private_VisualStudioToolsCommandletBase_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
