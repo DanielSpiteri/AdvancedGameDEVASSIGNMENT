@@ -1,0 +1,1759 @@
+﻿Log file open, 01/22/26 10:05:03
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogProfilingDebugging: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogWindows: Started CrashReportClient (pid=11760)
+LogWindows: Custom abort handler registered for crash reporting.
+LogInit: Display: Running engine for game: AdvancedGameDevPRoj
+LogCore: UTS: Unreal Trace Server launched successfully
+LogTrace: Initializing trace...
+LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+LogTrace: Display: Control listening on port 1985
+LogTrace: Finished trace initialization.
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.6-CL-44394996"
+LogCsvProfiler: Display: Metadata set : engineversion="5.6.1-44394996+++UE5+Release-5.6"
+LogCsvProfiler: Display: Metadata set : os="Windows 11 (25H2) [10.0.26200.7623] "
+LogCsvProfiler: Display: Metadata set : cpu="GenuineIntel|11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : commandline="" "C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\AdvancedGameDevPRoj.uproject"""
+LogCsvProfiler: Display: Metadata set : loginid="5aed68f843e9e159c088249ef178f207"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogStats: Stats thread started at 0.379292
+LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogInit: Session CrashGUID >====================================================
+         Session CrashGUID >   UECC-Windows-26A38ECC4B3333E86BE28D8085FA026E
+         Session CrashGUID >====================================================
+LogConfig: No local boot hotfix file found at: [../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogAudio: Display: Pre-Initializing Audio Device Manager...
+LogAudio: Display: AudioInfo: 'OPUS' Registered
+LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+LogAudio: Display: AudioInfo: 'OGG' Registered
+LogAudio: Display: AudioInfo: 'ADPCM' Registered
+LogAudio: Display: AudioInfo: 'PCM' Registered
+LogAudio: Display: AudioInfo: 'BINKA' Registered
+LogAudio: Display: AudioInfo: 'RADA' Registered
+LogAudio: Display: Audio Device Manager Pre-Initialized
+LogPluginManager: Looking for build plugins target receipt
+LogConfig: Display: Loading Android ini files took 0.05 seconds
+LogConfig: Display: Loading Mac ini files took 0.05 seconds
+LogConfig: Display: Loading IOS ini files took 0.05 seconds
+LogPluginManager: Found matching target receipt: ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Binaries/Win64/AdvancedGameDevPRojEditor.target
+LogPluginManager: Looking for enabled plugins target receipt
+LogConfig: Display: Loading Linux ini files took 0.08 seconds
+LogAssetRegistry: Display: Asset registry cache read as 72.3 MiB from ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/CachedAssetRegistry_0.bin.
+LogPluginManager: Found matching target receipt: ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Binaries/Win64/AdvancedGameDevPRojEditor.target
+LogConfig: Display: Loading Unix ini files took 0.05 seconds
+LogConfig: Display: Loading VulkanPC ini files took 0.04 seconds
+LogConfig: Display: Loading TVOS ini files took 0.06 seconds
+LogPluginManager: Mounting Engine plugin Bridge
+LogPluginManager: Mounting Engine plugin ChaosCloth
+LogPluginManager: Mounting Engine plugin ChaosInsights
+LogPluginManager: Mounting Engine plugin ChaosVD
+LogPluginManager: Mounting Engine plugin CmdLinkServer
+LogPluginManager: Mounting Engine plugin EnhancedInput
+LogPluginManager: Mounting Engine plugin Fab
+LogPluginManager: Mounting Engine plugin FastBuildController
+LogPluginManager: Mounting Engine plugin IoStoreInsights
+LogPluginManager: Mounting Engine plugin MassInsights
+LogPluginManager: Mounting Engine plugin MeshPainting
+LogPluginManager: Mounting Engine plugin RenderGraphInsights
+LogPluginManager: Mounting Engine plugin TraceUtilities
+LogPluginManager: Mounting Engine plugin UbaController
+LogPluginManager: Mounting Engine plugin WorldMetrics
+LogPluginManager: Mounting Engine plugin XGEController
+LogPluginManager: Mounting Engine plugin MetaHumanSDK
+LogPluginManager: Mounting Engine plugin NNEDenoiser
+LogPluginManager: Mounting Engine plugin NNERuntimeORT
+LogPluginManager: Mounting Engine plugin LauncherChunkInstaller
+LogConfig: Display: Loading Windows ini files took 0.05 seconds
+LogPluginManager: Mounting Engine plugin AISupport
+LogPluginManager: Mounting Engine plugin Paper2D
+LogPluginManager: Mounting Engine plugin EnvironmentQueryEditor
+LogPluginManager: Mounting Engine plugin ACLPlugin
+LogPluginManager: Mounting Engine plugin AnimationModifierLibrary
+LogPluginManager: Mounting Engine plugin AnimationData
+LogPluginManager: Mounting Engine plugin BlendSpaceMotionAnalysis
+LogPluginManager: Mounting Engine plugin ControlRigModules
+LogPluginManager: Mounting Engine plugin ControlRig
+LogPluginManager: Mounting Engine plugin DeformerGraph
+LogPluginManager: Mounting Engine plugin ControlRigSpline
+LogPluginManager: Mounting Engine plugin GameplayInsights
+LogPluginManager: Mounting Engine plugin IKRig
+LogPluginManager: Mounting Engine plugin LiveLink
+LogPluginManager: Mounting Engine plugin TweeningUtils
+LogPluginManager: Mounting Engine plugin SkeletalMeshModelingTools
+LogPluginManager: Mounting Engine plugin RigLogic
+LogPluginManager: Mounting Engine plugin CameraShakePreviewer
+LogPluginManager: Mounting Engine plugin EngineCameras
+LogPluginManager: Mounting Engine plugin GameplayCameras
+LogPluginManager: Mounting Engine plugin OodleNetwork
+LogPluginManager: Mounting Engine plugin AnimationSharing
+LogPluginManager: Mounting Engine plugin CLionSourceCodeAccess
+LogPluginManager: Mounting Engine plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting Engine plugin DumpGPUServices
+LogPluginManager: Mounting Engine plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting Engine plugin GitSourceControl
+LogPluginManager: Mounting Engine plugin NamingTokens
+LogPluginManager: Mounting Engine plugin N10XSourceCodeAccess
+LogPluginManager: Mounting Engine plugin NullSourceCodeAccess
+LogConfig: Display: Loading VisionOS ini files took 0.04 seconds
+LogPluginManager: Mounting Engine plugin PixWinPlugin
+LogPluginManager: Mounting Engine plugin PerforceSourceControl
+LogPluginManager: Mounting Engine plugin PlasticSourceControl
+LogPluginManager: Mounting Engine plugin ProjectLauncher
+LogPluginManager: Mounting Engine plugin PluginUtils
+LogPluginManager: Mounting Engine plugin PropertyAccessNode
+LogPluginManager: Mounting Engine plugin RenderDocPlugin
+LogPluginManager: Mounting Engine plugin RiderSourceCodeAccess
+LogPluginManager: Mounting Engine plugin SubversionSourceControl
+LogPluginManager: Mounting Engine plugin TextureFormatOodle
+LogPluginManager: Mounting Engine plugin UObjectPlugin
+LogPluginManager: Mounting Engine plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting Engine plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting Engine plugin AssetManagerEditor
+LogPluginManager: Mounting Engine plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting Engine plugin ChangelistReview
+LogPluginManager: Mounting Engine plugin BlueprintHeaderView
+LogPluginManager: Mounting Engine plugin CryptoKeys
+LogPluginManager: Mounting Engine plugin ColorGrading
+LogPluginManager: Mounting Engine plugin CurveEditorTools
+LogPluginManager: Mounting Engine plugin EditorDebugTools
+LogPluginManager: Mounting Engine plugin DataValidation
+LogPluginManager: Mounting Engine plugin EditorScriptingUtilities
+LogPluginManager: Mounting Engine plugin EngineAssetDefinitions
+LogPluginManager: Mounting Engine plugin FacialAnimation
+LogPluginManager: Mounting Engine plugin GameplayTagsEditor
+LogPluginManager: Mounting Engine plugin GeometryMode
+LogPluginManager: Mounting Engine plugin MacGraphicsSwitching
+LogPluginManager: Mounting Engine plugin MaterialAnalyzer
+LogPluginManager: Mounting Engine plugin MeshLODToolset
+LogPluginManager: Mounting Engine plugin ModelingToolsEditorMode
+LogPluginManager: Mounting Engine plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting Engine plugin ProxyLODPlugin
+LogPluginManager: Mounting Engine plugin PluginBrowser
+LogPluginManager: Mounting Engine plugin SequencerAnimTools
+LogPluginManager: Mounting Engine plugin SpeedTreeImporter
+LogPluginManager: Mounting Engine plugin StylusInput
+LogPluginManager: Mounting Engine plugin WorldPartitionHLODUtilities
+LogPluginManager: Mounting Engine plugin UMGWidgetPreview
+LogPluginManager: Mounting Engine plugin UVEditor
+LogPluginManager: Mounting Engine plugin DatasmithContent
+LogPluginManager: Mounting Engine plugin GLTFExporter
+LogPluginManager: Mounting Engine plugin VariantManager
+LogPluginManager: Mounting Engine plugin VariantManagerContent
+LogPluginManager: Mounting Engine plugin AdvancedRenamer
+LogPluginManager: Mounting Engine plugin AutomationUtils
+LogPluginManager: Mounting Engine plugin BackChannel
+LogPluginManager: Mounting Engine plugin ChaosCaching
+LogPluginManager: Mounting Engine plugin ChaosEditor
+LogPluginManager: Mounting Engine plugin ChaosNiagara
+LogPluginManager: Mounting Engine plugin ChaosUserDataPT
+LogPluginManager: Mounting Engine plugin ChaosSolverPlugin
+LogPluginManager: Mounting Engine plugin CharacterAI
+LogPluginManager: Mounting Engine plugin Dataflow
+LogPluginManager: Mounting Engine plugin EditorDataStorage
+LogPluginManager: Mounting Engine plugin EditorDataStorageFeatures
+LogPluginManager: Mounting Engine plugin EditorPerformance
+LogPluginManager: Mounting Engine plugin EditorTelemetry
+LogPluginManager: Mounting Engine plugin Fracture
+LogPluginManager: Mounting Engine plugin FullBodyIK
+LogPluginManager: Mounting Engine plugin GeometryCollectionPlugin
+LogPluginManager: Mounting Engine plugin GeometryDataflow
+LogPluginManager: Mounting Engine plugin GeometryFlow
+LogPluginManager: Mounting Engine plugin LevelSequenceNavigatorBridge
+LogPluginManager: Mounting Engine plugin LocalizableMessage
+LogPluginManager: Mounting Engine plugin LowLevelNetTrace
+LogPluginManager: Mounting Engine plugin MeshModelingToolsetExp
+LogPluginManager: Mounting Engine plugin NFORDenoise
+LogPluginManager: Mounting Engine plugin PlanarCut
+LogPluginManager: Mounting Engine plugin PlatformCrypto
+LogPluginManager: Mounting Engine plugin PythonScriptPlugin
+LogPluginManager: Mounting Engine plugin RuntimeTelemetry
+LogPluginManager: Mounting Engine plugin SequenceNavigator
+LogPluginManager: Mounting Engine plugin SkeletalReduction
+LogPluginManager: Mounting Engine plugin ToolPresets
+LogPluginManager: Mounting Engine plugin Cascade
+LogPluginManager: Mounting Engine plugin Niagara
+LogPluginManager: Mounting Engine plugin NiagaraSimCaching
+LogPluginManager: Mounting Engine plugin AlembicImporter
+LogPluginManager: Mounting Engine plugin USDImporter
+LogPluginManager: Mounting Engine plugin InterchangeEditor
+LogPluginManager: Mounting Engine plugin InterchangeAssets
+LogPluginManager: Mounting Engine plugin Interchange
+LogPluginManager: Mounting Engine plugin AndroidMedia
+LogPluginManager: Mounting Engine plugin FabLauncher
+LogPluginManager: Mounting Engine plugin AvfMedia
+LogPluginManager: Mounting Engine plugin ImgMedia
+LogPluginManager: Mounting Engine plugin MediaCompositing
+LogPluginManager: Mounting Engine plugin MediaPlayerEditor
+LogPluginManager: Mounting Engine plugin MediaPlate
+LogPluginManager: Mounting Engine plugin WebMMedia
+LogPluginManager: Mounting Engine plugin WmfMedia
+LogPluginManager: Mounting Engine plugin TcpMessaging
+LogPluginManager: Mounting Engine plugin UdpMessaging
+LogPluginManager: Mounting Engine plugin ActorSequence
+LogPluginManager: Mounting Engine plugin LevelSequenceEditor
+LogPluginManager: Mounting Engine plugin SequencerScripting
+LogPluginManager: Mounting Engine plugin TemplateSequence
+LogPluginManager: Mounting Engine plugin EOSShared
+LogPluginManager: Mounting Engine plugin OnlineServices
+LogPluginManager: Mounting Engine plugin OnlineBase
+LogPluginManager: Mounting Engine plugin OnlineSubsystem
+LogPluginManager: Mounting Engine plugin OnlineSubsystemNull
+LogPluginManager: Mounting Engine plugin OnlineSubsystemUtils
+LogPluginManager: Mounting Engine plugin ActorLayerUtilities
+LogPluginManager: Mounting Engine plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin AndroidFileServer
+LogPluginManager: Mounting Engine plugin AndroidMoviePlayer
+LogPluginManager: Mounting Engine plugin AndroidPermission
+LogPluginManager: Mounting Engine plugin AppleImageUtils
+LogPluginManager: Mounting Engine plugin AppleMoviePlayer
+LogPluginManager: Mounting Engine plugin AssetTags
+LogPluginManager: Mounting Engine plugin ArchVisCharacter
+LogPluginManager: Mounting Engine plugin AudioWidgets
+LogPluginManager: Mounting Engine plugin AudioCapture
+LogPluginManager: Mounting Engine plugin AudioSynesthesia
+LogPluginManager: Mounting Engine plugin CableComponent
+LogPluginManager: Mounting Engine plugin ChunkDownloader
+LogPluginManager: Mounting Engine plugin ComputeFramework
+LogPluginManager: Mounting Engine plugin CustomMeshComponent
+LogPluginManager: Mounting Engine plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin GameplayStateTree
+LogPluginManager: Mounting Engine plugin GeometryCache
+LogPluginManager: Mounting Engine plugin GeometryProcessing
+LogPluginManager: Mounting Engine plugin GoogleCloudMessaging
+LogPluginManager: Mounting Engine plugin GooglePAD
+LogPluginManager: Mounting Engine plugin HairStrands
+LogPluginManager: Mounting Engine plugin InputDebugging
+LogPluginManager: Mounting Engine plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin LocationServicesBPLibrary
+LogPluginManager: Mounting Engine plugin MeshModelingToolset
+LogPluginManager: Mounting Engine plugin Metasound
+LogPluginManager: Mounting Engine plugin MobilePatchingUtils
+LogPluginManager: Mounting Engine plugin MsQuic
+LogPluginManager: Mounting Engine plugin PropertyBindingUtils
+LogPluginManager: Mounting Engine plugin PropertyAccessEditor
+LogPluginManager: Mounting Engine plugin ProceduralMeshComponent
+LogPluginManager: Mounting Engine plugin RigVM
+LogPluginManager: Mounting Engine plugin ResonanceAudio
+LogPluginManager: Mounting Engine plugin SignificanceManager
+LogPluginManager: Mounting Engine plugin SoundFields
+LogPluginManager: Mounting Engine plugin StateTree
+LogPluginManager: Mounting Engine plugin Synthesis
+LogPluginManager: Mounting Engine plugin USDCore
+LogPluginManager: Mounting Engine plugin WaveTable
+LogPluginManager: Mounting Engine plugin WebMMoviePlayer
+LogPluginManager: Mounting Engine plugin WindowsDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin WindowsMoviePlayer
+LogPluginManager: Mounting Engine plugin InterchangeTests
+LogPluginManager: Mounting Engine plugin CameraCalibrationCore
+LogPluginManager: Mounting Engine plugin Takes
+LogPluginManager: Mounting Engine plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting Engine plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting Engine plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting Engine plugin LightMixer
+LogPluginManager: Mounting Engine plugin ObjectMixer
+LogPluginManager: Mounting Engine plugin SQLiteCore
+LogPluginManager: Mounting Engine plugin ConcertMain
+LogPluginManager: Mounting Engine plugin OnlineSubsystemIOS
+LogPluginManager: Mounting Engine plugin AnalyticsBlueprintLibrary
+LogPluginManager: Mounting Engine plugin BaseCharacterFXEditor
+LogPluginManager: Mounting Engine plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting Engine plugin XInputDevice
+LogPluginManager: Mounting Engine plugin PortableObjectFileDataSource
+LogPluginManager: Mounting Engine plugin CompositeCore
+LogPluginManager: Mounting Engine plugin ConcertSyncClient
+LogPluginManager: Mounting Engine plugin ConcertSyncCore
+LogPluginManager: Mounting Project plugin VisualStudioTools
+SourceControl: Revision control is disabled
+SourceControl: Revision control is disabled
+SourceControl: Revision control is disabled
+LogWindows: Failed to load 'WinPixGpuCapturer.dll' (GetLastError=126)
+LogWindows: File 'WinPixGpuCapturer.dll' does not exist
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogConfig: Applying CVar settings from Section [/Script/RenderDocPlugin.RenderDocPluginSettings] File [Engine]
+RenderDocPlugin: Display: RenderDoc plugin will not be loaded. Use '-AttachRenderDoc' on the cmd line or enable 'renderdoc.AutoAttach' in the plugin settings.
+LogStudioTelemetry: Started StudioTelemetry Session
+LogNFORDenoise: NFORDenoise function starting up
+LogEOSShared: Loaded "C:/Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/EOSSDK-Win64-Shipping.dll"
+LogEOSShared: FEOSSDKManager::Initialize Initializing EOSSDK Version:1.17.0-41373641
+LogInit: Using libcurl 8.12.1
+LogInit:  - built for Windows
+LogInit:  - supports SSL with OpenSSL/1.1.1t
+LogInit:  - supports HTTP deflate (compression) using libz 1.3
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:      CURL_VERSION_HTTP2
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: CreateHttpThread using FCurlMultiPollEventLoopHttpThread
+LogInit: Creating http thread with maximum 256 concurrent requests
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: Created online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+LogConfig: Applying CVar settings from Section [/Script/CompositeCore.CompositeCorePluginSettings] File [Engine]
+LogInit: ExecutableName: UnrealEditor.exe
+LogInit: Build: ++UE5+Release-5.6-CL-44394996
+LogInit: Platform=WindowsEditor
+LogInit: MachineId=5aed68f843e9e159c088249ef178f207
+LogInit: DeviceId=
+LogInit: Engine Version: 5.6.1-44394996+++UE5+Release-5.6
+LogInit: Compatible Engine Version: 5.6.0-43139311+++UE5+Release-5.6
+LogInit: Net CL: 43139311
+LogInit: OS: Windows 11 (25H2) [10.0.26200.7623] (), CPU: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz, GPU: Intel(R) Iris(R) Xe Graphics
+LogInit: Compiled (64-bit): Jul 28 2025 20:53:34
+LogInit: Architecture: x64
+LogInit: Compiled with Visual C++: 19.38.33130.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE5+Release-5.6
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogDevObjectVersion: Number of dev versions registered: 37
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 20
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 49
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 207
+LogDevObjectVersion:   FortniteValkyrie (8DBC2C5B-54A7-43E0-A768-FCBB7DA29060): 8
+LogDevObjectVersion:   FortniteSeason (5B4C06B7-2463-4AF8-805B-BF70CDF5D0DD): 13
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 17
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 11
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   UE5-Main (697DD581-E64F-41AB-AA4A-51ECBEB7B628): 121
+LogDevObjectVersion:   UE5-Release (D89B5E42-24BD-4D46-8412-ACA8DF641779): 56
+LogDevObjectVersion:   UE5-SpecialProject (59DA5D52-1232-4948-B878-597870B8E98B): 9
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogDevObjectVersion:   Dev-NaniteResearch (30D58BE3-95EA-4282-A6E3-B159D8EBB06A): 1
+LogDevObjectVersion:   Dev-ComputeFramework (6304A3E7-0059-4F59-8CFC-21BD7721FD4E): 0
+LogDevObjectVersion:   LensFileVersion (8652A554-966A-466C-9FD7-1C6DD61B1ADB): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC.
+LogInit: Object subsystem initialized
+LogConfig: Set CVar [[con.DebugEarlyDefault:1]]
+LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+LogConfig: Set CVar [[r.setres:1280x720]]
+LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+LogConfig: Set CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+LogConfig: Set CVar [[r.Nanite.Streaming.ReservedResources:1]]
+LogConfig: CVar [[D3D12.Bindless.ResourceDescriptorHeapSize:32768]] deferred - dummy variable created
+LogConfig: CVar [[D3D12.Bindless.SamplerDescriptorHeapSize:2048]] deferred - dummy variable created
+LogConfig: Set CVar [[r.PSOPrecache.GlobalShaders:1]]
+LogConfig: Set CVar [[r.VRS.EnableSoftware:1]]
+LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.VSync:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.GPUCrashDebugging:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[MaxSkinBones:(Default=65536,PerPlatform=(("Mobile", 256)))]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.Shaders.RemoveUnusedInterpolators:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.ReflectionMethod:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.GenerateMeshDistanceFields:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.DynamicGlobalIlluminationMethod:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.AllowStaticLighting:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.SkinCache.CompileShaders:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.RayTracing:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.RayTracing.RayTracingProxies.ProjectEnabled:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.Shadow.Virtual.Enable:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.DefaultFeature.LocalExposure.HighlightContrastScale:0.8]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[r.DefaultFeature.LocalExposure.ShadowContrastScale:0.8]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.AsyncLoadingThreadEnabled:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[s.MaxPackageSummarySize:16384]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[s.FlushStreamingOnExit:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__SoundBase]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__DeviceProfileManager]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.FlushStreamingOnGC:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.AllowParallelGC:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.CreateGCClusters:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.MinGCClusterSize:5]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.AssetClustreringEnabled:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.ActorClusteringEnabled:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.VerifyUObjectsAreNotFGCObjects:0]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Set CVar [[gc.GarbageEliminationEnabled:1]]
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Average",ToolTip="Simulates average internet conditions")]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [Engine]
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[DefaultASTCQualityBySpeed:2]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[DefaultASTCQualityBySize:3]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[DefaultASTCQualityBySizeHQ:4]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:WidgetBlueprint]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GroupActor]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MetaData]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ObjectRedirector]] deferred - dummy variable created
+[2026.01.22-09.05.03:822][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NavMeshRenderingComponent]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ReflectionCaptureComponent]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:TextRenderComponent]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:Font]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:InterpCurveEdSetup]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MaterialExpression]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraEmitter]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraScript]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleEmitter]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleLODLevel]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleModule]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SubUVAnimation]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SoundNode]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GameplayEffectUIData]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:AmbientSound]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:WidgetBlueprint]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:GroupActor]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:MetaData]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:ObjectRedirector]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:InterpCurveEdSetup]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.AllowStaticLighting]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.MaterialEditor.LWCTruncateMode]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.GBuffer]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.VelocityOutputPass]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.SelectiveBasePassOutputs]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.DBuffer]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Mobile.DBuffer]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Symbols]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.GenerateSymbols]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.WriteSymbols]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.AllowUniqueSymbols]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.ExtraData]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Optimize]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.CompileShadersForDevelopment]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.MobileHDR]] deferred - dummy variable created
+[2026.01.22-09.05.03:823][  0]LogConfig: CVar [[VersionedIntRValues:r.UsePreExposure]] deferred - dummy variable created
+[2026.01.22-09.05.03:825][  0]LogCsvProfiler: Display: Metadata set : systemresolution.resx="1920"
+[2026.01.22-09.05.03:825][  0]LogCsvProfiler: Display: Metadata set : systemresolution.resy="1080"
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.ViewDistanceScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.FXAA.Quality:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TemporalAA.Quality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.History.R11G11B10:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:200]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.ReprojectionField:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TSR.Resurrection:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.MaxResolution:2048]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:4096]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-1.5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-1.5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkylightIntensityMultiplier:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AOQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.MaxLightsPerTile:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.UpdateFactor:32]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.UpdateFactor:64]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:32]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget:100]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:16]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.NumAdaptiveProbes:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TracingOctahedronResolution:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.FullResolutionJitterWidth:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HardwareRayTracing:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.BentNormal:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:32]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TracingOctahedronResolution:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.ProbeResolution:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.NumProbesToTraceBudget:70]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.RayTracing.Scene.BuildMode:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSR.Quality:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.MaxRoughnessToEvaluateRoughSpecularForFoliage:0.8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples:5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.MinWeight:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Enable:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.MotionBlurQuality:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.EyeAdaptationQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.FastBlurThreshold:100]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Upscale.Quality:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Filter.SizeScale:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Gather.ResolutionDivisor:2         ; lower gathering resolution]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.MaxAnisotropy:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.PoolSize:1000]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SceneColorFormat:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.DetailMode:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSS.SampleSet:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSS.Quality:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSS.HalfRes:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SSGI.Quality:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.ParticleLightQuality:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[fx.Niagara.QualityLevel:3]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.Refraction.OffsetQuality:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.DownsampleFactor:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.MaxStepCount:256]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.Resolution:256]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.MaxSampleCount:8]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.UseExistenceMask:0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[foliage.DensityScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[grass.DensityScale:1.0]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2026.01.22-09.05.03:826][  0]LogConfig: Applying CVar settings from Section [LandscapeQuality@3] File [Scalability]
+[2026.01.22-09.05.03:830][  0]LogRHI: Using Default RHI: D3D12
+[2026.01.22-09.05.03:830][  0]LogRHI: Using Highest Feature Level of D3D12: SM6
+[2026.01.22-09.05.03:830][  0]LogRHI: Loading RHI module D3D12RHI
+[2026.01.22-09.05.03:832][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+[2026.01.22-09.05.03:833][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM6 is supported by your system.
+[2026.01.22-09.05.03:929][  0]LogD3D12RHI: Intel Extensions Framework not supported by driver. Please check if a driver update is available.
+[2026.01.22-09.05.03:954][  0]LogD3D12RHI: Found D3D12 adapter 0: Intel(R) Iris(R) Xe Graphics (VendorId: 8086, DeviceId: 9a49, SubSysId: 1ebf1043, Revision: 0001
+[2026.01.22-09.05.03:954][  0]LogD3D12RHI:   Max supported Feature Level 12_1, shader model 6.7, binding tier 3, wave ops supported, atomic64 unsupported
+[2026.01.22-09.05.03:954][  0]LogD3D12RHI:   Adapter has 128MB of dedicated video memory, 0MB of dedicated system memory, and 8040MB of shared system memory, 2 output[s], UMA:true
+[2026.01.22-09.05.03:954][  0]LogD3D12RHI:   Driver Version: 32.0.101.7076 (internal:32.0.101.7076, unified:101.7076)
+[2026.01.22-09.05.03:954][  0]LogD3D12RHI:      Driver Date: 9-12-2025
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI: Found D3D12 adapter 1: Microsoft Basic Render Driver (VendorId: 1414, DeviceId: 008c, SubSysId: 0000, Revision: 0000
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI:   Max supported Feature Level 12_1, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI:   Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8040MB of shared system memory, 0 output[s], UMA:true
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI: DirectX Agility SDK runtime found.
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
+[2026.01.22-09.05.03:963][  0]LogD3D12RHI: Adapter only supports up to Feature Level 'SM5', requested Feature Level was 'SM6'
+[2026.01.22-09.05.03:963][  0]LogRHI: RHI D3D12 with Feature Level SM6 is not supported on your system, attempting to fall back to RHI D3D11 with Feature Level SM5
+[2026.01.22-09.05.03:963][  0]LogRHI: Loading RHI module D3D11RHI
+[2026.01.22-09.05.03:964][  0]LogRHI: Checking if RHI D3D11 with Feature Level SM5 is supported by your system.
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_1
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI: D3D11 adapters:
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI: Testing D3D11 Adapter 0:
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     Description : Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     VendorId    : 8086
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     DeviceId    : 9a49
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     SubSysId    : 1ebf1043
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     Revision    : 0001
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     DedicatedVideoMemory : 134217728 bytes
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     SharedSystemMemory : 8430702592 bytes
+[2026.01.22-09.05.03:964][  0]LogD3D11RHI:     AdapterLuid : 0 73506
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:    0. 'Intel(R) Iris(R) Xe Graphics' (Feature Level 11_1)
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:       128/0/8040 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x8086 UMA:true
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI: Testing D3D11 Adapter 1:
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     Description : Microsoft Basic Render Driver
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     VendorId    : 1414
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     DeviceId    : 008c
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     SubSysId    : 0000
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     Revision    : 0000
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     DedicatedVideoMemory : 0 bytes
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     SharedSystemMemory : 8430702592 bytes
+[2026.01.22-09.05.04:080][  0]LogD3D11RHI:     AdapterLuid : 0 77115
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_1)
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:       0/0/8040 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414 UMA:true
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI: Chosen D3D11 Adapter:
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     Description : Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     VendorId    : 8086
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     DeviceId    : 9a49
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     SubSysId    : 1ebf1043
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     Revision    : 0001
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     DedicatedVideoMemory : 134217728 bytes
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     SharedSystemMemory : 8430702592 bytes
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI:     AdapterLuid : 0 73506
+[2026.01.22-09.05.04:083][  0]LogD3D11RHI: Integrated GPU (iGPU): true
+[2026.01.22-09.05.04:083][  0]LogRHI: RHI D3D11 with Feature Level SM5 is supported and will be used.
+[2026.01.22-09.05.04:083][  0]LogInit: Selected Device Profile: [WindowsEditor]
+[2026.01.22-09.05.04:083][  0]LogHAL: Display: Platform has ~ 16 GB [16861405184 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.01.22-09.05.04:084][  0]LogDeviceProfileManager: Going up to parent DeviceProfile [Windows]
+[2026.01.22-09.05.04:084][  0]LogDeviceProfileManager: Going up to parent DeviceProfile []
+[2026.01.22-09.05.04:084][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.RasterizationMode:Bitmap -> Msdf]]
+[2026.01.22-09.05.04:084][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.ResolutionLevel:2 -> 2]]
+[2026.01.22-09.05.04:084][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.01.22-09.05.04:084][  0]LogConfig: Set CVar [[r.DumpShaderDebugInfo:2]]
+[2026.01.22-09.05.04:084][  0]LogConfig: Set CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2026.01.22-09.05.04:084][  0]LogConfig: Set CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2026.01.22-09.05.04:084][  0]LogConfig: CVar [[ds.CADTranslator.Meshing.ActivateThinZoneMeshing:0]] deferred - dummy variable created
+[2026.01.22-09.05.04:084][  0]LogConfig: CVar [[ds.CADTranslator.Stitching.RemoveThinFaces:0]] deferred - dummy variable created
+[2026.01.22-09.05.04:084][  0]LogConfig: Applying CVar settings from Section [Startup_Windows] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.01.22-09.05.04:084][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2026.01.22-09.05.04:084][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/Config/WindowsEditor/Editor.ini]
+[2026.01.22-09.05.04:084][  0]LogInit: Computer: MICHY
+[2026.01.22-09.05.04:084][  0]LogInit: User: User
+[2026.01.22-09.05.04:084][  0]LogInit: CPU Page size=4096, Cores=4
+[2026.01.22-09.05.04:084][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.01.22-09.05.04:084][  0]LogMemory: Process is running as part of a Windows Job with separate resource limits
+[2026.01.22-09.05.04:084][  0]LogMemory: Memory total: Physical=15.7GB (16GB approx) Virtual=29.7GB
+[2026.01.22-09.05.04:084][  0]LogMemory: Platform Memory Stats for WindowsEditor
+[2026.01.22-09.05.04:084][  0]LogMemory: Process Physical Memory: 649.66 MB used, 690.07 MB peak
+[2026.01.22-09.05.04:084][  0]LogMemory: Process Virtual Memory: 630.82 MB used, 650.83 MB peak
+[2026.01.22-09.05.04:084][  0]LogMemory: Physical Memory: 8906.56 MB used,  7173.73 MB free, 16080.29 MB total
+[2026.01.22-09.05.04:084][  0]LogMemory: Virtual Memory: 17292.19 MB used,  13124.10 MB free, 30416.29 MB total
+[2026.01.22-09.05.04:084][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2026.01.22-09.05.04:088][  0]LogWindows: WindowsPlatformFeatures enabled
+[2026.01.22-09.05.04:091][  0]LogChaosDD: Chaos Debug Draw Startup
+[2026.01.22-09.05.04:091][  0]LogInit: Physics initialised using underlying interface: Chaos
+[2026.01.22-09.05.04:092][  0]LogInit: Using OS detected language (en-GB).
+[2026.01.22-09.05.04:092][  0]LogInit: Using OS detected locale (en-150).
+[2026.01.22-09.05.04:098][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so 'en' will be used for the language.
+[2026.01.22-09.05.04:098][  0]LogInit: Setting process to per monitor DPI aware
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem: Available input methods:
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem:   - English (Europe) - (Keyboard).
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem:   - English (Europe) - Touch Input Correction (TSF IME).
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem:   - English (Europe) - (Keyboard).
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem:   - English (United Kingdom) - (Keyboard).
+[2026.01.22-09.05.04:483][  0]LogWindowsTextInputMethodSystem: Activated input method: English (Europe) - (Keyboard).
+[2026.01.22-09.05.04:489][  0]LogWindowsTouchpad: Display: CacheForceMaxTouchpadSensitivityMode SetMaxTouchpadSensitivity
+[2026.01.22-09.05.04:492][  0]LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.01.22-09.05.04:497][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2026.01.22-09.05.04:497][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.01.22-09.05.04:635][  0]LogRHI: Using Default RHI: D3D12
+[2026.01.22-09.05.04:635][  0]LogRHI: Using Highest Feature Level of D3D12: SM6
+[2026.01.22-09.05.04:635][  0]LogRHI: Loading RHI module D3D12RHI
+[2026.01.22-09.05.04:635][  0]LogRHI: Checking if RHI D3D12 with Feature Level SM6 is supported by your system.
+[2026.01.22-09.05.04:635][  0]LogD3D12RHI: Adapter only supports up to Feature Level 'SM5', requested Feature Level was 'SM6'
+[2026.01.22-09.05.04:635][  0]LogRHI: RHI D3D12 with Feature Level SM6 is not supported on your system, attempting to fall back to RHI D3D11 with Feature Level SM5
+[2026.01.22-09.05.04:635][  0]LogRHI: Loading RHI module D3D11RHI
+[2026.01.22-09.05.04:635][  0]LogRHI: Checking if RHI D3D11 with Feature Level SM5 is supported by your system.
+[2026.01.22-09.05.04:635][  0]LogRHI: RHI D3D11 with Feature Level SM5 is supported and will be used.
+[2026.01.22-09.05.04:636][  0]LogWindows: Attached monitors:
+[2026.01.22-09.05.04:636][  0]LogWindows:     resolution: 1920x1080, work area: (-1920, -505) -> (0, 515), device: '\\.\DISPLAY1'
+[2026.01.22-09.05.04:636][  0]LogWindows:     resolution: 1920x1080, work area: (0, 0) -> (1920, 1032), device: '\\.\DISPLAY2' [PRIMARY]
+[2026.01.22-09.05.04:636][  0]LogWindows: Found 2 attached monitors.
+[2026.01.22-09.05.04:636][  0]LogWindows: Gathering driver information using Windows Setup API
+[2026.01.22-09.05.04:636][  0]LogRHI: RHI Adapter Info:
+[2026.01.22-09.05.04:636][  0]LogRHI:             Name: Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.04:636][  0]LogRHI:   Driver Version: 32.0.101.7076 (internal:32.0.101.7076, unified:101.7076)
+[2026.01.22-09.05.04:636][  0]LogRHI:      Driver Date: 9-12-2025
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     GPU DeviceId: 0x9a49 (for the marketing name, search the web for "GPU Device Id")
+[2026.01.22-09.05.04:636][  0]LogRHI: Texture pool is 1523 MB (70% of 2176 MB)
+[2026.01.22-09.05.04:636][  0]LogNvidiaAftermath: Nvidia Aftermath is disabled in D3D11 due to instability issues.
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI: Creating D3DDevice using adapter:
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     Description : Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     VendorId    : 8086
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     DeviceId    : 9a49
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     SubSysId    : 1ebf1043
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     Revision    : 0001
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     DedicatedVideoMemory : 134217728 bytes
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     DedicatedSystemMemory : 0 bytes
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     SharedSystemMemory : 8430702592 bytes
+[2026.01.22-09.05.04:636][  0]LogD3D11RHI:     AdapterLuid : 0 73506
+[2026.01.22-09.05.04:743][  0]LogNvidiaAftermath: Aftermath is not loaded.
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: Intel Extensions loaded requested version for UAVOverlap: 1.1.0
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: Intel Extensions loaded requested version Atomics Version: 3.4.1
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: Intel Extensions Framework enabled
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: Async texture creation enabled
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: D3D11_MAP_WRITE_NO_OVERWRITE for dynamic buffer SRVs is supported
+[2026.01.22-09.05.04:767][  0]LogD3D11RHI: Array index from any shader is supported
+[2026.01.22-09.05.04:780][  0]LogVRS: Current RHI does not support Variable Rate Shading
+[2026.01.22-09.05.04:784][  0]LogCsvProfiler: Display: Metadata set : verbatimrhiname="D3D11"
+[2026.01.22-09.05.04:784][  0]LogCsvProfiler: Display: Metadata set : rhiname="D3D11"
+[2026.01.22-09.05.04:784][  0]LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM5"
+[2026.01.22-09.05.04:784][  0]LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM5"
+[2026.01.22-09.05.04:784][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.01.22-09.05.04:787][  0]LogTurnkeySupport: Running Turnkey SDK detection: ' -ScriptsForProject="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyReport_0.log" -log="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyLog_0.log" -project="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject"  -platform=all'
+[2026.01.22-09.05.04:787][  0]LogMonitoredProcess: Running Serialized UAT: [ cmd.exe /c ""C:/Program Files/Epic Games/UE_5.6/Engine/Build/BatchFiles/RunUAT.bat"  -ScriptsForProject="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyReport_0.log" -log="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyLog_0.log" -project="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject"  -platform=all" ]
+[2026.01.22-09.05.04:803][  0]LogTextureFormatASTC: Display: ASTCEnc version 5.0.1 library loaded
+[2026.01.22-09.05.04:803][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+[2026.01.22-09.05.04:803][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+[2026.01.22-09.05.04:803][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+[2026.01.22-09.05.04:803][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+[2026.01.22-09.05.04:803][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+[2026.01.22-09.05.04:803][  0]LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.13
+[2026.01.22-09.05.04:803][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.13.dll
+[2026.01.22-09.05.04:803][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.5.dll
+[2026.01.22-09.05.04:804][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_OpenXR'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_OpenXRClient'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2026.01.22-09.05.04:846][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2026.01.22-09.05.04:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2026.01.22-09.05.04:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2026.01.22-09.05.04:888][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2026.01.22-09.05.04:889][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxEditor'
+[2026.01.22-09.05.04:889][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2026.01.22-09.05.04:889][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2026.01.22-09.05.04:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2026.01.22-09.05.04:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacEditor'
+[2026.01.22-09.05.04:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2026.01.22-09.05.04:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2026.01.22-09.05.04:925][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2026.01.22-09.05.04:925][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2026.01.22-09.05.04:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2026.01.22-09.05.04:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+[2026.01.22-09.05.04:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2026.01.22-09.05.04:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2026.01.22-09.05.04:946][  0]LogTargetPlatformManager: Display: Building Assets For WindowsEditor
+[2026.01.22-09.05.04:992][  0]LogTargetPlatformManager: Unable to find shader format SF_METAL_ES3_1_IOS from hinted modules, loading all potential format modules to find it
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager: Loaded format module MetalShaderFormat
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_ES3_1_IOS
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_SM5_IOS
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_ES3_1_TVOS
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_SM5_TVOS
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_SM5
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_SM6
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_SIM
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_METAL_ES3_1
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager: Loaded format module ShaderFormatD3D
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   PCD3D_SM6
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   PCD3D_SM5
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   PCD3D_ES31
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager: Loaded format module ShaderFormatOpenGL
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   GLSL_150_ES31
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   GLSL_ES3_1_ANDROID
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager: Loaded format module ShaderFormatVectorVM
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   VVM_1_0
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager: Loaded format module VulkanShaderFormat
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_VULKAN_SM5
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_VULKAN_ES31_ANDROID
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_VULKAN_ES31
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_VULKAN_SM5_ANDROID
+[2026.01.22-09.05.05:000][  0]LogTargetPlatformManager:   SF_VULKAN_SM6
+[2026.01.22-09.05.05:000][  0]LogRendererCore: Ray tracing is disabled. Reason: not supported by current RHI.
+[2026.01.22-09.05.05:003][  0]LogDerivedDataCache: Display: Memory: Max Cache Size: -1 MB
+[2026.01.22-09.05.05:003][  0]LogDerivedDataCache: FDerivedDataBackendGraph: Pak pak cache file ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2026.01.22-09.05.05:003][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchy Hierarchy.
+[2026.01.22-09.05.05:003][  0]LogDerivedDataCache: FDerivedDataBackendGraph: CompressedPak pak cache file ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2026.01.22-09.05.05:003][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchy Hierarchy.
+[2026.01.22-09.05.05:253][  0]LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (1350 MiB)
+[2026.01.22-09.05.05:253][  0]LogDerivedDataCache: FDerivedDataBackendGraph: EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2026.01.22-09.05.05:253][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchy Hierarchy.
+[2026.01.22-09.05.05:254][  0]LogZenServiceInstance: Found Zen config default=C:/Users/User/AppData/Local/UnrealEngine/Common/Zen/Data
+[2026.01.22-09.05.05:254][  0]LogZenServiceInstance: InTree version at 'C:/Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/zenserver.exe' is '5.6.6-202504241958-windows-x64-release-f090a03'
+[2026.01.22-09.05.05:255][  0]LogZenServiceInstance: Installed version at 'C:/Users/User/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe' is '5.6.6-202504241958-windows-x64-release-f090a03'
+[2026.01.22-09.05.05:255][  0]LogZenServiceInstance: No current process using the data dir found, launching a new instance
+[2026.01.22-09.05.05:255][  0]LogZenServiceInstance: Display: Launching executable 'C:/Users/User/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe', working dir 'C:/Users/User/AppData/Local/UnrealEngine/Common/Zen/Install', data dir 'C:/Users/User/AppData/Local/UnrealEngine/Common/Zen/Data', args '--port 8558 --data-dir "C:\Users\User\AppData\Local\UnrealEngine\Common\Zen\Data" --http asio --gc-cache-duration-seconds 1209600 --gc-interval-seconds 21600 --gc-low-diskspace-threshold 2147483648 --quiet --http-forceloopback --owner-pid 2540  --child-id Zen_2540_Startup'
+[2026.01.22-09.05.05:404][  0]LogZenServiceInstance: Display: Unreal Zen Storage Server HTTP service at [::1]:8558 status: OK!.
+[2026.01.22-09.05.05:404][  0]LogZenServiceInstance: Local ZenServer AutoLaunch initialization completed in 0.150 seconds
+[2026.01.22-09.05.05:406][  0]LogDerivedDataCache: Display: ZenLocal: Using ZenServer HTTP service at http://[::1]:8558/ with namespace ue.ddc status: OK!.
+[2026.01.22-09.05.05:415][  0]LogDerivedDataCache: C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Speed tests took 0.01 seconds.
+[2026.01.22-09.05.05:415][  0]LogDerivedDataCache: Display: C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Performance: Latency=0.04ms. RandomReadSpeed=1122.68MBs, RandomWriteSpeed=142.69MBs. Assigned SpeedClass 'Local'
+[2026.01.22-09.05.05:416][  0]LogDerivedDataCache: Local: Using data cache path C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: DeleteOnly
+[2026.01.22-09.05.05:416][  0]LogDerivedDataCache: ZenShared: Disabled because Host is set to 'None'
+[2026.01.22-09.05.05:416][  0]LogDerivedDataCache: Unable to find inner node ZenShared for hierarchy Hierarchy.
+[2026.01.22-09.05.05:418][  0]LogDerivedDataCache: Shared: Disabled because no path is configured.
+[2026.01.22-09.05.05:418][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchy Hierarchy.
+[2026.01.22-09.05.05:418][  0]LogDerivedDataCache: Cloud: Disabled because Host is set to 'None'
+[2026.01.22-09.05.05:418][  0]LogDerivedDataCache: Unable to find inner node Cloud for hierarchy Hierarchy.
+[2026.01.22-09.05.05:418][  0]LogShaderCompilers: Guid format shader working directory is -33 characters bigger than the processId version (../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/Shaders/WorkingDirectory/2540/).
+[2026.01.22-09.05.05:418][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/User/AppData/Local/Temp/UnrealShaderWorkingDir/DEEE05FF414C31C340C5AC92EF7E8625/'.
+[2026.01.22-09.05.05:418][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2026.01.22-09.05.05:418][  0]LogUbaHorde: Display: UBA/Horde Configuration [Uba.Provider.Horde]: Not Enabled
+[2026.01.22-09.05.05:418][  0]LogShaderCompilers: Display: Using 5 local workers for shader compilation
+[2026.01.22-09.05.05:420][  0]LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2026.01.22-09.05.05:421][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.01.22-09.05.06:477][  0]LogTurnkeySupport: Completed SDK detection: ExitCode = 0
+[2026.01.22-09.05.06:943][  0]LogSlate: Using FreeType 2.10.0
+[2026.01.22-09.05.06:943][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.01.22-09.05.06:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png' error.
+[2026.01.22-09.05.06:947][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png] file: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png]
+[2026.01.22-09.05.06:947][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2026.01.22-09.05.06:947][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] file: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png]
+[2026.01.22-09.05.06:966][  0]LogAssetRegistry: FAssetRegistry took 0.0038 seconds to start up
+[2026.01.22-09.05.06:968][  0]LogEditorDomain: Display: EditorDomain is Disabled
+[2026.01.22-09.05.06:993][  0]LogAssetRegistry: Display: AssetDataGatherer spent 0.000s loading caches ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/CachedAssetRegistry_*.bin.
+[2026.01.22-09.05.07:237][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2026.01.22-09.05.07:237][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2026.01.22-09.05.07:270][  0]LogDeviceProfileManager: Active device profile: [000001EB81F00A00][000001EB799D2800 66] WindowsEditor
+[2026.01.22-09.05.07:270][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+[2026.01.22-09.05.07:272][  0]LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.22-09.05.07:274][  0]LogTextureEncodingSettings: Display: Texture Encode Speed: FinalIfAvailable (editor).
+[2026.01.22-09.05.07:274][  0]LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2026.01.22-09.05.07:274][  0]LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2026.01.22-09.05.07:282][  0]LogTurnkeySupport: Turnkey Platform: Win64: (Status=Valid, MinAllowed_Sdk=10.0.19041.0, MaxAllowed_Sdk=10.9.99999.0, Current_Sdk=10.0.22621.0, Allowed_AutoSdk=10.0.22621.0, Current_AutoSdk=, Flags="InstalledSdk_ValidVersionExists, Sdk_HasBestVersion")
+[2026.01.22-09.05.07:284][  0]LogTurnkeySupport: Running Turnkey device detection: ' -ScriptsForProject="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyReport_1.log" -log="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyLog_1.log" -project="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject"  -Device=Win64@MICHY'
+[2026.01.22-09.05.07:284][  0]LogMonitoredProcess: Running Serialized UAT: [ cmd.exe /c ""C:/Program Files/Epic Games/UE_5.6/Engine/Build/BatchFiles/RunUAT.bat"  -ScriptsForProject="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyReport_1.log" -log="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/TurnkeyLog_1.log" -project="C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/AdvancedGameDevPRoj.uproject"  -Device=Win64@MICHY" -nocompile -nocompileuat ]
+[2026.01.22-09.05.07:313][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:313][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness because of a recursive sync load
+[2026.01.22-09.05.07:313][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:313][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:314][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec because of a recursive sync load
+[2026.01.22-09.05.07:314][  0]LogStreaming: Display: Flushing package /Engine/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:314][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:316][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/T_Default_Material_Grid_M because of a recursive sync load
+[2026.01.22-09.05.07:316][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/T_Default_Material_Grid_N because of a recursive sync load
+[2026.01.22-09.05.07:318][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade because of a recursive sync load
+[2026.01.22-09.05.07:319][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:320][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:320][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: WaitingForIo) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:322][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultDiffuse because of a recursive sync load
+[2026.01.22-09.05.07:322][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components because of a recursive sync load
+[2026.01.22-09.05.07:323][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultLightFunctionMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultPostProcessMaterial because of a recursive sync load
+[2026.01.22-09.05.07:323][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultPostProcessMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:360][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultDeferredDecalMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultLightFunctionMaterial because of a recursive sync load
+[2026.01.22-09.05.07:361][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultLightFunctionMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:376][  0]LogStreaming: Display: Package /Engine/EngineMaterials/WorldGridMaterial is adding a dynamic import to package /Engine/EngineMaterials/DefaultDeferredDecalMaterial because of a recursive sync load
+[2026.01.22-09.05.07:376][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/DefaultDeferredDecalMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/WorldGridMaterial (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:389][  0]LogStreaming: Display: Package /Engine/EngineMaterials/DefaultTextMaterialOpaque is adding a dynamic import to package /Engine/EngineMaterials/WorldGridMaterial because of a recursive sync load
+[2026.01.22-09.05.07:389][  0]LogStreaming: Display: Flushing package /Engine/EngineMaterials/WorldGridMaterial (state: DeferredPostLoad) recursively from another package /Engine/EngineMaterials/DefaultTextMaterialOpaque (state: CreateLinkerLoadExports) will result in a partially loaded package to avoid a deadlock.
+[2026.01.22-09.05.07:505][  0]LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+[2026.01.22-09.05.07:505][  0]LogMeshReduction: Display: Using SkeletalMeshReduction for automatic skeletal mesh reduction
+[2026.01.22-09.05.07:505][  0]LogMeshReduction: Display: Using ProxyLODMeshReduction for automatic mesh merging
+[2026.01.22-09.05.07:505][  0]LogMeshReduction: Display: No distributed automatic mesh merging module available
+[2026.01.22-09.05.07:505][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2026.01.22-09.05.07:972][  0]LogConfig: Applying CVar settings from Section [/Script/CQTest.CQTestSettings] File [Engine]
+[2026.01.22-09.05.08:013][  0]LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+[2026.01.22-09.05.08:013][  0]LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2026.01.22-09.05.08:013][  0]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: NetActorFactory name: NetActorFactory id: 0
+[2026.01.22-09.05.08:013][  0]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: NetSubObjectFactory name: NetSubObjectFactory id: 1
+[2026.01.22-09.05.08:016][  0]LogLiveCoding: Display: Starting LiveCoding
+[2026.01.22-09.05.08:016][  0]LogLiveCoding: Display: LiveCodingConsole Arguments: UnrealEditor Win64 Development
+[2026.01.22-09.05.08:018][  0]LogLiveCoding: Display: First instance in process group "UE_AdvancedGameDevPRoj_0xd9de53ca", spawning console
+[2026.01.22-09.05.08:023][  0]LogLiveCoding: Display: Waiting for server
+[2026.01.22-09.05.08:041][  0]LogSlate: Border
+[2026.01.22-09.05.08:042][  0]LogSlate: BreadcrumbButton
+[2026.01.22-09.05.08:042][  0]LogSlate: Brushes.Title
+[2026.01.22-09.05.08:042][  0]LogSlate: ColorPicker.ColorThemes
+[2026.01.22-09.05.08:042][  0]LogSlate: Default
+[2026.01.22-09.05.08:042][  0]LogSlate: Icons.Save
+[2026.01.22-09.05.08:042][  0]LogSlate: Icons.Toolbar.Settings
+[2026.01.22-09.05.08:042][  0]LogSlate: ListView
+[2026.01.22-09.05.08:042][  0]LogSlate: SoftwareCursor_CardinalCross
+[2026.01.22-09.05.08:042][  0]LogSlate: SoftwareCursor_Grab
+[2026.01.22-09.05.08:042][  0]LogSlate: TableView.DarkRow
+[2026.01.22-09.05.08:042][  0]LogSlate: TableView.Row
+[2026.01.22-09.05.08:042][  0]LogSlate: TreeView
+[2026.01.22-09.05.08:150][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+[2026.01.22-09.05.08:153][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 2.977 ms
+[2026.01.22-09.05.08:193][  0]LogInit: XR: Instanced Stereo Rendering is Disabled
+[2026.01.22-09.05.08:193][  0]LogInit: XR: MultiViewport is Disabled
+[2026.01.22-09.05.08:193][  0]LogInit: XR: Mobile Multiview is Disabled
+[2026.01.22-09.05.08:229][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.01.22-09.05.08:341][  0]LogNNERuntimeORT: Available graphics and compute adapters:
+[2026.01.22-09.05.08:341][  0]LogNNERuntimeORT: Selecting NPU adapter: Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT: MakeRuntimeORTDml:
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   DirectML:  yes
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   RHI D3D12: no
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   D3D12:     yes
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   NPU:       yes
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT: Interface availability:
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   GPU: yes
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   RDG: no
+[2026.01.22-09.05.08:416][  0]LogNNERuntimeORT:   NPU: yes
+[2026.01.22-09.05.08:495][  0]LogNNERuntimeORT: Available graphics and compute adapters:
+[2026.01.22-09.05.08:495][  0]LogNNERuntimeORT: Selecting NPU adapter: Intel(R) Iris(R) Xe Graphics
+[2026.01.22-09.05.08:593][  0]LogTurnkeySupport: Completed device detection: Code = 0
+[2026.01.22-09.05.09:067][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 4E90830943914C228000000000008C00 | Instance: 6A764BE64C0B0D2CA3FEA0A8B100CDAC (MICHY-2540).
+[2026.01.22-09.05.09:142][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2026.01.22-09.05.09:146][  0]LogUdpMessaging: Display: Work queue size set to 1024.
+[2026.01.22-09.05.09:146][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2026.01.22-09.05.09:146][  0]LogUdpMessaging: Display: Unicast socket bound to '0.0.0.0:49667'.
+[2026.01.22-09.05.09:150][  0]LogUdpMessaging: Display: Added local interface '172.20.10.3' to multicast group '230.0.0.1:6666'
+[2026.01.22-09.05.09:152][  0]LogUdpMessaging: Display: Using asynchronous task graph for message deserialization.
+[2026.01.22-09.05.09:275][  0]LogMetaSound: Display: MetaSound Page Target Initialized to 'Default'
+[2026.01.22-09.05.09:275][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2026.01.22-09.05.09:298][  0]LogMetaSound: MetaSound Engine Initialized
+[2026.01.22-09.05.09:398][  0]LogChaosVDEditor: [FChaosVDExtensionsManager::RegisterExtension] Registering CVD Extension [FChaosVDGenericDebugDrawExtension] ...
+[2026.01.22-09.05.09:398][  0]LogChaosVDEditor: [FChaosVDExtensionsManager::RegisterExtension] Registering CVD Extension [FChaosVDAccelerationStructuresExtension] ...
+[2026.01.22-09.05.09:406][  0]LogTimingProfiler: Initialize
+[2026.01.22-09.05.09:407][  0]LogTimingProfiler: OnSessionChanged
+[2026.01.22-09.05.09:407][  0]LoadingProfiler: Initialize
+[2026.01.22-09.05.09:407][  0]LoadingProfiler: OnSessionChanged
+[2026.01.22-09.05.09:407][  0]LogNetworkingProfiler: Initialize
+[2026.01.22-09.05.09:407][  0]LogNetworkingProfiler: OnSessionChanged
+[2026.01.22-09.05.09:407][  0]LogMemoryProfiler: Initialize
+[2026.01.22-09.05.09:407][  0]LogMemoryProfiler: OnSessionChanged
+[2026.01.22-09.05.09:429][  0]LogLiveCoding: Display: Successfully initialized, removing startup thread
+[2026.01.22-09.05.09:463][  0]LogConfig: Applying CVar settings from Section [/Script/NNEDenoiser.NNEDenoiserSettings] File [Engine]
+[2026.01.22-09.05.09:662][  0]SourceControl: Revision control is disabled
+[2026.01.22-09.05.09:672][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Common/ButtonHoverHint.png' error.
+[2026.01.22-09.05.09:672][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Content/Slate/Common/ButtonHoverHint.png] file: [../../../Engine/Content/Slate/Common/ButtonHoverHint.png]
+[2026.01.22-09.05.09:672][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Icons/doc_16x.png' error.
+[2026.01.22-09.05.09:672][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Content/Slate/Icons/doc_16x.png] file: [../../../Engine/Content/Slate/Icons/doc_16x.png]
+[2026.01.22-09.05.09:683][  0]SourceControl: Revision control is disabled
+[2026.01.22-09.05.10:044][  0]LogUsd: Attempted to call a static function from UnrealUSDWrapper before the module is actually loaded! The module will be loaded now, but not all static functions have this check. In general, please ensure an Unreal module is loaded before calling any of its static functions, for example by calling 'FModuleManager::LoadModuleChecked<IUnrealUSDWrapperModule>("UnrealUSDWrapper");' beforehand.
+[2026.01.22-09.05.10:132][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.01.22-09.05.10:144][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.01.22-09.05.10:144][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.01.22-09.05.10:216][  0]LogCollectionManager: Loaded 0 collections in 0.002078 seconds
+[2026.01.22-09.05.10:219][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/Collections/' took 0.00s
+[2026.01.22-09.05.10:223][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/Developers/User/Collections/' took 0.00s
+[2026.01.22-09.05.10:226][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/Collections/' took 0.00s
+[2026.01.22-09.05.10:282][  0]LogTurnkeySupport: Turnkey Device: Win64@michy: (Name=michy, Type=Computer, Status=Valid, MinAllowed=10.0.19041.0, MaxAllowed=, Current=10.0.26200.0, Flags="Device_InstallSoftwareValid")
+[2026.01.22-09.05.10:291][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png' error.
+[2026.01.22-09.05.10:291][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png] file: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png]
+[2026.01.22-09.05.10:291][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2026.01.22-09.05.10:291][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] file: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png]
+[2026.01.22-09.05.10:336][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Icons/doc_16x.png' error.
+[2026.01.22-09.05.10:337][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Content/Slate/Icons/doc_16x.png] file: [../../../Engine/Content/Slate/Icons/doc_16x.png]
+[2026.01.22-09.05.10:337][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Slate/Common/ButtonHoverHint.png' error.
+[2026.01.22-09.05.10:337][  0]LogSlate: Could not load file for Slate resource: [../../../Engine/Content/Slate/Common/ButtonHoverHint.png] file: [../../../Engine/Content/Slate/Common/ButtonHoverHint.png]
+[2026.01.22-09.05.10:357][  0]LogEOSSDK: LogEOS: [Boot] EOSSDK Version 1.17.0-41373641 booting at 2026-01-22T09:05:10.357Z using C
+[2026.01.22-09.05.10:358][  0]LogEOSSDK: LogEOS: [Boot] EOSSDK Platform Properties [OS=Windows/10.0.26100.7309.64bit, ClientId=xyza7891REBVsEqSJRRNXmlS7EQHM459, ProductId=86f32f1151354e7cb39c12f8ab2c22a3, SandboxId=a01927f7421a4d4995673fe30ef46945, DeploymentId=a652a72ea1664dcab3a467891eea5f30, ProductName=AdvancedGameDevPRoj, ProductVersion=++UE5+Release-5.6-CL-44394996, IsServer=false, Flags=DisableOverlay]
+[2026.01.22-09.05.10:358][  0]LogEOSSDK: LogEOSAnalytics: Start Session (User: ...)
+[2026.01.22-09.05.10:358][  0]LogEOSSDK: LogEOSOverlay: Overlay will not load, because it was explicitly disabled when creating the platform
+[2026.01.22-09.05.10:364][  0]LogEOSSDK: LogEOSAntiCheat: [AntiCheatClient] Anti-cheat client not available. Verify that the game was started using the anti-cheat bootstrapper if you intend to use it.
+[2026.01.22-09.05.10:365][  0]LogEOSSDK: LogEOS: SetApplicationStatus - OldStatus: EOS_AS_Foreground, NewStatus: EOS_AS_Foreground, Current Time: 0001.01.01-00.00.00
+[2026.01.22-09.05.10:365][  0]LogEOSSDK: LogEOS: SetNetworkStatus - OldStatus: EOS_NS_Online, NewStatus: EOS_NS_Online
+[2026.01.22-09.05.10:365][  0]LogEOSSDK: LogEOS: Updating Platform SDK Config, Time: 0.000068
+[2026.01.22-09.05.10:399][  0]LogFabLauncher: Display: FabLauncher (version 0.5.0) active
+[2026.01.22-09.05.10:433][  0]LogUObjectArray: 43627 objects as part of root set at end of initial load.
+[2026.01.22-09.05.10:433][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2026.01.22-09.05.10:586][  0]LogEngine: Initializing Engine...
+[2026.01.22-09.05.10:704][  0]LogStylusInput: Initializing StylusInput subsystem.
+[2026.01.22-09.05.10:704][  0]LogTedsSettings: UTedsSettingsEditorSubsystem::Initialize
+[2026.01.22-09.05.10:938][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.11.dll
+[2026.01.22-09.05.10:961][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.12.dll
+[2026.01.22-09.05.10:980][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.01.22-09.05.11:004][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.01.22-09.05.11:004][  0]LogInit: Texture streaming: Enabled
+[2026.01.22-09.05.11:016][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::StartSession ( APIServer = https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data. AppVersion = 5.6.1-44394996+++UE5+Release-5.6 )
+[2026.01.22-09.05.11:022][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.01.22-09.05.11:038][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.01.22-09.05.11:039][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.01.22-09.05.11:040][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.01.22-09.05.11:040][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.01.22-09.05.11:040][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.01.22-09.05.11:040][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.01.22-09.05.11:041][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.01.22-09.05.11:041][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.01.22-09.05.11:041][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.01.22-09.05.11:052][  0]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.01.22-09.05.11:244][  0]LogAudioMixer: Display: Using Audio Hardware Device Headphones (JBL Tune 777NC)
+[2026.01.22-09.05.11:245][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.01.22-09.05.11:247][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.01.22-09.05.11:247][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.01.22-09.05.11:249][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2026.01.22-09.05.11:249][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2026.01.22-09.05.11:253][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2026.01.22-09.05.11:253][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=1
+[2026.01.22-09.05.11:253][  0]LogInit: FAudioDevice initialized with ID 1.
+[2026.01.22-09.05.11:254][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2026.01.22-09.05.11:254][  0]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 1
+[2026.01.22-09.05.11:268][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.01.22-09.05.11:277][  0]LogInit: Undo buffer set to 256 MB
+[2026.01.22-09.05.11:277][  0]LogInit: Transaction tracking system initialized
+[2026.01.22-09.05.11:301][  0]LogSourceControl: Display: Uncontrolled Changelist persistency file loaded ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/SourceControl/UncontrolledChangelists.json
+[2026.01.22-09.05.11:384][  0]LocalizationService: Localization service is disabled
+[2026.01.22-09.05.11:760][  0]LogNNEDenoiser: Ray Tracing is not enabled, therefore NNEDenoiser is not registered!
+[2026.01.22-09.05.11:762][  0]LogFileCache: Scanning file cache for directory 'C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/' took 0.11s
+[2026.01.22-09.05.11:775][  0]LogPython: Python enabled via CVar 'Engine.Python.IsEnabledByDefault'
+[2026.01.22-09.05.11:776][  0]LogPython: Using Python 3.11.8
+[2026.01.22-09.05.11:845][  0]LogPython: Display: No pip-enabled plugins with python dependencies found, skipping
+[2026.01.22-09.05.12:861][  0]LogLevelSequenceEditor: LevelSequenceEditor subsystem initialized.
+[2026.01.22-09.05.12:902][  0]LogEditorDataStorage: Initializing
+[2026.01.22-09.05.12:906][  0]LogEditorDataStorage: Initialized
+[2026.01.22-09.05.12:912][  0]LogCore: Display: GameplayInsights module auto-connecting to local trace server...
+[2026.01.22-09.05.12:916][  0]LogAssetRegistry: Display: Triggering cache save on discovery complete
+[2026.01.22-09.05.13:039][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.01.22-09.05.13:043][  0]SourceControl: Revision control is disabled
+[2026.01.22-09.05.13:043][  0]LogUnrealEdMisc: Loading editor; pre map load, took 10.271
+[2026.01.22-09.05.13:048][  0]Cmd: MAP LOAD FILE="../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level2_OutdoorWash.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2026.01.22-09.05.13:050][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.01.22-09.05.13:050][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.05.13:073][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.01.22-09.05.13:077][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2026.01.22-09.05.13:557][  0]LogBlueprint: Error: [AssetLog] C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Content\FirstPerson\Blueprints\BP_FirstPersonCharacter.uasset: [Compiler] Internal Compiler Error: Tried to create a property WashTool in scope SKEL_BP_FirstPersonCharacter_C, but another object (ObjectProperty /Script/AdvancedGameDevPRoj.AdvancedGameDevPRojCharacter:WashTool) already exists there.
+[2026.01.22-09.05.13:559][  0]LogBlueprint: Error: [AssetLog] C:\Users\User\Desktop\adv game prog\CarWash\AdvancedGameDevPRoj\Content\FirstPerson\Blueprints\BP_FirstPersonCharacter.uasset: [Compiler] Internal Compiler Error: Tried to create a property WashTool in scope BP_FirstPersonCharacter_C, but another object (ObjectProperty /Script/AdvancedGameDevPRoj.AdvancedGameDevPRojCharacter:WashTool) already exists there.
+[2026.01.22-09.05.14:183][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Level2_OutdoorWash'.
+[2026.01.22-09.05.14:183][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world Level2_OutdoorWash
+[2026.01.22-09.05.14:223][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.01.22-09.05.14:257][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2026.01.22-09.05.14:258][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.01.22-09.05.14:258][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.17ms to complete.
+[2026.01.22-09.05.14:281][  0]LogUnrealEdMisc: Total Editor Startup Time, took 11.509
+[2026.01.22-09.05.14:317][  0]LogAssetRegistry: Display: Asset registry cache written as 72.3 MiB to ../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Intermediate/CachedAssetRegistry_*.bin
+[2026.01.22-09.05.14:430][  0]LogPlacementMode: Display: The Asset Registry is not yet fully loaded so some placeable classes might be missing.
+[2026.01.22-09.05.14:804][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.05.15:001][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.05.15:215][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.05.15:423][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.05.15:476][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:476][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/StarterContent.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:477][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:477][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_FirstPerson.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:477][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:478][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_FirstPersonBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:479][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:480][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_HandheldARBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:481][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:481][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_ThirdPerson.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:482][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:482][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_ThirdPersonBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:482][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:483][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_TopDown.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:485][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:485][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_TopDownBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:486][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:487][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_VehicleAdvBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.15:487][  0]LogPakFile: Initializing PakPlatformFile
+[2026.01.22-09.05.15:488][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.6/FeaturePacks/TP_VirtualRealityBP.upack', mount point: 'root:/'
+[2026.01.22-09.05.16:027][  0]LogSlate: Took 0.000214 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2026.01.22-09.05.16:423][  0]LogSlate: Took 0.000269 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.01.22-09.05.16:429][  0]LogSlate: Took 0.000329 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2026.01.22-09.05.16:432][  0]LogSlate: Took 0.000249 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2026.01.22-09.05.16:514][  0]LogSlate: Took 0.000240 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2026.01.22-09.05.16:587][  0]LogStall: Startup...
+[2026.01.22-09.05.16:591][  0]LogStall: Startup complete.
+[2026.01.22-09.05.16:612][  0]LogLoad: (Engine Initialization) Total time: 13.84 seconds
+[2026.01.22-09.05.17:002][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2026.01.22-09.05.17:002][  0]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+[2026.01.22-09.05.17:150][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.05.17:152][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/UE_5.6/Engine/Plugins/Importers/USDImporter/Content/Python/init_unreal.py... started...
+[2026.01.22-09.05.17:152][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/UE_5.6/Engine/Plugins/Importers/USDImporter/Content/Python/init_unreal.py... took 287 us
+[2026.01.22-09.05.17:152][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/UE_5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... started...
+[2026.01.22-09.05.17:190][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+
+[2026.01.22-09.05.17:199][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/UE_5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... took 46.763 ms (total: 47.050 ms)
+[2026.01.22-09.05.17:199][  0]LogLiveCoding: Display: LiveCodingConsole Arguments: AdvancedGameDevPRojEditor Win64 Development
+[2026.01.22-09.05.17:547][  1]LogAssetRegistry: AssetRegistryGather time 0.1402s: AssetDataDiscovery 0.0163s, AssetDataGather 0.0272s, StoreResults 0.0968s. Wall time 10.5840s.
+	NumCachedDirectories 2123. NumUncachedDirectories 21. NumCachedFiles 8361. NumUncachedFiles 1.
+	BackgroundTickInterruptions 0.
+[2026.01.22-09.05.17:607][  1]LogPlacementMode: Display: The Asset Registry is done with its initial scan, the list of placeable classes has been updated.
+[2026.01.22-09.05.17:619][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000000 seconds (updated 0 objects)
+[2026.01.22-09.05.17:619][  1]LogSourceControl: Uncontrolled asset discovery started...
+[2026.01.22-09.05.17:824][  2]LogEOSSDK: LogEOS: SDK Config Platform Update Request Successful, Time: 7.374919
+[2026.01.22-09.05.17:828][  2]LogEOSSDK: LogEOSAnalytics: EOS SDK Analytics disabled for route [1].
+[2026.01.22-09.05.17:830][  2]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 7.459981
+[2026.01.22-09.05.17:912][  3]LogSlate: Took 0.000358 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.01.22-09.05.18:701][  6]LogSourceControl: Uncontrolled asset discovery finished in 1.081243 seconds (Found 8338 uncontrolled assets)
+[2026.01.22-09.05.19:228][  7]LogEOSSDK: LogEOSAnalytics: Start Session (User: ...)
+[2026.01.22-09.05.19:894][  9]LogEOSSDK: LogEOS: SDK Config Product Update Request Successful, Time: 9.197565
+[2026.01.22-09.05.19:899][  9]LogEOSSDK: LogEOS: SDK Config Data - Watermark: 1164040915
+[2026.01.22-09.05.19:899][  9]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 9.197565, Update Interval: 325.985291
+[2026.01.22-09.05.37:931][245]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2026.01.22-09.05.37:932][245]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2026.01.22-09.05.37:932][245]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2026.01.22-09.05.37:941][245]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 8.868ms to complete.
+[2026.01.22-09.05.37:941][245]LogEditorBuildUtils: Build time 0:00
+[2026.01.22-09.05.39:798][305]LogUObjectHash: Compacting FUObjectHashTables data took   0.71ms
+[2026.01.22-09.05.40:953][305]LogSlate: Window 'Save Content' being destroyed
+[2026.01.22-09.05.40:974][305]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.01.22-09.05.41:107][305]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2026.01.22-09.05.41:320][305]LogSavePackage: Moving output files for package: /Game/CarWashBox/Maps/Level2_OutdoorWash
+[2026.01.22-09.05.41:321][305]LogSavePackage: Moving '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/Level2_OutdoorWashAFE455274ABA3DE602DB77BB5225753C.tmp' to '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level2_OutdoorWash.umap'
+[2026.01.22-09.05.41:346][305]LogFileHelpers: Saving map 'Level2_OutdoorWash' took 0.306
+[2026.01.22-09.05.41:437][305]LogFileHelpers: InternalPromptForCheckoutAndSave took 461.866 ms
+[2026.01.22-09.05.41:437][305]LogStreaming: Display: FlushAsyncLoading(330): 1 QueuedPackages, 0 AsyncPackages
+[2026.01.22-09.05.41:474][305]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2026.01.22-09.05.41:480][305]LogAssetEditorSubsystem: Opening Asset editor for World /Game/CarWashBox/Maps/Level1.Level1
+[2026.01.22-09.05.41:480][305]Cmd: MAP LOAD FILE="../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2026.01.22-09.05.41:535][305]LogWorld: UWorld::CleanupWorld for Level2_OutdoorWash, bSessionEnded=true, bCleanupResources=true
+[2026.01.22-09.05.41:535][305]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.05.41:558][305]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.01.22-09.05.41:568][305]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2026.01.22-09.05.41:572][305]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2026.01.22-09.05.41:573][305]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.05.41:592][305]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2026.01.22-09.05.41:614][305]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2026.01.22-09.05.41:626][305]LogAudio: Display: Audio Device (ID: 1) registered with world 'Level1'.
+[2026.01.22-09.05.41:626][305]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2026.01.22-09.05.41:732][305]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.01.22-09.05.41:732][305]LogNavigation: Warning: Recreating dtNavMesh instance RecastNavMesh-BacteriaAgent due to saved navmesh origin (X=-2280.000 Y=-1070.000 Z=190.000, usually the RecastNavMesh location) not being aligned with tile size (988 uu) 
+[2026.01.22-09.05.41:766][305]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2026.01.22-09.05.41:787][305]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.01.22-09.05.41:787][305]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.099ms to complete.
+[2026.01.22-09.05.41:893][305]LogContentValidation: Display: Starting to validate 1 assets
+[2026.01.22-09.05.41:893][305]LogContentValidation: Enabled validators:
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.01.22-09.05.41:893][305]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.01.22-09.05.44:113][399]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2026.01.22-09.05.44:113][399]LogNavigationDataBuild: Display:    RebuildAll building NavData:  Name BacteriaAgent class /Script/NavigationSystem.RecastNavMesh agent radius 60.0.
+[2026.01.22-09.05.44:113][399]LogNavigationDataBuild: Display:    ANavigationData::RebuildAll load time: 0.00s
+[2026.01.22-09.05.44:131][399]LogNavigationDataBuild: Display:    FRecastNavMeshGenerator::ProcessTileTasksAndGetUpdatedTiles build time: 0.02s
+[2026.01.22-09.05.44:131][399]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.02s
+[2026.01.22-09.05.44:131][399]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2026.01.22-09.05.44:135][399]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 3.888ms to complete.
+[2026.01.22-09.05.44:135][399]LogEditorBuildUtils: Build time 0:00
+[2026.01.22-09.05.53:193][680]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2026.01.22-09.06.01:747][952]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2026.01.22-09.07.05:418][504]LogDerivedDataCache: C:/Users/User/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.01.22-09.08.48:363][663]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2026.01.22-09.08.48:363][663]LogNavigationDataBuild: Display:    RebuildAll building NavData:  Name BacteriaAgent class /Script/NavigationSystem.RecastNavMesh agent radius 60.0.
+[2026.01.22-09.08.48:363][663]LogNavigationDataBuild: Display:    ANavigationData::RebuildAll load time: 0.00s
+[2026.01.22-09.08.48:380][663]LogNavigationDataBuild: Display:    FRecastNavMeshGenerator::ProcessTileTasksAndGetUpdatedTiles build time: 0.02s
+[2026.01.22-09.08.48:380][663]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.02s
+[2026.01.22-09.08.48:380][663]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2026.01.22-09.08.48:383][663]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 3.829ms to complete.
+[2026.01.22-09.08.48:383][663]LogEditorBuildUtils: Build time 0:00
+[2026.01.22-09.09.46:727][  0]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.01.22-09.09.46:908][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2026.01.22-09.09.46:955][  0]LogSavePackage: Moving output files for package: /Game/CarWashBox/Maps/Level1
+[2026.01.22-09.09.46:956][  0]LogSavePackage: Moving '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/Level145849155472B5E0F5FE516A57DEAB6F0.tmp' to '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level1.umap'
+[2026.01.22-09.09.46:976][  0]LogFileHelpers: Saving map 'Level1' took 0.137
+[2026.01.22-09.09.46:998][  0]LogFileHelpers: InternalPromptForCheckoutAndSave took 271.929 ms (total: 733.795 ms)
+[2026.01.22-09.09.47:078][  0]LogContentValidation: Display: Starting to validate 1 assets
+[2026.01.22-09.09.47:078][  0]LogContentValidation: Enabled validators:
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.01.22-09.09.47:078][  0]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.01.22-09.09.47:078][  0]AssetCheck: /Game/CarWashBox/Maps/Level1 Validating asset
+[2026.01.22-09.09.48:492][ 53]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.01.22-09.09.48:517][ 53]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.01.22-09.09.48:517][ 53]BlueprintLog: Warning: Blueprint failed to compile:  BP_FirstPersonCharacter
+[2026.01.22-09.09.50:421][ 53]LogSlate: Window 'Blueprint Compilation Errors' being destroyed
+[2026.01.22-09.09.50:502][ 53]LogOnline: OSS: Created online subsystem instance for: NULL
+[2026.01.22-09.09.50:502][ 53]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2026.01.22-09.09.50:506][ 53]LogPlayLevel: Creating play world package: /Game/CarWashBox/Maps/UEDPIE_0_Level1
+[2026.01.22-09.09.50:524][ 53]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017922s)
+[2026.01.22-09.09.50:524][ 53]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CarWashBox/Maps/Level1.Level1 to /Game/CarWashBox/Maps/UEDPIE_0_Level1.Level1 (0.018175s)
+[2026.01.22-09.09.50:543][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2026.01.22-09.09.50:547][ 53]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2026.01.22-09.09.50:553][ 53]LogPlayLevel: PIE: World Init took: (0.006198s)
+[2026.01.22-09.09.50:556][ 53]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.01.22-09.09.50:556][ 53]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.01.22-09.09.50:556][ 53]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.01.22-09.09.50:556][ 53]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.01.22-09.09.50:556][ 53]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.01.22-09.09.50:556][ 53]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.01.22-09.09.50:559][ 53]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.01.22-09.09.50:660][ 53]LogAudioMixer: Display: Using Audio Hardware Device Headphones (JBL Tune 777NC)
+[2026.01.22-09.09.50:660][ 53]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.01.22-09.09.50:660][ 53]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.01.22-09.09.50:660][ 53]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.01.22-09.09.50:661][ 53]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2026.01.22-09.09.50:661][ 53]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2026.01.22-09.09.50:664][ 53]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2026.01.22-09.09.50:664][ 53]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2026.01.22-09.09.50:664][ 53]LogInit: FAudioDevice initialized with ID 2.
+[2026.01.22-09.09.50:664][ 53]LogAudio: Display: Audio Device (ID: 2) registered with world 'Level1'.
+[2026.01.22-09.09.50:664][ 53]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2026.01.22-09.09.50:679][ 53]LogLoad: Game class is 'BP_FirstPersonGameMode_C'
+[2026.01.22-09.09.50:685][ 53]LogWorld: Bringing World /Game/CarWashBox/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 60) at 2026.01.22-10.09.50
+[2026.01.22-09.09.50:708][ 53]LogWorld: Bringing up level for play took: 0.028170
+[2026.01.22-09.09.50:712][ 53]LogOnline: OSS: Created online subsystem instance for: :Context_3
+[2026.01.22-09.09.50:797][ 53]PIE: Server logged in
+[2026.01.22-09.09.50:801][ 53]PIE: Play in editor total start time 2.292 seconds.
+[2026.01.22-09.09.50:812][ 53]LogTemp: Warning: AI: Dist=1711.8 State=0
+[2026.01.22-09.09.50:812][ 53]LogTemp: Warning: AI: DoPatrol called
+[2026.01.22-09.09.50:812][ 53]LogTemp: Warning: AI: GetRandomPatrolPoint called
+[2026.01.22-09.09.50:814][ 53]LogTemp: Error: GetRandomPatrolPoint failed
+[2026.01.22-09.09.50:905][ 54]LogTemp: Warning: AI: Dist=1711.8 State=0
+[2026.01.22-09.09.50:982][ 55]LogTemp: Warning: AI: Dist=1702.7 State=0
+[2026.01.22-09.09.51:066][ 56]LogTemp: Warning: AI: Dist=1700.2 State=0
+[2026.01.22-09.09.51:116][ 57]LogTemp: Warning: AI: Dist=1698.1 State=0
+[2026.01.22-09.09.51:164][ 58]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:202][ 59]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:237][ 60]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:256][ 61]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:306][ 62]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:323][ 63]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:368][ 64]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:385][ 65]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:434][ 66]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:451][ 67]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:499][ 68]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:532][ 69]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:564][ 70]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:594][ 71]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:612][ 72]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:672][ 73]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:685][ 74]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:730][ 75]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:747][ 76]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:795][ 77]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:812][ 78]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:861][ 79]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:877][ 80]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:924][ 81]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:942][ 82]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.51:989][ 83]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:005][ 84]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:053][ 85]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:071][ 86]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:120][ 87]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:136][ 88]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:182][ 89]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:199][ 90]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:247][ 91]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:264][ 92]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:311][ 93]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:328][ 94]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:376][ 95]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:392][ 96]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:438][ 97]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:456][ 98]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:502][ 99]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:533][100]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:565][101]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:597][102]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:631][103]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:662][104]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:694][105]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:727][106]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:759][107]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:791][108]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:822][109]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:853][110]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:885][111]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:915][112]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:946][113]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.52:977][114]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:007][115]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:024][116]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:044][117]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:076][118]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:106][119]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:136][120]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:169][121]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:200][122]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:233][123]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:265][124]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:295][125]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:328][126]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:358][127]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:390][128]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:423][129]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:455][130]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:488][131]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:520][132]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:551][133]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:582][134]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:613][135]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:646][136]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:675][137]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:708][138]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:738][139]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:770][140]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:803][141]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:835][142]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:866][143]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:899][144]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:929][145]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:962][146]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.53:993][147]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:025][148]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:057][149]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:088][150]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:122][151]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:152][152]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:185][153]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:215][154]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:248][155]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:278][156]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:310][157]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:342][158]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:373][159]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:403][160]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:437][161]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:467][162]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:498][163]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:528][164]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:557][165]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:586][166]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:615][167]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:644][168]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:673][169]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:702][170]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:735][171]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:764][172]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:794][173]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:825][174]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:856][175]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:887][176]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:916][177]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:946][178]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.54:976][179]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:006][180]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:037][181]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:068][182]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:098][183]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:129][184]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:159][185]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:188][186]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:217][187]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:248][188]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:277][189]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:306][190]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:337][191]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:364][192]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:395][193]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:424][194]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:453][195]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:483][196]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:514][197]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:543][198]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:571][199]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:602][200]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:629][201]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:658][202]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:687][203]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:715][204]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:743][205]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:771][206]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:799][207]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:826][208]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:853][209]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:881][210]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:910][211]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:936][212]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:962][213]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.55:989][214]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:017][215]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:048][216]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:073][217]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:100][218]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:128][219]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:157][220]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:183][221]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:211][222]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:237][223]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:262][224]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:290][225]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:318][226]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:344][227]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:370][228]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:397][229]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:424][230]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:451][231]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:475][232]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:501][233]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:527][234]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:553][235]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:577][236]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:604][237]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:630][238]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:654][239]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:681][240]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:708][241]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:733][242]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:758][243]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:782][244]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:809][245]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:834][246]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:859][247]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:883][248]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:910][249]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:936][250]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:959][251]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.56:983][252]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:008][253]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:033][254]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:059][255]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:082][256]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:107][257]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:132][258]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:156][259]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:180][260]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:204][261]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:230][262]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:253][263]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:278][264]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:302][265]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:326][266]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:350][267]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:374][268]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:398][269]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:422][270]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:448][271]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:472][272]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:497][273]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:523][274]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:547][275]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:572][276]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:595][277]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:620][278]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:645][279]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:669][280]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:693][281]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:720][282]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:744][283]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:769][284]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:794][285]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:819][286]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:845][287]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:870][288]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:893][289]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:920][290]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:944][291]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:970][292]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.57:996][293]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:020][294]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:045][295]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:071][296]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:096][297]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:122][298]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:147][299]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:172][300]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:198][301]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:222][302]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:246][303]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:272][304]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:297][305]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:322][306]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:347][307]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:371][308]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:396][309]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:421][310]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:446][311]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:472][312]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:498][313]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:523][314]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:547][315]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:572][316]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:597][317]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:623][318]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:648][319]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:672][320]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:697][321]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:722][322]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:746][323]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:771][324]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:795][325]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:820][326]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:843][327]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:869][328]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:895][329]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:918][330]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:943][331]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:969][332]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.58:992][333]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:017][334]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:042][335]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:071][336]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:091][337]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:116][338]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:141][339]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:165][340]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:190][341]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:215][342]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:239][343]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:263][344]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:289][345]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:312][346]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:338][347]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:361][348]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:386][349]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:411][350]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:436][351]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:461][352]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:486][353]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:511][354]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:536][355]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:562][356]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:586][357]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:611][358]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:635][359]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:659][360]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:683][361]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:707][362]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:731][363]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:756][364]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:781][365]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:804][366]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:830][367]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:856][368]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:879][369]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:903][370]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:928][371]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:952][372]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.09.59:978][373]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:002][374]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:028][375]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:051][376]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:077][377]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:101][378]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:126][379]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:150][380]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:174][381]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:199][382]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:223][383]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:247][384]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:271][385]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:296][386]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:320][387]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:345][388]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:369][389]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:394][390]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:418][391]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:443][392]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:466][393]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:492][394]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:516][395]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:541][396]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:565][397]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:590][398]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:614][399]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:639][400]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:663][401]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:687][402]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:711][403]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:736][404]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:761][405]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:785][406]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:810][407]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:834][408]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:860][409]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:885][410]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:909][411]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:935][412]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:960][413]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.00:983][414]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:009][415]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:034][416]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:060][417]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:089][418]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:110][419]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:135][420]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:162][421]LogTemp: Warning: AI: Dist=1697.8 State=0
+[2026.01.22-09.10.01:203][421]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.10.01:203][421]LogWorld: BeginTearingDown for /Game/CarWashBox/Maps/UEDPIE_0_Level1
+[2026.01.22-09.10.01:205][421]LogWorld: UWorld::CleanupWorld for Level1, bSessionEnded=true, bCleanupResources=true
+[2026.01.22-09.10.01:207][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.10.01:214][421]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.01.22-09.10.01:220][421]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.01.22-09.10.01:249][421]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.01.22-09.10.01:249][421]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2026.01.22-09.10.01:250][421]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2, StreamState=4
+[2026.01.22-09.10.01:253][421]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2, StreamState=2
+[2026.01.22-09.10.01:264][421]LogUObjectHash: Compacting FUObjectHashTables data took   1.07ms
+[2026.01.22-09.10.01:381][422]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2026.01.22-09.10.46:111][227]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 335.746124
+[2026.01.22-09.10.47:111][230]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.01.22-09.10.47:111][230]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 336.412445, Update Interval: 317.509094
+[2026.01.22-09.11.31:198][110]Cmd: TRANSACTION UNDO
+[2026.01.22-09.11.31:200][110]LogEditorTransaction: Undo Move Elements
+[2026.01.22-09.11.43:366][358]Cmd: TRANSACTION UNDO
+[2026.01.22-09.11.43:367][358]LogEditorTransaction: Undo Set Scale
+[2026.01.22-09.11.43:835][362]Cmd: TRANSACTION UNDO
+[2026.01.22-09.11.43:835][362]LogEditorTransaction: Undo Set Scale
+[2026.01.22-09.11.44:654][379]Cmd: TRANSACTION UNDO
+[2026.01.22-09.11.44:654][379]LogEditorTransaction: Undo Set Scale
+[2026.01.22-09.12.28:452][504]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2026.01.22-09.12.28:452][504]LogNavigationDataBuild: Display:    RebuildAll building NavData:  Name BacteriaAgent class /Script/NavigationSystem.RecastNavMesh agent radius 60.0.
+[2026.01.22-09.12.28:452][504]LogNavigationDataBuild: Display:    ANavigationData::RebuildAll load time: 0.00s
+[2026.01.22-09.12.28:486][504]LogNavigationDataBuild: Display:    FRecastNavMeshGenerator::ProcessTileTasksAndGetUpdatedTiles build time: 0.03s
+[2026.01.22-09.12.28:486][504]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.03s
+[2026.01.22-09.12.28:486][504]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2026.01.22-09.12.28:490][504]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 3.181ms to complete.
+[2026.01.22-09.12.28:490][504]LogEditorBuildUtils: Build time 0:00
+[2026.01.22-09.12.29:624][531]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.01.22-09.12.29:832][531]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2026.01.22-09.12.29:900][531]LogSavePackage: Moving output files for package: /Game/CarWashBox/Maps/Level1
+[2026.01.22-09.12.29:901][531]LogSavePackage: Moving '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/Level11EF52B3B4171ABF7CE4D029D19F6E49A.tmp' to '../../../../../../Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Content/CarWashBox/Maps/Level1.umap'
+[2026.01.22-09.12.29:932][531]LogFileHelpers: Saving map 'Level1' took 0.191
+[2026.01.22-09.12.29:967][531]LogFileHelpers: InternalPromptForCheckoutAndSave took 342.862 ms (total: 1.07 sec)
+[2026.01.22-09.12.30:039][531]LogContentValidation: Display: Starting to validate 1 assets
+[2026.01.22-09.12.30:039][531]LogContentValidation: Enabled validators:
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.01.22-09.12.30:039][531]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.01.22-09.12.30:040][531]AssetCheck: /Game/CarWashBox/Maps/Level1 Validating asset
+[2026.01.22-09.12.31:257][564]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.01.22-09.12.31:274][564]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.01.22-09.12.31:275][564]LogPlayLevel: Creating play world package: /Game/CarWashBox/Maps/UEDPIE_0_Level1
+[2026.01.22-09.12.31:294][564]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018975s)
+[2026.01.22-09.12.31:294][564]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/CarWashBox/Maps/Level1.Level1 to /Game/CarWashBox/Maps/UEDPIE_0_Level1.Level1 (0.019049s)
+[2026.01.22-09.12.31:324][564]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2026.01.22-09.12.31:326][564]LogChaosDD: Creating Chaos Debug Draw Scene for world Level1
+[2026.01.22-09.12.31:330][564]LogPlayLevel: PIE: World Init took: (0.004601s)
+[2026.01.22-09.12.31:332][564]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.01.22-09.12.31:332][564]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.01.22-09.12.31:332][564]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.01.22-09.12.31:333][564]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.01.22-09.12.31:333][564]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.01.22-09.12.31:333][564]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.01.22-09.12.31:337][564]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.01.22-09.12.31:502][564]LogAudioMixer: Display: Using Audio Hardware Device Headphones (JBL Tune 777NC)
+[2026.01.22-09.12.31:502][564]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.01.22-09.12.31:502][564]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.01.22-09.12.31:502][564]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.01.22-09.12.31:503][564]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2026.01.22-09.12.31:503][564]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2026.01.22-09.12.31:508][564]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2026.01.22-09.12.31:508][564]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2026.01.22-09.12.31:508][564]LogInit: FAudioDevice initialized with ID 3.
+[2026.01.22-09.12.31:509][564]LogAudio: Display: Audio Device (ID: 3) registered with world 'Level1'.
+[2026.01.22-09.12.31:509][564]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2026.01.22-09.12.31:516][564]LogLoad: Game class is 'BP_FirstPersonGameMode_C'
+[2026.01.22-09.12.31:525][564]LogWorld: Bringing World /Game/CarWashBox/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 60) at 2026.01.22-10.12.31
+[2026.01.22-09.12.31:526][564]LogWorld: Bringing up level for play took: 0.009821
+[2026.01.22-09.12.31:532][564]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2026.01.22-09.12.31:553][564]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=-2378.905 Y=-2646.911 Z=326.925] for [BP_FirstPersonCharacter_C]
+[2026.01.22-09.12.31:554][564]LogGameMode: Warning: SpawnDefaultPawnAtTransform: Couldn't spawn Pawn of type BP_FirstPersonCharacter_C at Rotation: Pitch 0.000000 Yaw 95.714344 Roll 0.000000
+Translation: -2378.904927 -2646.910535 326.925069
+Scale3D: 1.000000 1.000000 1.000000
+
+[2026.01.22-09.12.31:558][564]PIE: Server logged in
+[2026.01.22-09.12.31:563][564]PIE: Play in editor total start time 0.288 seconds.
+[2026.01.22-09.12.31:566][564]LogTemp: Warning: AI: DoPatrol called
+[2026.01.22-09.12.31:566][564]LogTemp: Warning: AI: GetRandomPatrolPoint called
+[2026.01.22-09.12.31:566][564]LogTemp: Error: GetRandomPatrolPoint failed
+[2026.01.22-09.12.31:567][564]LogTemp: Error: AttackPlayer: Player cast failed (not AAdvancedGameDevPRojCharacter)

@@ -17,6 +17,15 @@ void ABacteriaAIController::OnPossess(APawn* InPawn)
 	Enemy = Cast<ABacteriaEnemyCharacter>(InPawn);
 	SpawnPoint = InPawn ? InPawn->GetActorLocation() : FVector::ZeroVector;
 
+	//if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
+	//{
+	//	FNavLocation Projected;
+	//	if (NavSys->ProjectPointToNavigation(SpawnPoint, Projected))
+	//	{
+	//		SpawnPoint = Projected.Location;
+	//	}
+	//}
+
 	Player = UGameplayStatics::GetPlayerCharacter(this, 0);
 
 	State = EBacteriaAIState::Patrol;
@@ -63,29 +72,43 @@ void ABacteriaAIController::Tick(float DeltaSeconds)
 
 void ABacteriaAIController::UpdateState()
 {
-	if (!Player.IsValid() || !Enemy.IsValid())
+	// Always validate weak pointers before using them
+	if (!Enemy.IsValid())
 	{
+		State = EBacteriaAIState::Patrol;
 		return;
 	}
 
-	const float DistanceToPlayer = FVector::Dist(Player->GetActorLocation(), Enemy->GetActorLocation());
+	ACharacter* PlayerChar = Player.Get();
+	if (!IsValid(PlayerChar))
+	{
+		PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
+		Player = PlayerChar;
+	}
 
-	if (DistanceToPlayer <= AttackRange)
-	{
-		State = EBacteriaAIState::Attack;
-	}
-	else if (DistanceToPlayer <= ChaseRange)
-	{
-		State = EBacteriaAIState::Chase;
-	}
-	else
+	if (!IsValid(PlayerChar))
 	{
 		State = EBacteriaAIState::Patrol;
+		return;
 	}
+
+	const float DistanceToPlayer = FVector::Dist(
+		PlayerChar->GetActorLocation(),
+		Enemy->GetActorLocation()
+	);
+
+	UE_LOG(LogTemp, Warning, TEXT("AI: Dist=%.1f State=%d"), DistanceToPlayer, (int32)State);
+
+	if (DistanceToPlayer <= AttackRange) State = EBacteriaAIState::Attack;
+	else if (DistanceToPlayer <= ChaseRange) State = EBacteriaAIState::Chase;
+	else State = EBacteriaAIState::Patrol;
 }
+
 
 void ABacteriaAIController::DoPatrol()
 {
+	UE_LOG(LogTemp, Warning, TEXT("AI: DoPatrol called"));
+
 	if (!Enemy.IsValid())
 	{
 		return;
@@ -94,7 +117,13 @@ void ABacteriaAIController::DoPatrol()
 	FVector PatrolPoint;
 	if (GetRandomPatrolPoint(PatrolPoint))
 	{
-		MoveToLocation(PatrolPoint, 5.f);
+		auto Result = MoveToLocation(PatrolPoint, 5.f);
+		UE_LOG(LogTemp, Warning, TEXT("MoveToLocation called"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("GetRandomPatrolPoint failed"));
+
 	}
 }
 
@@ -121,24 +150,25 @@ void ABacteriaAIController::DoAttack()
 
 bool ABacteriaAIController::GetRandomPatrolPoint(FVector& OutPoint) const
 {
-	if (!Enemy.IsValid())
+	if (!GetWorld()) return false;
+
+	UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld());
+	if (!NavSys) return false;
+
+	// If SpawnPoint ended up invalid, fall back to current pawn location
+	FVector Center = SpawnPoint;
+	if (Center.IsNearlyZero())
 	{
-		return false;
+		if (APawn* P = GetPawn())
+		{
+			Center = P->GetActorLocation();
+		}
 	}
 
-	UNavigationSystemV1* NavigationSystem = UNavigationSystemV1::GetCurrent(GetWorld());
-	if (!NavigationSystem) return false;
+	FNavLocation Loc;
+	const bool bFound = NavSys->GetRandomPointInNavigableRadius(Center, PatrolRadius, Loc);
+	if (!bFound) return false;
 
-	FNavLocation RandomLocation;
-	bool bFound = NavigationSystem->GetRandomPointInNavigableRadius(SpawnPoint, PatrolRadius, RandomLocation);
-
-	if (!bFound)
-	{
-		return false;
-	}
-	else
-	{
-		OutPoint = RandomLocation.Location;
-		return true;
-	}
+	OutPoint = Loc.Location;
+	return true;
 }

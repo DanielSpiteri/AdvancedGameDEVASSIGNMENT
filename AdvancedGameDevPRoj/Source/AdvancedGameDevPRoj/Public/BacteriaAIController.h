@@ -25,7 +25,7 @@ class ADVANCEDGAMEDEVPROJ_API ABacteriaAIController : public AAIController
 
 	private:
 		UPROPERTY(EditDefaultsOnly, Category = "AI")
-		float PatrolRadius = 800.f;
+		float PatrolRadius = 2000.f;
 
 		UPROPERTY(EditDefaultsOnly, Category = "AI")
 		float ChaseRange = 900.f;
