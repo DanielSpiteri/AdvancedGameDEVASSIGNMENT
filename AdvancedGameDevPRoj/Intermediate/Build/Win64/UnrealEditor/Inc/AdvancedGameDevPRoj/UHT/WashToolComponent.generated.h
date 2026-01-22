@@ -18,9 +18,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UWashToolComponent *******************************************************
 #define FID_Desktop_AdvancedGameDev_AdvancedGameDEVASSIGNMENT_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_WashToolComponent_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execAddCharge); \
 	DECLARE_FUNCTION(execGetCurrentCharge); \
 	DECLARE_FUNCTION(execGetChargeNormalised); \
+	DECLARE_FUNCTION(execAddCharge); \
 	DECLARE_FUNCTION(execSetWashRateMultiplier); \
 	DECLARE_FUNCTION(execStopSpray); \
 	DECLARE_FUNCTION(execStartSpray);
