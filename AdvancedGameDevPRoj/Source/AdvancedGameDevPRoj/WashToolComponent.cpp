@@ -116,3 +116,14 @@ void UWashToolComponent::AddCharge(float Amount)
 
 	UE_LOG(LogTemp, Warning, TEXT("Charge refilled: %f -> %f"), Old, CurrentCharge);
 }
+
+
+float UWashToolComponent::GetChargeNormalised() const
+{
+	return (MaxCharge <= 0.f) ? 0.f : (CurrentCharge / MaxCharge);
+}
+
+float UWashToolComponent::GetCurrentCharge() const
+{
+	return CurrentCharge;
+}

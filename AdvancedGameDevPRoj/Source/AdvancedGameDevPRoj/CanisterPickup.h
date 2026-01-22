@@ -23,7 +23,7 @@ protected:
     USphereComponent* Trigger;
 
     UPROPERTY(EditAnywhere, Category = "Charge")
-    float RefillAmount = 50.0f;
+    float RefillAmount = 75.0f;
 
     UFUNCTION()
     void OnTriggerOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,

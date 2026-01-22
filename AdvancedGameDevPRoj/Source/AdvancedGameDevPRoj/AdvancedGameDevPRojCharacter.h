@@ -104,6 +104,19 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
 
+
+	// Cars cleaned counter
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Progress")
+	int32 CarsCleaned = 0;
+
+	UFUNCTION(BlueprintCallable, Category = "Progress")
+	int32 GetCarsCleaned() const { return CarsCleaned; }
+
+	// Called by cars when they become fully clean
+	UFUNCTION(BlueprintCallable, Category = "Progress")
+	void AddCleanedCar() { CarsCleaned++; }
+
+
 	virtual void BeginPlay() override;
 
 	/** Set up input action bindings */

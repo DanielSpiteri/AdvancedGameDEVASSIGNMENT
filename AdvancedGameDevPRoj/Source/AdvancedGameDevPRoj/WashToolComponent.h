@@ -14,12 +14,9 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	virtual void TickComponent(
-		float DeltaTime,
-		ELevelTick TickType,
-		FActorComponentTickFunction* ThisTickFunction
-	) override;
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	// --- Washing ---
 	UPROPERTY(EditAnywhere, Category = "Washing")
 	float BaseWashRate = 20.0f; // dirt per second
 
@@ -31,19 +28,9 @@ protected:
 
 	bool DoSprayTrace(FHitResult& OutHit) const;
 
-public:
-	UFUNCTION(BlueprintCallable, Category = "Washing")
-	void StartSpray();
-
-	UFUNCTION(BlueprintCallable, Category = "Washing")
-	void StopSpray();
-
+	// Multiplier (soap boost etc.)
 	UPROPERTY(EditAnywhere, Category = "Washing")
 	float WashRateMultiplier = 1.0f;
-
-	UFUNCTION(BlueprintCallable, Category = "Washing")
-	void SetWashRateMultiplier(float NewMultiplier);
-
 
 	// --- Charge / Fuel ---
 	UPROPERTY(EditAnywhere, Category = "Charge")
@@ -55,20 +42,39 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Charge")
 	float ChargeDrainPerSecond = 20.0f; // drains while spraying
 
-	UPROPERTY(EditAnywhere, Category = "Charge")
-	float ChargeRefillAmount = 50.0f;   // default refill amount (optional)
+	UPROPERTY(VisibleAnywhere, Category = "Washing|UI")
+	AActor* CurrentWashTarget = nullptr;
 
-	// Getters for UI
-	UFUNCTION(BlueprintCallable, Category = "Charge")
-	float GetChargeNormalised() const { return (MaxCharge <= 0.f) ? 0.f : (CurrentCharge / MaxCharge); }
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing")
+	bool bCountedAsClean = false;
 
-	UFUNCTION(BlueprintCallable, Category = "Charge")
-	float GetCurrentCharge() const { return CurrentCharge; }
 
-	// Refill function for canister pickup
+
+public:
+	// Spray controls
+	UFUNCTION(BlueprintCallable, Category = "Washing")
+	void StartSpray();
+
+	UFUNCTION(BlueprintCallable, Category = "Washing")
+	void StopSpray();
+
+	// Soap boost setter
+	UFUNCTION(BlueprintCallable, Category = "Washing")
+	void SetWashRateMultiplier(float NewMultiplier);
+
+	// Charge refill (canister pickup)
 	UFUNCTION(BlueprintCallable, Category = "Charge")
 	void AddCharge(float Amount);
 
+	// --- Getters for UI ---
+	UFUNCTION(BlueprintCallable, Category = "Charge")
+	float GetChargeNormalised() const;
 
+	UFUNCTION(BlueprintCallable, Category = "Charge")
+	float GetCurrentCharge() const;
+
+	// Current wash target (for UI)
+	UFUNCTION(BlueprintCallable, Category = "Washing|UI")
+	AActor* GetCurrentWashTarget() const { return CurrentWashTarget; }
 
 };

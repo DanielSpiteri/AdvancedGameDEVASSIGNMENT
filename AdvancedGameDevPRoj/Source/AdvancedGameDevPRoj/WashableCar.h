@@ -32,6 +32,10 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Washing|Visual")
 	FName CleanParamName = "CleanAmount";
 
+	UPROPERTY(VisibleAnywhere, Category = "Washing")
+	bool bCountedAsClean = false;
+
+
 private:
 	UPROPERTY()
 	UMaterialInstanceDynamic* CarMID = nullptr;

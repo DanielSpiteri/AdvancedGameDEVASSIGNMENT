@@ -2,6 +2,9 @@
 #include "Components/StaticMeshComponent.h"
 #include "Materials/MaterialInstanceDynamic.h"
 #include "Engine/Engine.h"
+#include "AdvancedGameDevProjCharacter.h"
+#include "Kismet/GameplayStatics.h"
+
 
 AWashableCar::AWashableCar()
 {
@@ -50,12 +53,29 @@ void AWashableCar::ApplyWash_Implementation(float Amount)
 			FString::Printf(TEXT("Car Clean: %.1f%%"), CleanPct)
 		);
 	}
+
+	if (!bCountedAsClean && IsFullyClean_Implementation())
+	{
+		bCountedAsClean = true;
+
+		if (AActor* PlayerActor = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))
+		{
+			// Call by function name (works if function exists and is BlueprintCallable/UFUNCTION)
+			static const FName FuncName(TEXT("AddCleanedCar"));
+			if (UFunction* Func = PlayerActor->FindFunction(FuncName))
+			{
+				PlayerActor->ProcessEvent(Func, nullptr);
+			}
+		}
+	}
 }
+
 
 float AWashableCar::GetCleanPercent_Implementation() const
 {
 	if (MaxDirt <= 0.0f) return 1.0f;
 	return FMath::Clamp((MaxDirt - CurrentDirt) / MaxDirt, 0.0f, 1.0f);
+
 }
 
 bool AWashableCar::IsFullyClean_Implementation() const
