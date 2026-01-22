@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeBacteriaEnemyCharacter() {}
 // ********** Begin Cross Module References ********************************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_ABacteriaEnemyCharacter();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_ABacteriaEnemyCharacter_NoRegister();
+ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
@@ -59,13 +60,58 @@ struct Z_Construct_UClass_ABacteriaEnemyCharacter_Statics
 		{ "IncludePath", "BacteriaEnemyCharacter.h" },
 		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+		{ "Category", "Components" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//enemy health \n" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "enemy health" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackRange_MetaData[] = {
+		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//combat settings\n" },
+#endif
+		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "combat settings" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackDamage_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttackCooldown_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Health;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AttackRange;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AttackDamage;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AttackCooldown;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABacteriaEnemyCharacter>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x00400000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABacteriaEnemyCharacter, Health), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackRange = { "AttackRange", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABacteriaEnemyCharacter, AttackRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackRange_MetaData), NewProp_AttackRange_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackDamage = { "AttackDamage", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABacteriaEnemyCharacter, AttackDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackDamage_MetaData), NewProp_AttackDamage_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackCooldown = { "AttackCooldown", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABacteriaEnemyCharacter, AttackCooldown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackCooldown_MetaData), NewProp_AttackCooldown_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_Health,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackRange,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackDamage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::NewProp_AttackCooldown,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_ACharacter,
 	(UObject* (*)())Z_Construct_UPackage__Script_AdvancedGameDevPRoj,
@@ -77,11 +123,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABacteriaEnemyCharacter
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers),
 	0,
 	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::Class_MetaDataParams)
@@ -102,10 +148,10 @@ ABacteriaEnemyCharacter::~ABacteriaEnemyCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABacteriaEnemyCharacter, ABacteriaEnemyCharacter::StaticClass, TEXT("ABacteriaEnemyCharacter"), &Z_Registration_Info_UClass_ABacteriaEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABacteriaEnemyCharacter), 704786466U) },
+		{ Z_Construct_UClass_ABacteriaEnemyCharacter, ABacteriaEnemyCharacter::StaticClass, TEXT("ABacteriaEnemyCharacter"), &Z_Registration_Info_UClass_ABacteriaEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABacteriaEnemyCharacter), 1445432321U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_1295833682(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_1419563986(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

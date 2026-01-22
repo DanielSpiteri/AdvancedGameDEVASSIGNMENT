@@ -37,29 +37,48 @@ void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 
 void ABacteriaEnemyCharacter::AttackPlayer()
 {
-	//check if attack is off cooldown
-	if (TimeTilNextAttack <= 0.f) return;
+	// check if attack is off cooldown (ready when <= 0)
+	if (TimeTilNextAttack > 0.f)
+	{
+		UE_LOG(LogTemp, Verbose, TEXT("Bacteria attack cooldown: %.2f"), TimeTilNextAttack);
+		return;
+	}
 
-	//get player character
-	AAdvancedGameDevPRojCharacter* Player = Cast<AAdvancedGameDevPRojCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
+	// get player character
+	AAdvancedGameDevPRojCharacter* Player =
+		Cast<AAdvancedGameDevPRojCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
 
-	if (!Player) return;
+	if (!Player)
+	{
+		UE_LOG(LogTemp, Error, TEXT("AttackPlayer: Player cast failed (not AAdvancedGameDevPRojCharacter)"));
+		return;
+	}
 
-	//get player health component
+	// get player health component
 	UHealthComponent* PlayerHealth = Player->FindComponentByClass<UHealthComponent>();
-	if (!PlayerHealth) return;
+	if (!PlayerHealth)
+	{
+		UE_LOG(LogTemp, Error, TEXT("AttackPlayer: Player has no HealthComponent"));
+		return;
+	}
 
-	//check distance to player
+	// check distance to player
 	const float Distance = FVector::Dist(GetActorLocation(), Player->GetActorLocation());
-	if (Distance > AttackRange) return;
 
-	//deal damage to player
+	UE_LOG(LogTemp, Verbose, TEXT("AttackPlayer: distance %.1f / range %.1f"), Distance, AttackRange);
+
+	if (Distance > AttackRange)
+	{
+		return;
+	}
+
+	// deal damage to player
 	PlayerHealth->TakeDamage(AttackDamage);
 
-	//debug 
-	UE_LOG(LogTemp, Warning, TEXT("Bacteria attacked player for %f damage"), AttackDamage);
+	// debug
+	UE_LOG(LogTemp, Warning, TEXT("Bacteria attacked player for %.1f damage"), AttackDamage);
 
-	//reset attack cooldown
+	// reset attack cooldown
 	TimeTilNextAttack = AttackCooldown;
-
 }
+

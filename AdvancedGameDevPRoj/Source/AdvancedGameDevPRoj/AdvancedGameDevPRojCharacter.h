@@ -16,6 +16,8 @@ class USkeletalMeshComponent;
 class UCameraComponent;
 class UInputAction;
 struct FInputActionValue;
+class UHealthComponent;
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
@@ -114,4 +116,8 @@ public:
 
 	/**  Optional getter for your wash tool (handy for pickups etc.) **/
 	UWashToolComponent* GetWashTool() const { return WashTool; }
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UHealthComponent* Health;
+
 };

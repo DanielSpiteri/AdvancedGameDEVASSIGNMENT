@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRojCharacter() {}
 // ********** Begin Cross Module References ********************************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_AAdvancedGameDevPRojCharacter_NoRegister();
+ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_UWashToolComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -346,6 +347,12 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "AdvancedGameDevPRojCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FirstPersonCameraComponent;
@@ -357,6 +364,7 @@ struct Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Spray;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Menu;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Health;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -381,6 +389,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameD
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_DefaultMappingContext = { "DefaultMappingContext", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, DefaultMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultMappingContext_MetaData), NewProp_DefaultMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Spray = { "IA_Spray", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, IA_Spray), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Spray_MetaData), NewProp_IA_Spray_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu = { "IA_Menu", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, IA_Menu), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Menu_MetaData), NewProp_IA_Menu_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAdvancedGameDevPRojCharacter, Health), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_FirstPersonCameraComponent,
@@ -392,6 +401,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAdvanced
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_DefaultMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Spray,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_IA_Menu,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::NewProp_Health,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AAdvancedGameDevPRojCharacter_Statics::DependentSingletons[])() = {
@@ -430,10 +440,10 @@ AAdvancedGameDevPRojCharacter::~AAdvancedGameDevPRojCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 1566180935U) },
+		{ Z_Construct_UClass_AAdvancedGameDevPRojCharacter, AAdvancedGameDevPRojCharacter::StaticClass, TEXT("AAdvancedGameDevPRojCharacter"), &Z_Registration_Info_UClass_AAdvancedGameDevPRojCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAdvancedGameDevPRojCharacter), 3843410338U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_3550613313(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_892201123(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_AdvancedGameDevPRojCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

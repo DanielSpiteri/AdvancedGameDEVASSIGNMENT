@@ -12,6 +12,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputMappingContext.h"
 #include "InputAction.h"
+#include "HealthComponent.h"
 
 
 // ADD THIS include (safe even if already included in .h)
@@ -52,6 +53,9 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 	// Configure character movement
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	GetCharacterMovement()->AirControl = 0.5f;
+
+	Health = CreateDefaultSubobject<UHealthComponent>(TEXT("Health"));
+
 }
 
 void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
