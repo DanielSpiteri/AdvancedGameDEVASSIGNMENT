@@ -6,8 +6,8 @@
 			"AdvancedGameDevPRojCharacter.gen.cpp.obj",
 			"AdvancedGameDevPRojGameMode.gen.cpp.obj",
 			"AdvancedGameDevPRojPlayerController.gen.cpp.obj",
+			"BacteriaEnemyCharacter.gen.cpp.obj",
 			"EnvQueryContext_Target.gen.cpp.obj",
-			"HealthComponent.gen.cpp.obj",
 			"HorrorCharacter.gen.cpp.obj",
 			"HorrorGameMode.gen.cpp.obj",
 			"HorrorPlayerController.gen.cpp.obj",
@@ -32,10 +32,10 @@
 			"PerModuleInline.gen.cpp.obj",
 			"AdvancedGameDevPRoj.cpp.obj",
 			"AdvancedGameDevPRojCameraManager.cpp.obj",
+			"AdvancedGameDevPRojCharacter.cpp.obj",
 			"AdvancedGameDevPRojGameMode.cpp.obj",
 			"AdvancedGameDevPRojPlayerController.cpp.obj",
 			"PickupBase.cpp.obj",
-			"HealthComponent.cpp.obj",
 			"UpgradeData.cpp.obj",
 			"HorrorCharacter.cpp.obj",
 			"HorrorGameMode.cpp.obj",
@@ -58,9 +58,11 @@
 			"WashableCar.cpp.obj",
 			"WashToolComponent.cpp.obj",
 			"AdvancedGameDevPRoj.init.gen.cpp.obj",
-			"BacteriaEnemyCharacter.gen.cpp.obj",
-			"AdvancedGameDevPRojCharacter.cpp.obj",
-			"BacteriaEnemyCharacter.cpp.obj"
+			"HealthComponent.gen.cpp.obj",
+			"HeartPickup.gen.cpp.obj",
+			"BacteriaEnemyCharacter.cpp.obj",
+			"HealthComponent.cpp.obj",
+			"HeartPickup.cpp.obj"
 		]
 	}
 }

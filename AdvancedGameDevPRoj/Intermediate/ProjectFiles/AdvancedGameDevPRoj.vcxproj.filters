@@ -201,6 +201,9 @@
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\HealthComponent.cpp">
       <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\HeartPickup.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\AdvancedGameDevPRoj\Public">
       <UniqueIdentifier>{CC2BCBC6-BAC3-3463-9BF1-D7C9A25DD5CF}</UniqueIdentifier>
     </Filter>
@@ -208,6 +211,9 @@
       <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HealthComponent.h">
+      <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HeartPickup.h">
       <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
     </ClInclude>
     <Filter Include="Source\AdvancedGameDevPRoj\Variant_Horror">

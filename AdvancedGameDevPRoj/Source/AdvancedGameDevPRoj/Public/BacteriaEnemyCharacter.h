@@ -35,6 +35,12 @@ private:
 
 	//timer to manage attack cooldown
 	float TimeTilNextAttack = 0.f;
-
 	void AttackPlayer();
+
+	UPROPERTY(EditDefaultsOnly, Category = "Drops")
+	TSubclassOf<AActor> HeartPickupClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Drops")
+	float HeartDropChance = 0.25f; // 25% chance
+
 };

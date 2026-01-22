@@ -42,6 +42,13 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	bool IsDead() const { return bDead; } //returns true if health is zero
 
+	UFUNCTION(BlueprintCallable, Category = "Health")
+	void IncreaseMaxHealth(float Amount); //increases max health
+
+	UFUNCTION(BlueprintCallable, Category = "Health")
+	void AddHealth(float Amount);  //increases current health without affecting max health
+
+
 protected:
 	virtual void BeginPlay() override;
 

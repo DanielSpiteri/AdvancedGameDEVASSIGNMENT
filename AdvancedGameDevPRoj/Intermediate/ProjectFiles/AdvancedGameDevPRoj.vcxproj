@@ -672,8 +672,14 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\HeartPickup.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaEnemyCharacter.h"/>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HealthComponent.h"/>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HeartPickup.h"/>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>

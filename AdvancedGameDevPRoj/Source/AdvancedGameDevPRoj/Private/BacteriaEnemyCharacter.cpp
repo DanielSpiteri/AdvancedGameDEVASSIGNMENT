@@ -20,7 +20,7 @@ void ABacteriaEnemyCharacter::BeginPlay()
 
 void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Bacteria ticking: %s"), *GetName());
+	//UE_LOG(LogTemp, Warning, TEXT("Bacteria ticking: %s"), *GetName());
 
 	Super::Tick(DeltaSeconds);
 

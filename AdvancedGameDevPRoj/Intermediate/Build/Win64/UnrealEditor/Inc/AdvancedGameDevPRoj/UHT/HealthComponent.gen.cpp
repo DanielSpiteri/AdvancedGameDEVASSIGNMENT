@@ -108,6 +108,55 @@ void FOnDied_DelegateWrapper(const FMulticastScriptDelegate& OnDied)
 }
 // ********** End Delegate FOnDied *****************************************************************
 
+// ********** Begin Class UHealthComponent Function AddHealth **************************************
+struct Z_Construct_UFunction_UHealthComponent_AddHealth_Statics
+{
+	struct HealthComponent_eventAddHealth_Parms
+	{
+		float Amount;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//increases max health\n" },
+#endif
+		{ "ModuleRelativePath", "Public/HealthComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "increases max health" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Amount;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(HealthComponent_eventAddHealth_Parms, Amount), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::NewProp_Amount,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UHealthComponent, nullptr, "AddHealth", Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::HealthComponent_eventAddHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::HealthComponent_eventAddHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UHealthComponent_AddHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UHealthComponent_AddHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UHealthComponent::execAddHealth)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Amount);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddHealth(Z_Param_Amount);
+	P_NATIVE_END;
+}
+// ********** End Class UHealthComponent Function AddHealth ****************************************
+
 // ********** Begin Class UHealthComponent Function Heal *******************************************
 struct Z_Construct_UFunction_UHealthComponent_Heal_Statics
 {
@@ -156,6 +205,55 @@ DEFINE_FUNCTION(UHealthComponent::execHeal)
 	P_NATIVE_END;
 }
 // ********** End Class UHealthComponent Function Heal *********************************************
+
+// ********** Begin Class UHealthComponent Function IncreaseMaxHealth ******************************
+struct Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics
+{
+	struct HealthComponent_eventIncreaseMaxHealth_Parms
+	{
+		float Amount;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//returns true if health is zero\n" },
+#endif
+		{ "ModuleRelativePath", "Public/HealthComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "returns true if health is zero" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Amount;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(HealthComponent_eventIncreaseMaxHealth_Parms, Amount), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::NewProp_Amount,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UHealthComponent, nullptr, "IncreaseMaxHealth", Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::HealthComponent_eventIncreaseMaxHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::HealthComponent_eventIncreaseMaxHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UHealthComponent::execIncreaseMaxHealth)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Amount);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreaseMaxHealth(Z_Param_Amount);
+	P_NATIVE_END;
+}
+// ********** End Class UHealthComponent Function IncreaseMaxHealth ********************************
 
 // ********** Begin Class UHealthComponent Function IsDead *****************************************
 struct Z_Construct_UFunction_UHealthComponent_IsDead_Statics
@@ -258,7 +356,9 @@ void UHealthComponent::StaticRegisterNativesUHealthComponent()
 {
 	UClass* Class = UHealthComponent::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AddHealth", &UHealthComponent::execAddHealth },
 		{ "Heal", &UHealthComponent::execHeal },
+		{ "IncreaseMaxHealth", &UHealthComponent::execIncreaseMaxHealth },
 		{ "IsDead", &UHealthComponent::execIsDead },
 		{ "TakeDamage", &UHealthComponent::execTakeDamage },
 	};
@@ -350,7 +450,9 @@ struct Z_Construct_UClass_UHealthComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UHealthComponent_AddHealth, "AddHealth" }, // 2283332534
 		{ &Z_Construct_UFunction_UHealthComponent_Heal, "Heal" }, // 2328741443
+		{ &Z_Construct_UFunction_UHealthComponent_IncreaseMaxHealth, "IncreaseMaxHealth" }, // 3299697326
 		{ &Z_Construct_UFunction_UHealthComponent_IsDead, "IsDead" }, // 1103936630
 		{ &Z_Construct_UFunction_UHealthComponent_TakeDamage, "TakeDamage" }, // 160375104
 	};
@@ -407,10 +509,10 @@ UHealthComponent::~UHealthComponent() {}
 struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UHealthComponent, UHealthComponent::StaticClass, TEXT("UHealthComponent"), &Z_Registration_Info_UClass_UHealthComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHealthComponent), 1971882698U) },
+		{ Z_Construct_UClass_UHealthComponent, UHealthComponent::StaticClass, TEXT("UHealthComponent"), &Z_Registration_Info_UClass_UHealthComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHealthComponent), 3958243775U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h__Script_AdvancedGameDevPRoj_3851627291(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h__Script_AdvancedGameDevPRoj_192082717(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
