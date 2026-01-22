@@ -38,7 +38,9 @@ private:
 		UPrimitiveComponent* OtherComp,
 		int32 OtherBodyIndex,
 		bool bFromSweep,
-		const FHitResult& SweepResult
+		const FHitResult& SweepResult);
 
-	);
+	float PickupDelay = 1.f;
+	bool bCanPickup = false;
+
 };

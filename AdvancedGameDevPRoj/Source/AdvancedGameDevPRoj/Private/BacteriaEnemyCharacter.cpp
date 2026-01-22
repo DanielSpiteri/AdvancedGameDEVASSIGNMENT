@@ -16,6 +16,11 @@ void ABacteriaEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	TimeTilNextAttack = 0.f;
+
+	if (Health)
+	{
+		Health->OnDied.AddDynamic(this, &ABacteriaEnemyCharacter::HandleDeath);
+	}
 }
 
 void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
@@ -32,6 +37,11 @@ void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 
 	//attack player if in range
 	AttackPlayer();
+
+	if (Health && Health->CurrentHealth > 0.f && FVector::Dist(GetActorLocation(), UGameplayStatics::GetPlayerCharacter(this, 0)->GetActorLocation()) < 150.f)
+	{
+		Health->TakeDamage(9999.f); // insta-kill when close (TEMP)
+	}
 
 }
 
@@ -82,3 +92,23 @@ void ABacteriaEnemyCharacter::AttackPlayer()
 	TimeTilNextAttack = AttackCooldown;
 }
 
+void ABacteriaEnemyCharacter::HandleDeath()
+{
+	if (HeartPickupClass && FMath::FRand() <= HeartDropChance)
+	{
+		FVector SpawnLocation = GetActorLocation() + FVector(0, 0, 30);
+
+		if (ACharacter* Player = UGameplayStatics::GetPlayerCharacter(this, 0))
+		{
+			const FVector AwayFromPlayer =
+				(GetActorLocation() - Player->GetActorLocation()).GetSafeNormal();
+
+			SpawnLocation += AwayFromPlayer * 120.f; // push it away from player
+		}
+
+		GetWorld()->SpawnActor<AActor>(HeartPickupClass, SpawnLocation, FRotator::ZeroRotator);
+		UE_LOG(LogTemp, Warning, TEXT("Bacteria dropped a heart pickup"));
+	}
+
+	Destroy();
+}

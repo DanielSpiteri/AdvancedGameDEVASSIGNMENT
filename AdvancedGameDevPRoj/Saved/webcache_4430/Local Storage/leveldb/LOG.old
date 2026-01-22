@@ -1,3 +1,12 @@
-2026/01/22-03:00:35.749 1a70 Reusing MANIFEST C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
-2026/01/22-03:00:35.752 1a70 Recovering log #3
-2026/01/22-03:00:35.753 1a70 Reusing old log C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/000003.log 
+2026/01/22-03:27:28.947 1fe8 Reusing MANIFEST C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/01/22-03:27:28.949 1fe8 Recovering log #3
+2026/01/22-03:27:28.954 1fe8 Reusing old log C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/000003.log 
+2026/01/22-03:31:44.676 46b8 Level-0 table #5: started
+2026/01/22-03:31:44.686 46b8 Level-0 table #5: 67674 bytes OK
+2026/01/22-03:31:44.689 46b8 Delete type=0 #3
+2026/01/22-03:40:04.741 46b8 Level-0 table #7: started
+2026/01/22-03:40:04.751 46b8 Level-0 table #7: 70485 bytes OK
+2026/01/22-03:40:04.755 46b8 Delete type=0 #4
+2026/01/22-03:45:09.730 2db0 Level-0 table #9: started
+2026/01/22-03:45:09.738 2db0 Level-0 table #9: 66445 bytes OK
+2026/01/22-03:45:09.742 2db0 Delete type=0 #6

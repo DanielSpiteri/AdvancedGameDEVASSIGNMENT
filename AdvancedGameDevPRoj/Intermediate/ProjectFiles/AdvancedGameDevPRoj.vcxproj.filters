@@ -195,6 +195,9 @@
     <Filter Include="Source\AdvancedGameDevPRoj\Private">
       <UniqueIdentifier>{8105DD0A-530B-3440-8849-B813863570E4}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\BacteriaAIController.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\BacteriaEnemyCharacter.cpp">
       <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
     </ClCompile>
@@ -207,6 +210,9 @@
     <Filter Include="Source\AdvancedGameDevPRoj\Public">
       <UniqueIdentifier>{CC2BCBC6-BAC3-3463-9BF1-D7C9A25DD5CF}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaAIController.h">
+      <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaEnemyCharacter.h">
       <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
     </ClInclude>

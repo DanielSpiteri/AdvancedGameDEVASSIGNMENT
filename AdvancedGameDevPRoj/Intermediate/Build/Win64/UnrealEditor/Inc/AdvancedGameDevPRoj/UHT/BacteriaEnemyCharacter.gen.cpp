@@ -21,9 +21,49 @@ ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 UPackage* Z_Construct_UPackage__Script_AdvancedGameDevPRoj();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class ABacteriaEnemyCharacter Function HandleDeath *****************************
+struct Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// 25% chance\n" },
+#endif
+		{ "ModuleRelativePath", "Public/BacteriaEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "25% chance" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABacteriaEnemyCharacter, nullptr, "HandleDeath", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABacteriaEnemyCharacter::execHandleDeath)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->HandleDeath();
+	P_NATIVE_END;
+}
+// ********** End Class ABacteriaEnemyCharacter Function HandleDeath *******************************
+
 // ********** Begin Class ABacteriaEnemyCharacter **************************************************
 void ABacteriaEnemyCharacter::StaticRegisterNativesABacteriaEnemyCharacter()
 {
+	UClass* Class = ABacteriaEnemyCharacter::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "HandleDeath", &ABacteriaEnemyCharacter::execHandleDeath },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 FClassRegistrationInfo Z_Registration_Info_UClass_ABacteriaEnemyCharacter;
 UClass* ABacteriaEnemyCharacter::GetPrivateStaticClass()
@@ -108,6 +148,10 @@ struct Z_Construct_UClass_ABacteriaEnemyCharacter_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_HeartDropChance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABacteriaEnemyCharacter_HandleDeath, "HandleDeath" }, // 2465446247
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABacteriaEnemyCharacter>::IsAbstract,
 	};
@@ -138,11 +182,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABacteriaEnemyCharacter
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ABacteriaEnemyCharacter_Statics::PropPointers),
 	0,
 	0x009001A4u,
@@ -164,10 +208,10 @@ ABacteriaEnemyCharacter::~ABacteriaEnemyCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABacteriaEnemyCharacter, ABacteriaEnemyCharacter::StaticClass, TEXT("ABacteriaEnemyCharacter"), &Z_Registration_Info_UClass_ABacteriaEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABacteriaEnemyCharacter), 2982748394U) },
+		{ Z_Construct_UClass_ABacteriaEnemyCharacter, ABacteriaEnemyCharacter::StaticClass, TEXT("ABacteriaEnemyCharacter"), &Z_Registration_Info_UClass_ABacteriaEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABacteriaEnemyCharacter), 1891578393U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_1944048615(TEXT("/Script/AdvancedGameDevPRoj"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_1820564024(TEXT("/Script/AdvancedGameDevPRoj"),
 	Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h__Script_AdvancedGameDevPRoj_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

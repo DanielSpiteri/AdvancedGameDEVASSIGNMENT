@@ -17,6 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ABacteriaEnemyCharacter **************************************************
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execHandleDeath);
+
+
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_ABacteriaEnemyCharacter_NoRegister();
 
 #define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_INCLASS_NO_PURE_DECLS \
@@ -44,6 +48,7 @@ public: \
 #define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaEnemyCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \

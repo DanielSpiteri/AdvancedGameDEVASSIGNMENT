@@ -24,12 +24,19 @@ void AHeartPickup::BeginPlay()
 {
 	Super::BeginPlay();
 	Collision->OnComponentBeginOverlap.AddDynamic(this, &AHeartPickup::OnOverlap);
+
+	FTimerHandle Timer;
+	GetWorldTimerManager().SetTimer(Timer, [this]()
+		{bCanPickup = true;}, 1.f, false);
+
+
 }
 
 void AHeartPickup::OnOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (!OtherActor) return;
+	if (!bCanPickup) return;
 
 	UHealthComponent* Health = OtherActor->FindComponentByClass<UHealthComponent>();
 	if (!Health) return;

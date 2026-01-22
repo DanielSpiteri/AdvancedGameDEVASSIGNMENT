@@ -13,6 +13,7 @@ class ADVANCEDGAMEDEVPROJ_API ABacteriaEnemyCharacter : public ACharacter
 
 public:
 	ABacteriaEnemyCharacter();
+	void AttackPlayer();
 
 protected:
 	virtual void BeginPlay() override;
@@ -35,7 +36,6 @@ private:
 
 	//timer to manage attack cooldown
 	float TimeTilNextAttack = 0.f;
-	void AttackPlayer();
 
 	UPROPERTY(EditDefaultsOnly, Category = "Drops")
 	TSubclassOf<AActor> HeartPickupClass;
@@ -43,4 +43,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Drops")
 	float HeartDropChance = 0.25f; // 25% chance
 
+	UFUNCTION()
+	void HandleDeath();
 };
