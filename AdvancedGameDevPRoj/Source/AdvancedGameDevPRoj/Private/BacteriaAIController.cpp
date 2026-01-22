@@ -34,6 +34,9 @@ void ABacteriaAIController::OnPossess(APawn* InPawn)
 
 void ABacteriaAIController::Tick(float DeltaSeconds)
 {
+	UE_LOG(LogTemp, Warning, TEXT("AI Tick: State=%d TimeUntilMovement=%.2f"),
+		(int32)State, TimeUntilMovement);
+
 	Super::Tick(DeltaSeconds);
 
 	if (!Enemy.IsValid())
@@ -44,15 +47,18 @@ void ABacteriaAIController::Tick(float DeltaSeconds)
 	if (!Player.IsValid())
 	{
 		Player = UGameplayStatics::GetPlayerCharacter(this, 0);
-
 	}
 
 	UpdateState();
 
+	// countdown so we don't spam MoveTo every frame
 	if (TimeUntilMovement > 0.f)
 	{
+		TimeUntilMovement -= DeltaSeconds;
 		return;
 	}
+
+	UE_LOG(LogTemp, Warning, TEXT("AI Tick: running state logic now (State=%d)"), (int32)State);
 
 	switch (State)
 	{
@@ -69,6 +75,7 @@ void ABacteriaAIController::Tick(float DeltaSeconds)
 
 	TimeUntilMovement = MoveUpdateInterval;
 }
+
 
 void ABacteriaAIController::UpdateState()
 {
@@ -129,13 +136,14 @@ void ABacteriaAIController::DoPatrol()
 
 void ABacteriaAIController::DoChase()
 {
-	if (!Enemy.IsValid() || !Player.IsValid())
-	{
-		return;
-	}
+	UE_LOG(LogTemp, Warning, TEXT("AI: DoChase CALLED"));
 
-	MoveToActor(Player.Get(), AttackRange * 0.9f);
+	if (!Player.IsValid()) return;
+
+	const EPathFollowingRequestResult::Type Result = MoveToActor(Player.Get(), AttackRange * 0.9f);
+	UE_LOG(LogTemp, Warning, TEXT("AI: MoveToActor result=%d"), (int32)Result);
 }
+
 
 void ABacteriaAIController::DoAttack()
 {

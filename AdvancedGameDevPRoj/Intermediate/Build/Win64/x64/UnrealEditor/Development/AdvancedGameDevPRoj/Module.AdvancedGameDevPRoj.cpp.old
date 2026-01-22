@@ -37,7 +37,6 @@
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/AdvancedGameDevPRojGameMode.cpp"
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/AdvancedGameDevPRojPlayerController.cpp"
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/PickupBase.cpp"
-#include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/Private/BacteriaEnemyCharacter.cpp"
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/Private/HealthComponent.cpp"
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/Private/HeartPickup.cpp"
 #include "C:/Users/User/Desktop/adv game prog/CarWash/AdvancedGameDevPRoj/Source/AdvancedGameDevPRoj/UpgradeData.cpp"

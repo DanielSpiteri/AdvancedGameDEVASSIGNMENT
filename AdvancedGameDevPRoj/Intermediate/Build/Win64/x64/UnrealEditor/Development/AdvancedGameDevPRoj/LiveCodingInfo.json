@@ -40,6 +40,7 @@
 			"AdvancedGameDevPRojGameMode.cpp.obj",
 			"AdvancedGameDevPRojPlayerController.cpp.obj",
 			"PickupBase.cpp.obj",
+			"BacteriaEnemyCharacter.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"HeartPickup.cpp.obj",
 			"UpgradeData.cpp.obj",
@@ -63,8 +64,7 @@
 			"Washable.cpp.obj",
 			"WashableCar.cpp.obj",
 			"WashToolComponent.cpp.obj",
-			"BacteriaAIController.cpp.obj",
-			"BacteriaEnemyCharacter.cpp.obj"
+			"BacteriaAIController.cpp.obj"
 		]
 	}
 }
