@@ -1,3 +1,5 @@
-2026/01/21-23:37:48.615 1050 Reusing MANIFEST C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
-2026/01/21-23:37:48.616 1050 Recovering log #6
-2026/01/21-23:37:48.616 1050 Reusing old log C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/000006.log 
+2026/01/22-11:56:45.376 8180 Reusing MANIFEST C:/Users/User/Desktop/AdvancedGameDev/AdvancedGameDEVASSIGNMENT/AdvancedGameDevPRoj/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/01/22-11:56:45.382 8180 Recovering log #6
+2026/01/22-11:56:45.383 8180 Level-0 table #9: started
+2026/01/22-11:56:45.386 8180 Level-0 table #9: 65106 bytes OK
+2026/01/22-11:56:45.388 8180 Delete type=0 #6
