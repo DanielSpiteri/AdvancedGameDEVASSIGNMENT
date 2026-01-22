@@ -1,4 +1,5 @@
 #include "BacteriaEnemyCharacter.h"
+#include "BacteriaAIController.h"
 
 #include "HealthComponent.h"
 #include "AdvancedGameDevPRojCharacter.h"
@@ -10,6 +11,8 @@ ABacteriaEnemyCharacter::ABacteriaEnemyCharacter()
 
 	Health = CreateDefaultSubobject<UHealthComponent>(TEXT("Health"));
 
+	AIControllerClass = ABacteriaAIController::StaticClass();
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void ABacteriaEnemyCharacter::BeginPlay()

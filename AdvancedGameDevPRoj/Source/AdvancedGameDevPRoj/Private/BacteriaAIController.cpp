@@ -15,22 +15,39 @@ void ABacteriaAIController::OnPossess(APawn* InPawn)
 	Super::OnPossess(InPawn);
 
 	Enemy = Cast<ABacteriaEnemyCharacter>(InPawn);
-	SpawnPoint = InPawn ? InPawn->GetActorLocation() : FVector::ZeroVector;
-
-	//if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
-	//{
-	//	FNavLocation Projected;
-	//	if (NavSys->ProjectPointToNavigation(SpawnPoint, Projected))
-	//	{
-	//		SpawnPoint = Projected.Location;
-	//	}
-	//}
-
 	Player = UGameplayStatics::GetPlayerCharacter(this, 0);
+
+	if (!InPawn) return;
+
+	const FVector RawSpawn = InPawn->GetActorLocation();
+	UE_LOG(LogTemp, Warning, TEXT("AI: RawSpawn=%s"), *RawSpawn.ToString());
+
+	if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
+	{
+		FNavLocation Projected;
+
+		// IMPORTANT: allow some search radius + height
+		const FVector Extent(500.f, 500.f, 500.f);
+
+		const bool bProjected = NavSys->ProjectPointToNavigation(RawSpawn, Projected, Extent);
+
+		if (bProjected)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("AI: ProjectedSpawn=%s"), *Projected.Location.ToString());
+
+			SpawnPoint = Projected.Location;
+			InPawn->SetActorLocation(Projected.Location);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("AI: SpawnPoint could not be projected to navmesh! Raw=%s"), *RawSpawn.ToString());
+		}
+	}
 
 	State = EBacteriaAIState::Patrol;
 	TimeUntilMovement = 0.f;
 }
+
 
 void ABacteriaAIController::Tick(float DeltaSeconds)
 {
@@ -138,9 +155,23 @@ void ABacteriaAIController::DoChase()
 {
 	UE_LOG(LogTemp, Warning, TEXT("AI: DoChase CALLED"));
 
-	if (!Player.IsValid()) return;
+	if (!Enemy.IsValid() || !Player.IsValid()) return;
 
-	const EPathFollowingRequestResult::Type Result = MoveToActor(Player.Get(), AttackRange * 0.9f);
+	UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld());
+	if (!NavSys)
+	{
+		UE_LOG(LogTemp, Error, TEXT("AI: NavSys is null"));
+		return;
+	}
+
+	const FNavAgentProperties& Props = Enemy->GetNavAgentPropertiesRef();
+	const ANavigationData* NavData = NavSys->GetNavDataForProps(Props);
+
+	UE_LOG(LogTemp, Warning, TEXT("AI: AgentRadius=%.1f AgentHeight=%.1f NavData=%s"),
+		Props.AgentRadius, Props.AgentHeight,
+		NavData ? *NavData->GetName() : TEXT("NULL"));
+
+	const auto Result = MoveToActor(Player.Get(), AttackRange * 0.9f);
 	UE_LOG(LogTemp, Warning, TEXT("AI: MoveToActor result=%d"), (int32)Result);
 }
 
