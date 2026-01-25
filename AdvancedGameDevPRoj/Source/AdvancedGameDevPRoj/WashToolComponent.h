@@ -2,20 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "UpgradeData.h"
 #include "WashToolComponent.generated.h"
-
-USTRUCT(BlueprintType)
-struct FActiveUpgrade
-{
-	GENERATED_BODY()
-
-	UPROPERTY(BlueprintReadOnly)
-	TObjectPtr<const UUpgradeData> Data = nullptr;
-
-	UPROPERTY(BlueprintReadOnly)
-	float TimeRemaining = 0.0f;
-};
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class ADVANCEDGAMEDEVPROJ_API UWashToolComponent : public UActorComponent
@@ -29,55 +16,65 @@ protected:
 	virtual void BeginPlay() override;
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	// Base values
+	// --- Washing ---
 	UPROPERTY(EditAnywhere, Category = "Washing")
 	float BaseWashRate = 20.0f; // dirt per second
 
 	UPROPERTY(EditAnywhere, Category = "Washing")
-	float BaseSprayRange = 800.0f;
-
-	// Optional resource (charge)
-	UPROPERTY(EditAnywhere, Category = "Washing|Charge")
-	float MaxCharge = 100.0f;
-
-	UPROPERTY(EditAnywhere, Category = "Washing|Charge")
-	float ChargeDrainPerSecond = 10.0f;
-
-	UPROPERTY(VisibleAnywhere, Category = "Washing|Charge")
-	float CurrentCharge = 100.0f;
+	float SprayRange = 800.0f;
 
 	UPROPERTY(VisibleAnywhere, Category = "Washing")
 	bool bIsSpraying = false;
 
-	// Active upgrades
-	UPROPERTY(VisibleAnywhere, Category = "Upgrades")
-	TArray<FActiveUpgrade> ActiveUpgrades;
-
-	// Cached multipliers
-	float WashRateMultiplier = 1.0f;
-	float RangeBonus = 0.0f;
-
-	// Internals
-	void UpdateUpgrades(float DeltaTime);
-	void RecalculateModifiers();
 	bool DoSprayTrace(FHitResult& OutHit) const;
 
+	// Multiplier (soap boost etc.)
+	UPROPERTY(EditAnywhere, Category = "Washing")
+	float WashRateMultiplier = 1.0f;
+
+	// --- Charge / Fuel ---
+	UPROPERTY(EditAnywhere, Category = "Charge")
+	float MaxCharge = 100.0f;
+
+	UPROPERTY(VisibleAnywhere, Category = "Charge")
+	float CurrentCharge = 100.0f;
+
+	UPROPERTY(EditAnywhere, Category = "Charge")
+	float ChargeDrainPerSecond = 20.0f; // drains while spraying
+
+	UPROPERTY(VisibleAnywhere, Category = "Washing|UI")
+	AActor* CurrentWashTarget = nullptr;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing")
+	bool bCountedAsClean = false;
+
+
+
 public:
+	// Spray controls
 	UFUNCTION(BlueprintCallable, Category = "Washing")
 	void StartSpray();
 
 	UFUNCTION(BlueprintCallable, Category = "Washing")
 	void StopSpray();
 
-	UFUNCTION(BlueprintCallable, Category = "Upgrades")
-	void ApplyUpgrade(const UUpgradeData* Upgrade);
-
+	// Soap boost setter
 	UFUNCTION(BlueprintCallable, Category = "Washing")
-	float GetCleanPercentLookingAt() const;
+	void SetWashRateMultiplier(float NewMultiplier);
 
-	UFUNCTION(BlueprintCallable, Category = "Washing|Charge")
-	float GetChargePercent() const { return (MaxCharge <= 0.0f) ? 1.0f : CurrentCharge / MaxCharge; }
+	// Charge refill (canister pickup)
+	UFUNCTION(BlueprintCallable, Category = "Charge")
+	void AddCharge(float Amount);
 
-	UFUNCTION(BlueprintCallable, Category = "Upgrades")
-	const TArray<FActiveUpgrade>& GetActiveUpgrades() const { return ActiveUpgrades; }
+	// --- Getters for UI ---
+	UFUNCTION(BlueprintCallable, Category = "Charge")
+	float GetChargeNormalised() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Charge")
+	float GetCurrentCharge() const;
+
+	// Current wash target (for UI)
+	UFUNCTION(BlueprintCallable, Category = "Washing|UI")
+	AActor* GetCurrentWashTarget() const { return CurrentWashTarget; }
+
 };
