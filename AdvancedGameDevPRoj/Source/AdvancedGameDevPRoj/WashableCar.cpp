@@ -4,6 +4,8 @@
 #include "Engine/Engine.h"
 #include "AdvancedGameDevProjCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "GameFramework/GameModeBase.h"
+
 
 
 AWashableCar::AWashableCar()
@@ -38,6 +40,9 @@ void AWashableCar::BeginPlay()
 
 void AWashableCar::ApplyWash_Implementation(float Amount)
 {
+
+	UE_LOG(LogTemp, Warning, TEXT("[CARCLEAN] ApplyWash called Amount=%f"), Amount);
+
 	if (Amount <= 0.0f) return;
 
 	CurrentDirt = FMath::Clamp(CurrentDirt - Amount, 0.0f, MaxDirt);
@@ -54,20 +59,36 @@ void AWashableCar::ApplyWash_Implementation(float Amount)
 		);
 	}
 
-	if (!bCountedAsClean && IsFullyClean_Implementation())
+	if (!bCountedAsCleaned && IsFullyClean_Implementation())
 	{
-		bCountedAsClean = true;
+		bCountedAsCleaned = true;
 
-		if (AActor* PlayerActor = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))
+		// Call BP_WashGameMode::RegisterCarCleaned() via reflection
+		if (AGameModeBase* GM = UGameplayStatics::GetGameMode(this))
 		{
-			// Call by function name (works if function exists and is BlueprintCallable/UFUNCTION)
-			static const FName FuncName(TEXT("AddCleanedCar"));
-			if (UFunction* Func = PlayerActor->FindFunction(FuncName))
+			static const FName FuncName(TEXT("RegisterCarCleaned"));
+
+			UE_LOG(LogTemp, Warning, TEXT("GameMode class: %s"), *GM->GetClass()->GetName());
+
+
+			UE_LOG(LogTemp, Warning, TEXT("Car became fully clean - attempting to notify GameMode"));
+
+			if (UFunction* Func = GM->FindFunction(FuncName))
 			{
-				PlayerActor->ProcessEvent(Func, nullptr);
+				UE_LOG(LogTemp, Warning, TEXT("[CARCLEAN] Found RegisterCarCleaned, calling it now"));
+
+				GM->ProcessEvent(Func, nullptr);
+			}
+			else if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(
+					-1, 2.0f, FColor::Red,
+					TEXT("ERROR: GameMode has no function 'RegisterCarCleaned' (name mismatch?)")
+				);
 			}
 		}
 	}
+
 }
 
 

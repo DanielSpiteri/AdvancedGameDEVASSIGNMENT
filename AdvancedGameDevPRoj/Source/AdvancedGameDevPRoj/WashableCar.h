@@ -35,6 +35,10 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "Washing")
 	bool bCountedAsClean = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Wash", meta = (AllowPrivateAccess = "true"))
+	bool bCountedAsCleaned = false;
+
+
 
 private:
 	UPROPERTY()
