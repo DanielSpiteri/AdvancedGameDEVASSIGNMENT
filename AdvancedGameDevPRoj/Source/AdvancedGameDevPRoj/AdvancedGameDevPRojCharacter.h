@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "WashToolComponent.h"
+#include "PlayerHUDWidget.h"
 #include "AdvancedGameDevPRojCharacter.generated.h"
 
 class UInputComponent;
@@ -15,14 +17,17 @@ class UInputMappingContext;
 class UUserWidget;
 class UWashToolComponent;
 struct FInputActionValue;
+class UHealthComponent;
+class UPlayerHUDWidget;
+class UUserWidget;
+
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
-/**
- *  A basic first person character
- */
+
 UCLASS(abstract)
-class AAdvancedGameDevPRojCharacter : public ACharacter
+class ADVANCEDGAMEDEVPROJ_API AAdvancedGameDevPRojCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -119,7 +124,7 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	/** Set up input action bindings */
+	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 public:
@@ -127,4 +132,24 @@ public:
 	USkeletalMeshComponent* GetFirstPersonMesh() const { return FirstPersonMesh; }
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 	UWashToolComponent* GetWashTool() const { return WashTool; }
+
+
+
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
+	UHealthComponent* Health;
+
+	UPROPERTY()
+	UPlayerHUDWidget* PlayerHUD;
+
+	UPROPERTY(EditDefaultsOnly, Category = "UI")
+	TSubclassOf<UPlayerHUDWidget> PlayerHUDClass;
+
+	UFUNCTION()
+	void ToggleMenu();
+
+	UFUNCTION()
+	void HandleDeath();
+
+
 };
