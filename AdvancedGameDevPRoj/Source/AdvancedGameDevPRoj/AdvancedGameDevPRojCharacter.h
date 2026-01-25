@@ -19,6 +19,7 @@ class UWashToolComponent;
 struct FInputActionValue;
 class UHealthComponent;
 class UPlayerHUDWidget;
+class UStatusMenuWidget;
 class UUserWidget;
 
 
@@ -79,15 +80,23 @@ protected:
 
 	UPROPERTY()
 	UUserWidget* StatusMenuInstance = nullptr;
-
 	bool bMenuOpen = false;
 
-	// Toggle function (C++ logic)
-	UFUNCTION()
-	void ToggleMenu();
+
 
 public:
 	AAdvancedGameDevPRojCharacter();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleMenu();
+	
+	UFUNCTION()
+	void OnPlayerHealthChanged(float NewHealth, float Delta);
+
+	void UpdatePlayerHealthUI(float Current, float Max);
+	void UpdateEnemyHealthUI(float Current, float Max);
+
+
 
 protected:
 
@@ -124,7 +133,6 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 public:
@@ -145,8 +153,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "UI")
 	TSubclassOf<UPlayerHUDWidget> PlayerHUDClass;
 
-	UFUNCTION()
-	void ToggleMenu();
+
+
+
 
 	UFUNCTION()
 	void HandleDeath();
