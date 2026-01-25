@@ -45,4 +45,8 @@ private:
 
 	UFUNCTION()
 	void HandleDeath();
+
+	UPROPERTY()
+	ACharacter* PlayerChar = nullptr;
+
 };

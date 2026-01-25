@@ -2,23 +2,26 @@
 
 #include "AdvancedGameDevPRojCharacter.h"
 
+#include "AdvancedGameDevPRoj.h"
 #include "HealthComponent.h"
 #include "PlayerHUDWidget.h"
-#include "UObject/ConstructorHelpers.h"
-#include "Blueprint/UserWidget.h"
+#include "WashToolComponent.h"
+
 #include "Animation/AnimInstance.h"
+#include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "GameFramework/PlayerController.h"
+#include "InputAction.h"
 #include "InputActionValue.h"
 #include "InputMappingContext.h"
-#include "InputAction.h"
-#include "GameFramework/PlayerController.h"
-#include "WashToolComponent.h"
-#include "AdvancedGameDevPRoj.h"
+#include "Kismet/GameplayStatics.h"
+#include "TimerManager.h"
+#include "UObject/ConstructorHelpers.h"
 
 AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 {
@@ -50,7 +53,7 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 	// Create wash tool component
 	WashTool = CreateDefaultSubobject<UWashToolComponent>(TEXT("WashTool"));
 
-	// configure the character comps
+	// Configure the character comps
 	GetMesh()->SetOwnerNoSee(true);
 	GetMesh()->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::WorldSpaceRepresentation;
 	GetCapsuleComponent()->SetCapsuleSize(34.0f, 96.0f);
@@ -70,128 +73,21 @@ AAdvancedGameDevPRojCharacter::AAdvancedGameDevPRojCharacter()
 	{
 		UE_LOG(LogTemp, Error, TEXT("Could not find WBP_PlayerHUD at /Game/UI/WBP_PlayerHUD"));
 	}
-
 }
 
-<<<<<<< HEAD
-void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
-	{
-		// Jump
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::DoJumpStart);
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AAdvancedGameDevPRojCharacter::DoJumpEnd);
-
-		// Move
-		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::MoveInput);
-
-		// Look
-		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
-		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
-
-		// ===== Wash Tool =====
-		if (WashTool && IA_Spray)
-		{
-			EnhancedInputComponent->BindAction(
-				IA_Spray,
-				ETriggerEvent::Started,
-				WashTool,
-				&UWashToolComponent::StartSpray
-			);
-
-			EnhancedInputComponent->BindAction(
-				IA_Spray,
-				ETriggerEvent::Completed,
-				WashTool,
-				&UWashToolComponent::StopSpray
-			);
-		}
-
-		// Menu (optional)
-		if (IA_Menu)
-		{
-			EnhancedInputComponent->BindAction(IA_Menu, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::ToggleMenu);
-		}
-	}
-}
-
-void AAdvancedGameDevPRojCharacter::ToggleMenu()
-{
-	UE_LOG(LogTemp, Warning, TEXT("ToggleMenu pressed"));
-}
-
-void AAdvancedGameDevPRojCharacter::MoveInput(const FInputActionValue& Value)
-{
-	// get the Vector2D move axis
-	FVector2D MovementVector = Value.Get<FVector2D>();
-
-	// pass the axis values to the move input
-	DoMove(MovementVector.X, MovementVector.Y);
-}
-
-void AAdvancedGameDevPRojCharacter::LookInput(const FInputActionValue& Value)
-{
-	// get the Vector2D look axis
-	FVector2D LookAxisVector = Value.Get<FVector2D>();
-
-	// pass the axis values to the aim input
-	DoAim(LookAxisVector.X, LookAxisVector.Y);
-}
-
-void AAdvancedGameDevPRojCharacter::DoAim(float Yaw, float Pitch)
-{
-	if (GetController())
-	{
-		// pass the rotation inputs
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
-	}
-}
-
-void AAdvancedGameDevPRojCharacter::DoMove(float Right, float Forward)
-{
-	if (GetController())
-	{
-		// pass the move inputs
-		AddMovementInput(GetActorRightVector(), Right);
-		AddMovementInput(GetActorForwardVector(), Forward);
-	}
-}
-
-void AAdvancedGameDevPRojCharacter::DoJumpStart()
-{
-	// pass Jump to the character
-	Jump();
-}
-
-void AAdvancedGameDevPRojCharacter::DoJumpEnd()
-{
-	// pass StopJumping to the character
-	StopJumping();
-}
-
-
-=======
->>>>>>> origin/main
 void AAdvancedGameDevPRojCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-<<<<<<< HEAD
+	// Get player controller (must exist for mapping + widgets)
 	APlayerController* PC = Cast<APlayerController>(GetController());
 	if (!PC)
-=======
-	// Add mapping context (Enhanced Input)
-	if (APlayerController* PC = Cast<APlayerController>(GetController()))
->>>>>>> origin/main
 	{
 		UE_LOG(LogTemp, Error, TEXT("BeginPlay: PlayerController is NULL (not possessed yet?)"));
 		return;
 	}
 
-	// Enhanced Input mapping (keep your existing logic)
+	// Add mapping context (Enhanced Input)
 	if (UEnhancedInputLocalPlayerSubsystem* Subsystem =
 		ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
 	{
@@ -211,7 +107,7 @@ void AAdvancedGameDevPRojCharacter::BeginPlay()
 		return;
 	}
 
-	// Create widget as UUserWidget (more reliable), then cast to your derived widget
+	// Create widget as UUserWidget, then cast to your derived widget
 	UUserWidget* RawWidget = CreateWidget<UUserWidget>(PC, PlayerHUDClass);
 	if (!RawWidget)
 	{
@@ -233,107 +129,71 @@ void AAdvancedGameDevPRojCharacter::BeginPlay()
 	if (Health)
 	{
 		PlayerHUD->BindToHealth(Health);
-
-		// Optional: confirm if the progress bar is binding
-		// (Add this log inside BindToHealth as well)
+		Health->OnDied.AddDynamic(this, &AAdvancedGameDevPRojCharacter::HandleDeath);
 	}
 	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("BeginPlay: Health is NULL - cannot bind HUD."));
 	}
-
-	if (Health)
-	{
-		Health->OnDied.AddDynamic(this, &AAdvancedGameDevPRojCharacter::HandleDeath);
-	}
 }
 
-<<<<<<< HEAD
-void AAdvancedGameDevPRojCharacter::HandleDeath()
-{
-	UE_LOG(LogTemp, Warning, TEXT("PLAYER DIED"));
-
-	// Disable input
-	if (APlayerController* PC = Cast<APlayerController>(GetController()))
-	{
-		DisableInput(PC);
-	}
-
-	// Stop movement
-	GetCharacterMovement()->DisableMovement();
-
-	// Optional: ragdoll or animation later
-
-	// For now: destroy after delay OR restart level
-	// Option A: Restart level
-	FTimerHandle RestartTimer;
-	GetWorldTimerManager().SetTimer(
-		RestartTimer,
-		FTimerDelegate::CreateLambda([this]()
-			{
-				UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()));
-			}),
-		2.0f,
-		false
-	);
-}
-
-=======
 void AAdvancedGameDevPRojCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
-	{
-		// Jump
-		if (JumpAction)
-		{
-			EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::DoJumpStart);
-			EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AAdvancedGameDevPRojCharacter::DoJumpEnd);
-		}
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-		// Move
-		if (MoveAction)
-		{
-			EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::MoveInput);
-		}
-
-		// Look
-		if (LookAction)
-		{
-			EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
-		}
-		if (MouseLookAction)
-		{
-			EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
-		}
-
-		// Spray -> wash tool
-		if (WashTool && IA_Spray)
-		{
-			EnhancedInputComponent->BindAction(IA_Spray, ETriggerEvent::Started, WashTool, &UWashToolComponent::StartSpray);
-			EnhancedInputComponent->BindAction(IA_Spray, ETriggerEvent::Completed, WashTool, &UWashToolComponent::StopSpray);
-		}
-
-		// Menu toggle
-		if (IA_Menu)
-		{
-			EnhancedInputComponent->BindAction(IA_Menu, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::ToggleMenu);
-		}
-	}
-	else
+	UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent);
+	if (!EnhancedInputComponent)
 	{
 		UE_LOG(LogAdvancedGameDevPRoj, Error, TEXT("'%s' Failed to find an Enhanced Input Component!"), *GetNameSafe(this));
+		return;
+	}
+
+	// Jump
+	if (JumpAction)
+	{
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::DoJumpStart);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &AAdvancedGameDevPRojCharacter::DoJumpEnd);
+	}
+
+	// Move
+	if (MoveAction)
+	{
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::MoveInput);
+	}
+
+	// Look
+	if (LookAction)
+	{
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
+	}
+	if (MouseLookAction)
+	{
+		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AAdvancedGameDevPRojCharacter::LookInput);
+	}
+
+	// Spray -> wash tool
+	if (WashTool && IA_Spray)
+	{
+		EnhancedInputComponent->BindAction(IA_Spray, ETriggerEvent::Started, WashTool, &UWashToolComponent::StartSpray);
+		EnhancedInputComponent->BindAction(IA_Spray, ETriggerEvent::Completed, WashTool, &UWashToolComponent::StopSpray);
+	}
+
+	// Menu toggle
+	if (IA_Menu)
+	{
+		EnhancedInputComponent->BindAction(IA_Menu, ETriggerEvent::Started, this, &AAdvancedGameDevPRojCharacter::ToggleMenu);
 	}
 }
 
 void AAdvancedGameDevPRojCharacter::MoveInput(const FInputActionValue& Value)
 {
-	FVector2D MovementVector = Value.Get<FVector2D>();
+	const FVector2D MovementVector = Value.Get<FVector2D>();
 	DoMove(MovementVector.X, MovementVector.Y);
 }
 
 void AAdvancedGameDevPRojCharacter::LookInput(const FInputActionValue& Value)
 {
-	FVector2D LookAxisVector = Value.Get<FVector2D>();
+	const FVector2D LookAxisVector = Value.Get<FVector2D>();
 	DoAim(LookAxisVector.X, LookAxisVector.Y);
 }
 
@@ -367,6 +227,8 @@ void AAdvancedGameDevPRojCharacter::DoJumpEnd()
 
 void AAdvancedGameDevPRojCharacter::ToggleMenu()
 {
+	UE_LOG(LogTemp, Warning, TEXT("ToggleMenu pressed"));
+
 	APlayerController* PC = Cast<APlayerController>(GetController());
 	if (!PC) return;
 
@@ -387,7 +249,6 @@ void AAdvancedGameDevPRojCharacter::ToggleMenu()
 		FInputModeGameAndUI Mode;
 		Mode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 		PC->SetInputMode(Mode);
-
 		PC->bShowMouseCursor = true;
 	}
 	else
@@ -396,9 +257,38 @@ void AAdvancedGameDevPRojCharacter::ToggleMenu()
 
 		FInputModeGameOnly Mode;
 		PC->SetInputMode(Mode);
-
 		PC->bShowMouseCursor = false;
 	}
-
 }
->>>>>>> origin/main
+
+void AAdvancedGameDevPRojCharacter::HandleDeath()
+{
+	UE_LOG(LogTemp, Warning, TEXT("PLAYER DIED"));
+
+	// Disable input
+	if (APlayerController* PC = Cast<APlayerController>(GetController()))
+	{
+		DisableInput(PC);
+	}
+
+	// Stop movement
+	if (GetCharacterMovement())
+	{
+		GetCharacterMovement()->DisableMovement();
+	}
+
+	// Restart level after 2 seconds
+	FTimerHandle RestartTimer;
+	GetWorldTimerManager().SetTimer(
+		RestartTimer,
+		FTimerDelegate::CreateLambda([this]()
+			{
+				if (UWorld* World = GetWorld())
+				{
+					UGameplayStatics::OpenLevel(this, FName(*World->GetName()));
+				}
+			}),
+		2.0f,
+		false
+	);
+}

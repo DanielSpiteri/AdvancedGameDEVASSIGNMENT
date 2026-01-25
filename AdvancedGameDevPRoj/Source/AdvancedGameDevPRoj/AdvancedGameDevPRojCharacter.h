@@ -82,12 +82,14 @@ protected:
 
 	bool bMenuOpen = false;
 
-	// Toggle function (C++ logic)
-	UFUNCTION()
-	void ToggleMenu();
+
 
 public:
 	AAdvancedGameDevPRojCharacter();
+
+	UFUNCTION(BlueprintCallable)
+	void ToggleMenu();
+
 
 protected:
 
@@ -124,7 +126,6 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
 
 public:
@@ -145,8 +146,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "UI")
 	TSubclassOf<UPlayerHUDWidget> PlayerHUDClass;
 
-	UFUNCTION()
-	void ToggleMenu();
+
 
 	UFUNCTION()
 	void HandleDeath();
