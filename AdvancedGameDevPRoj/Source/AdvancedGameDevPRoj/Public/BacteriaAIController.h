@@ -28,7 +28,7 @@ private:
 	AAdvancedGameDevPRojCharacter* Player = nullptr;
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
-	float StopDistance = 150.f;
+	float StopDistance = 50.f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	float RepathInterval = 0.25f;

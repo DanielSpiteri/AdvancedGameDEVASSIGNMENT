@@ -64,6 +64,19 @@ void ABacteriaEnemyCharacter::AttackPlayer()
 	UE_LOG(LogTemp, Warning, TEXT("Bacteria attacked player for %f damage"), AttackDamage);
 
 	TimeTilNextAttack = AttackCooldown;
+
+	FVector Dir = (PlayerChar->GetActorLocation() - GetActorLocation()).GetSafeNormal();
+	float KnockbackStrength = 600.f;
+
+	if (ACharacter* PlayerChar = Cast<ACharacter>(PlayerChar))
+	{
+		PlayerChar->LaunchCharacter(Dir * KnockbackStrength + FVector(0, 0, 200.f), true, true);
+	}
+
+	FVector Back = (GetActorLocation() - PlayerChar->GetActorLocation()).GetSafeNormal();
+	LaunchCharacter(Back * 400.f, true, true);
+
+
 }
 
 
