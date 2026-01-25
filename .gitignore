@@ -73,3 +73,27 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Unreal generated folders
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# VS / Rider / IDE
+.vs/
+.idea/
+
+# Build/debug artifacts
+*.pdb
+*.obj
+*.log
+*.tmp
+*.cache
+*.bin
+*.dll
+*.exe
+
+# OS junk
+.DS_Store
+Thumbs.db
