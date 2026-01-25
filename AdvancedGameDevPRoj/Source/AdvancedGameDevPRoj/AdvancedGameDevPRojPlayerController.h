@@ -6,15 +6,19 @@
 #include "GameFramework/PlayerController.h"
 #include "AdvancedGameDevPRojPlayerController.generated.h"
 
+
 class UInputMappingContext;
 class UUserWidget;
+
+class UInputAction;
+struct FInputActionValue;
 
 /**
  *  Simple first person Player Controller
  *  Manages the input mapping context.
  *  Overrides the Player Camera Manager class.
  */
-UCLASS(abstract)
+UCLASS()
 class ADVANCEDGAMEDEVPROJ_API AAdvancedGameDevPRojPlayerController : public APlayerController
 {
 	GENERATED_BODY()
@@ -46,5 +50,35 @@ protected:
 
 	/** Input mapping context setup */
 	virtual void SetupInputComponent() override;
+
+	// Assign this in the GameMode (or defaults)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	TSubclassOf<UUserWidget> StartMenuWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* StartMenuWidget;
+
+	UFUNCTION()
+	void ShowStartMenu();
+
+	UFUNCTION()
+	void HideStartMenu();
+
+	virtual void PlayerTick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere, Category = "Input|Actions")
+	TObjectPtr<UInputAction> LookAction;
+
+	void Look(const FInputActionValue& Value);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+	TSubclassOf<UUserWidget> GameOverWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* GameOverWidget;
+
+	UFUNCTION()
+	void ShowGameOver();
+
 
 };

@@ -35,9 +35,8 @@ void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 	}
 
 	// only try attacking if we have a valid player
-	ACharacter* PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
-	if (!IsValid(PlayerChar))
-		return;
+	PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
+	if (!IsValid(PlayerChar)) return;
 
 	// optional: distance check here or inside AttackPlayer
 	const float Distance = FVector::Dist(GetActorLocation(), PlayerChar->GetActorLocation());
@@ -50,7 +49,6 @@ void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 void ABacteriaEnemyCharacter::AttackPlayer()
 {
 
-	ACharacter* PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
 	if (!IsValid(PlayerChar)) return;
 
 	UHealthComponent* PlayerHealth = PlayerChar->FindComponentByClass<UHealthComponent>();
@@ -68,13 +66,20 @@ void ABacteriaEnemyCharacter::AttackPlayer()
 	FVector Dir = (PlayerChar->GetActorLocation() - GetActorLocation()).GetSafeNormal();
 	float KnockbackStrength = 600.f;
 
-	if (ACharacter* PlayerChar = Cast<ACharacter>(PlayerChar))
+	PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
+	if (PlayerChar)
 	{
+		// Launch the PLAYER
 		PlayerChar->LaunchCharacter(Dir * KnockbackStrength + FVector(0, 0, 200.f), true, true);
+
+		// Knock the ENEMY backwards away from the player
+		const FVector Back = (GetActorLocation() - PlayerChar->GetActorLocation()).GetSafeNormal();
+		LaunchCharacter(Back * 400.f, true, true);
 	}
 
-	FVector Back = (GetActorLocation() - PlayerChar->GetActorLocation()).GetSafeNormal();
-	LaunchCharacter(Back * 400.f, true, true);
+
+
+
 
 
 }
@@ -86,15 +91,20 @@ void ABacteriaEnemyCharacter::HandleDeath()
 	{
 		FVector SpawnLocation = GetActorLocation() + FVector(0, 0, 30);
 
-		if (ACharacter* Player = UGameplayStatics::GetPlayerCharacter(this, 0))
+		if (ACharacter* LocalPlayer = UGameplayStatics::GetPlayerCharacter(this, 0))
 		{
 			const FVector AwayFromPlayer =
-				(GetActorLocation() - Player->GetActorLocation()).GetSafeNormal();
+				(GetActorLocation() - LocalPlayer->GetActorLocation()).GetSafeNormal();
 
-			SpawnLocation += AwayFromPlayer * 120.f; // push it away from player
+			SpawnLocation += AwayFromPlayer * 120.f;
 		}
 
-		GetWorld()->SpawnActor<AActor>(HeartPickupClass, SpawnLocation, FRotator::ZeroRotator);
+		GetWorld()->SpawnActor<AActor>(
+			HeartPickupClass,
+			SpawnLocation,
+			FRotator::ZeroRotator
+		);
+
 		UE_LOG(LogTemp, Warning, TEXT("Bacteria dropped a heart pickup"));
 	}
 
