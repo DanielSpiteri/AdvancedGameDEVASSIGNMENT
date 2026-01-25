@@ -48,6 +48,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	void AddHealth(float Amount);  //increases current health without affecting max health
 
+	UFUNCTION(BlueprintPure, Category = "Health")
+	float GetHealthPercent() const { return (MaxHealth <= 0.f) ? 0.f : (CurrentHealth / MaxHealth); }
 
 protected:
 	virtual void BeginPlay() override;

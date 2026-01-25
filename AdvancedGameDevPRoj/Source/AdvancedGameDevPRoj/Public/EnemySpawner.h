@@ -7,7 +7,7 @@
 class ABacteriaEnemyCharacter;
 
 UCLASS()
-class YOURPROJECT_API AEnemySpawner : public AActor
+class ADVANCEDGAMEDEVPROJ_API AEnemySpawner : public AActor
 {
 	GENERATED_BODY()
 

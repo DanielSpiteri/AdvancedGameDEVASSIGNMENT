@@ -2,10 +2,12 @@
 	"RemapUnityFiles": 
 	{
 		"Module.AdvancedGameDevPRoj.cpp.obj": [
+			"AdvancedGameDevPRoj.init.gen.cpp.obj",
 			"AdvancedGameDevPRojCameraManager.gen.cpp.obj",
 			"AdvancedGameDevPRojCharacter.gen.cpp.obj",
 			"AdvancedGameDevPRojGameMode.gen.cpp.obj",
 			"AdvancedGameDevPRojPlayerController.gen.cpp.obj",
+			"BacteriaAIController.gen.cpp.obj",
 			"BacteriaEnemyCharacter.gen.cpp.obj",
 			"EnemySpawner.gen.cpp.obj",
 			"EnvQueryContext_Target.gen.cpp.obj",
@@ -39,6 +41,7 @@
 			"AdvancedGameDevPRojGameMode.cpp.obj",
 			"AdvancedGameDevPRojPlayerController.cpp.obj",
 			"PickupBase.cpp.obj",
+			"BacteriaAIController.cpp.obj",
 			"HealthComponent.cpp.obj",
 			"HeartPickup.cpp.obj",
 			"UpgradeData.cpp.obj",
@@ -62,9 +65,6 @@
 			"Washable.cpp.obj",
 			"WashableCar.cpp.obj",
 			"WashToolComponent.cpp.obj",
-			"AdvancedGameDevPRoj.init.gen.cpp.obj",
-			"BacteriaAIController.gen.cpp.obj",
-			"BacteriaAIController.cpp.obj",
 			"BacteriaEnemyCharacter.cpp.obj",
 			"EnemySpawner.cpp.obj"
 		]

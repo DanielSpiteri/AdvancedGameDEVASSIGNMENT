@@ -32,6 +32,7 @@ ADVANCEDGAMEDEVPROJ_API void FOnDied_DelegateWrapper(const FMulticastScriptDeleg
 
 // ********** Begin Class UHealthComponent *********************************************************
 #define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_HealthComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetHealthPercent); \
 	DECLARE_FUNCTION(execAddHealth); \
 	DECLARE_FUNCTION(execIncreaseMaxHealth); \
 	DECLARE_FUNCTION(execIsDead); \

@@ -29,7 +29,7 @@ private:
 	float AttackRange = 150.f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
-	float AttackDamage = 20.f;
+	float AttackDamage = 5.f;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Combat")
 	float AttackCooldown = 2.f;
