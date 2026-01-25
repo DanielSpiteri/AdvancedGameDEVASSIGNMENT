@@ -1,5 +1,4 @@
 #include "BacteriaEnemyCharacter.h"
-#include "BacteriaAIController.h"
 
 #include "HealthComponent.h"
 #include "AdvancedGameDevPRojCharacter.h"
@@ -10,9 +9,6 @@ ABacteriaEnemyCharacter::ABacteriaEnemyCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	Health = CreateDefaultSubobject<UHealthComponent>(TEXT("Health"));
-
-	AIControllerClass = ABacteriaAIController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 }
 
 void ABacteriaEnemyCharacter::BeginPlay()
@@ -53,7 +49,6 @@ void ABacteriaEnemyCharacter::Tick(float DeltaSeconds)
 
 void ABacteriaEnemyCharacter::AttackPlayer()
 {
-	if (TimeTilNextAttack > 0.f) return;  // cooldown check (note: > 0, not <= 0)
 
 	ACharacter* PlayerChar = UGameplayStatics::GetPlayerCharacter(this, 0);
 	if (!IsValid(PlayerChar)) return;

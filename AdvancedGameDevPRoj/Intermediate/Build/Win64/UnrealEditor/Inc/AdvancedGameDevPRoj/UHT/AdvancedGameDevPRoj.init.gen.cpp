@@ -33,13 +33,13 @@ void EmptyLinkFunctionForGeneratedCodeAdvancedGameDevPRoj_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x18B540C0,
-				0x5B8313B1,
+				0xFCF472E1,
+				0x1DB80687,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_AdvancedGameDevPRoj(Z_Construct_UPackage__Script_AdvancedGameDevPRoj, TEXT("/Script/AdvancedGameDevPRoj"), Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x18B540C0, 0x5B8313B1));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_AdvancedGameDevPRoj(Z_Construct_UPackage__Script_AdvancedGameDevPRoj, TEXT("/Script/AdvancedGameDevPRoj"), Z_Registration_Info_UPackage__Script_AdvancedGameDevPRoj, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xFCF472E1, 0x1DB80687));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -672,6 +672,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\EnemySpawner.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\HealthComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
@@ -684,6 +689,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaAIController.h"/>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaEnemyCharacter.h"/>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\EnemySpawner.h"/>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HealthComponent.h"/>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HeartPickup.h"/>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Variant_Horror\HorrorCharacter.cpp">

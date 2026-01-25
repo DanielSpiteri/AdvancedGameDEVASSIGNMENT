@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ABacteriaAIController ****************************************************
 ADVANCEDGAMEDEVPROJ_API UClass* Z_Construct_UClass_ABacteriaAIController_NoRegister();
 
-#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABacteriaAIController(); \
 	friend struct Z_Construct_UClass_ABacteriaAIController_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ABacteriaAIController)
 
 
-#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_13_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABacteriaAIController(ABacteriaAIController&&) = delete; \
 	ABacteriaAIController(const ABacteriaAIController&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ABacteriaAIController();
 
 
-#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_15_PROLOG
-#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_18_GENERATED_BODY \
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_10_PROLOG
+#define FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,16 +56,5 @@ class ABacteriaAIController;
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Users_User_Desktop_adv_game_prog_CarWash_AdvancedGameDevPRoj_Source_AdvancedGameDevPRoj_Public_BacteriaAIController_h
-
-// ********** Begin Enum EBacteriaAIState **********************************************************
-#define FOREACH_ENUM_EBACTERIAAISTATE(op) \
-	op(EBacteriaAIState::Patrol) \
-	op(EBacteriaAIState::Chase) \
-	op(EBacteriaAIState::Attack) 
-
-enum class EBacteriaAIState : uint8;
-template<> struct TIsUEnumClass<EBacteriaAIState> { enum { Value = true }; };
-template<> ADVANCEDGAMEDEVPROJ_API UEnum* StaticEnum<EBacteriaAIState>();
-// ********** End Enum EBacteriaAIState ************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

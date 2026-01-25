@@ -201,6 +201,9 @@
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\BacteriaEnemyCharacter.cpp">
       <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\EnemySpawner.cpp">
+      <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\AdvancedGameDevPRoj\Private\HealthComponent.cpp">
       <Filter>Source\AdvancedGameDevPRoj\Private</Filter>
     </ClCompile>
@@ -214,6 +217,9 @@
       <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\BacteriaEnemyCharacter.h">
+      <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\EnemySpawner.h">
       <Filter>Source\AdvancedGameDevPRoj\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\AdvancedGameDevPRoj\Public\HealthComponent.h">

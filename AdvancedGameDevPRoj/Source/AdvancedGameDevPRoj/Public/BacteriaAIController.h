@@ -1,53 +1,39 @@
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "AIController.h"
 #include "BacteriaAIController.generated.h"
 
-UENUM()
-enum class EBacteriaAIState : uint8
-{
-	Patrol,
-	Chase,
-	Attack
-};
+class ABacteriaEnemyCharacter;
+class AAdvancedGameDevPRojCharacter;
 
 UCLASS()
 class ADVANCEDGAMEDEVPROJ_API ABacteriaAIController : public AAIController
 {
 	GENERATED_BODY()
-	
-	public:
+
+public:
 	ABacteriaAIController();
 
+protected:
+	virtual void BeginPlay() override;
 	virtual void OnPossess(APawn* InPawn) override;
 	virtual void Tick(float DeltaSeconds) override;
 
-	private:
-		UPROPERTY(EditDefaultsOnly, Category = "AI")
-		float PatrolRadius = 2000.f;
+private:
+	UPROPERTY()
+	ABacteriaEnemyCharacter* Enemy = nullptr;
 
-		UPROPERTY(EditDefaultsOnly, Category = "AI")
-		float ChaseRange = 900.f;
+	UPROPERTY()
+	AAdvancedGameDevPRojCharacter* Player = nullptr;
 
-		UPROPERTY(EditDefaultsOnly, Category = "AI")
-		float AttackRange = 150.f;
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	float StopDistance = 150.f;
 
-		UPROPERTY(EditDefaultsOnly, Category = "AI")
-		float MoveUpdateInterval = 0.4f; //
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	float RepathInterval = 0.25f;
 
-		EBacteriaAIState State = EBacteriaAIState::Patrol;
+	float TimeUntilRepath = 0.f;
 
-		FVector SpawnPoint = FVector::ZeroVector;
-		float TimeUntilMovement = 0.f;
-
-		TWeakObjectPtr<class ABacteriaEnemyCharacter> Enemy;
-		TWeakObjectPtr<class ACharacter> Player;
-
-		void UpdateState();
-		void DoPatrol();
-		void DoChase();
-		void DoAttack();
-
-		bool GetRandomPatrolPoint(FVector& OutPoint) const;
+	void CachePlayer();
 };
