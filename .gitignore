@@ -73,3 +73,19 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+.idea/
+*.pdb
+*.obj
+*.log
+*.tmp
+*.cache
+*.bin
+*.dll
+*.exe
