@@ -1,7 +1,11 @@
 #include "WashToolComponent.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
+#include "AdvancedGameDevPRojCharacter.h"
+#include "StatusMenuWidget.h"
 #include "Camera/CameraComponent.h"
+#include "BacteriaEnemyCharacter.h"
+#include "HealthComponent.h"
 #include "Washable.h"
 
 UWashToolComponent::UWashToolComponent()
@@ -56,22 +60,45 @@ void UWashToolComponent::TickComponent(
 		return;
 	}
 
-
 	FHitResult Hit;
 	if (!DoSprayTrace(Hit)) return;
 
 	AActor* HitActor = Hit.GetActor();
 	if (!HitActor) return;
 
+	// 1) If it's bacteria, damage it (independent of Washable)
+	if (ABacteriaEnemyCharacter* Bacteria = Cast<ABacteriaEnemyCharacter>(HitActor))
+	{
+		if (UHealthComponent* EnemyHealth = Bacteria->FindComponentByClass<UHealthComponent>())
+		{
+			// Optional: make it per-second so it's consistent with spraying
+			EnemyHealth->TakeDamage(BacteriaDamage);
+
+			if (AAdvancedGameDevPRojCharacter* PlayerChar =
+				Cast<AAdvancedGameDevPRojCharacter>(GetOwner()))
+			{
+				PlayerChar->UpdateEnemyHealthUI(
+					EnemyHealth->GetCurrentHealth(), 50.f);
+			}
+
+
+			UE_LOG(LogTemp, Warning, TEXT("Wash tool damaged bacteria for %f"), BacteriaDamage * DeltaTime);
+		}
+
+		UE_LOG(LogTemp, Warning, TEXT("Hitting bacteria: DPS=%f"), BacteriaDamage);
+
+	}
+
+	// 2) If it's washable, wash it
 	if (HitActor->GetClass()->ImplementsInterface(UWashable::StaticClass()))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("[WashTool] Base=%f Mult=%f FinalPerSec=%f"),
 			BaseWashRate, WashRateMultiplier, BaseWashRate * WashRateMultiplier);
 
-
 		const float WashPerTick = (BaseWashRate * WashRateMultiplier) * DeltaTime;
 		IWashable::Execute_ApplyWash(HitActor, WashPerTick);
 	}
+
 }
 
 bool UWashToolComponent::DoSprayTrace(FHitResult& OutHit) const

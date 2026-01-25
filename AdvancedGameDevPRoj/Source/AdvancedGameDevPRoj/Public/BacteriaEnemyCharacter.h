@@ -41,7 +41,7 @@ private:
 	TSubclassOf<AActor> HeartPickupClass;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Drops")
-	float HeartDropChance = 0.25f; // 25% chance
+	float HeartDropChance = 1.f; // 25% chance
 
 	UFUNCTION()
 	void HandleDeath();

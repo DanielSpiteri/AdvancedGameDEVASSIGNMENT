@@ -13,6 +13,8 @@ void UHealthComponent::BeginPlay()
 	//start with full health
 	CurrentHealth = MaxHealth;
 	bDead = false;
+
+	UE_LOG(LogTemp, Warning, TEXT("[%s] Health Init: Max=%.1f Current=%.1f"), *GetOwner()->GetName(), MaxHealth, CurrentHealth);
 }
 
 void UHealthComponent::TakeDamage(float DamageAmount)
@@ -26,11 +28,15 @@ void UHealthComponent::TakeDamage(float DamageAmount)
 	const float Delta = CurrentHealth - OldHealth;
 	OnHealthChanged.Broadcast(CurrentHealth, Delta); //delta will be negative whilst taking damage
 
-	UE_LOG(LogTemp, Warning, TEXT("Player HP now: %.1f / %.1f"), CurrentHealth, MaxHealth);
+	UE_LOG(LogTemp, Warning, TEXT("[%s] HP: %.1f / %.1f (Delta: %.1f)"),
+		*GetOwner()->GetName(), CurrentHealth, MaxHealth, Delta);
 
 	if (CurrentHealth <= 0.f && !bDead)
 	{
 		bDead = true;
+
+		UE_LOG(LogTemp, Warning, TEXT("[%s] DIED - broadcasting OnDied"), *GetOwner()->GetName());
+
 		OnDied.Broadcast();
 	}
 }

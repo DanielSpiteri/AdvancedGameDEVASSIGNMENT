@@ -1,12 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "AdvancedGameDevPRojCharacter.h"
-
 #include "AdvancedGameDevPRoj.h"
 #include "HealthComponent.h"
 #include "PlayerHUDWidget.h"
 #include "WashToolComponent.h"
-
+#include "StatusMenuWidget.h"
 #include "Animation/AnimInstance.h"
 #include "Blueprint/UserWidget.h"
 #include "Camera/CameraComponent.h"
@@ -130,6 +129,8 @@ void AAdvancedGameDevPRojCharacter::BeginPlay()
 	{
 		PlayerHUD->BindToHealth(Health);
 		Health->OnDied.AddDynamic(this, &AAdvancedGameDevPRojCharacter::HandleDeath);
+		Health->OnHealthChanged.AddDynamic(this, &AAdvancedGameDevPRojCharacter::OnPlayerHealthChanged);
+
 	}
 	else
 	{
@@ -291,4 +292,30 @@ void AAdvancedGameDevPRojCharacter::HandleDeath()
 		2.0f,
 		false
 	);
+}
+
+void AAdvancedGameDevPRojCharacter::OnPlayerHealthChanged(float NewHealth, float Delta)
+{
+	// Update the UI if the menu exists
+	UpdatePlayerHealthUI(NewHealth, 100.f);
+}
+
+void AAdvancedGameDevPRojCharacter::UpdateEnemyHealthUI(float Current, float Max)
+{
+	if (!StatusMenuInstance) return;
+
+	if (UStatusMenuWidget* Menu = Cast<UStatusMenuWidget>(StatusMenuInstance))
+	{
+		Menu->SetEnemyHealth(Current, Max);
+	}
+}
+
+void AAdvancedGameDevPRojCharacter::UpdatePlayerHealthUI(float Current, float Max)
+{
+	if (!StatusMenuInstance) return;
+
+	if (UStatusMenuWidget* Menu = Cast<UStatusMenuWidget>(StatusMenuInstance))
+	{
+		Menu->SetPlayerHealth(Current, Max);
+	}
 }

@@ -76,12 +76,6 @@ void ABacteriaEnemyCharacter::AttackPlayer()
 		const FVector Back = (GetActorLocation() - PlayerChar->GetActorLocation()).GetSafeNormal();
 		LaunchCharacter(Back * 400.f, true, true);
 	}
-
-
-
-
-
-
 }
 
 

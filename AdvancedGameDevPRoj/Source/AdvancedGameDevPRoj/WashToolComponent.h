@@ -48,6 +48,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Washing")
 	bool bCountedAsClean = false;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Combat")
+	float BacteriaDamage = 10.f;
 
 
 public:

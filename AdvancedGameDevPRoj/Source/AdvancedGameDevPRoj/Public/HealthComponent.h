@@ -51,6 +51,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Health")
 	float GetHealthPercent() const { return (MaxHealth <= 0.f) ? 0.f : (CurrentHealth / MaxHealth); }
 
+	float GetCurrentHealth() const { return CurrentHealth; }
+	float GetMaxHealth() const { return MaxHealth; }
+
 protected:
 	virtual void BeginPlay() override;
 

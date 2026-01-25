@@ -19,6 +19,7 @@ class UWashToolComponent;
 struct FInputActionValue;
 class UHealthComponent;
 class UPlayerHUDWidget;
+class UStatusMenuWidget;
 class UUserWidget;
 
 
@@ -79,7 +80,6 @@ protected:
 
 	UPROPERTY()
 	UUserWidget* StatusMenuInstance = nullptr;
-
 	bool bMenuOpen = false;
 
 
@@ -89,6 +89,13 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ToggleMenu();
+	
+	UFUNCTION()
+	void OnPlayerHealthChanged(float NewHealth, float Delta);
+
+	void UpdatePlayerHealthUI(float Current, float Max);
+	void UpdateEnemyHealthUI(float Current, float Max);
+
 
 
 protected:
@@ -145,6 +152,8 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "UI")
 	TSubclassOf<UPlayerHUDWidget> PlayerHUDClass;
+
+
 
 
 
